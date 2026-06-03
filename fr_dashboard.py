@@ -27,35 +27,36 @@ FR_SCORE_FIELD    = "customfield_12330"   # confirmed field for FR Score
 
 # ─── 1. Fetch top 30 FR tickets ─────────────────────────────────────────────
 def fetch_fr_tickets(limit=30):
-    url = f"https://{JIRA_HOST}/rest/api/3/search"
+    # Jira Cloud now requires the /search/jql endpoint with cursor-based pagination
+    url = f"https://{JIRA_HOST}/rest/api/3/search/jql"
     headers = {"Accept": "application/json"}
     auth = (JIRA_EMAIL, JIRA_TOKEN)
 
     all_issues = []
-    start = 0
-    page_size = 50
+    next_page_token = None
 
     while len(all_issues) < limit:
-        params = {
+        payload = {
             "jql": f'project = {JIRA_PROJECT} ORDER BY cf[12330] DESC',
-            "startAt": start,
-            "maxResults": min(page_size, limit - len(all_issues)),
-            "fields": ",".join([
+            "maxResults": min(50, limit - len(all_issues)),
+            "fields": [
                 "summary", "description", "status", "priority",
                 "created", FR_SCORE_FIELD, "issuetype",
-                "customfield_10020",   # sprint
-            ])
+            ]
         }
-        resp = requests.get(url, headers=headers, auth=auth, params=params)
+        if next_page_token:
+            payload["nextPageToken"] = next_page_token
+
+        resp = requests.post(url, headers=headers, auth=auth, json=payload)
         resp.raise_for_status()
         data = resp.json()
         issues = data.get("issues", [])
         if not issues:
             break
         all_issues.extend(issues)
-        if data.get("total", 0) <= start + len(issues):
+        next_page_token = data.get("nextPageToken")
+        if not next_page_token:
             break
-        start += len(issues)
 
     return all_issues[:limit]
 
