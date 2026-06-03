@@ -299,6 +299,7 @@ resp = requests.post(
     json={
         "type": "page",
         "title": title,
+        "space": {"key": "Product"},
         "ancestors": [{"id": PARENT_ID}],
         "body": {"storage": {"value": page_body, "representation": "storage"}}
     },
