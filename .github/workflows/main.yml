@@ -107,25 +107,26 @@ jobs:
           # ── Fetch all FR issues ───────────────────────────────────────────────
           print("Fetching FR issues from Jira…")
           all_issues = []
-          start_at = 0
           page_size = 100
+          next_page_token = None
 
           while True:
-              data = jira_get(
-                  "/rest/api/3/search",
-                  params={
-                      "jql": f"project = {JIRA_PROJECT} ORDER BY cf[12330] DESC, cf[10300] ASC",
-                      "startAt": start_at,
-                      "maxResults": page_size,
-                      "fields": "summary,description,status,priority,customfield_12330,customfield_10300,labels,issuetype,created,updated"
-                  }
-              )
+              params = {
+                  "jql": f"project = {JIRA_PROJECT} ORDER BY cf[12330] DESC, cf[10300] ASC",
+                  "maxResults": page_size,
+                  "fields": "summary,description,status,priority,customfield_12330,customfield_10300,labels,issuetype,created,updated"
+              }
+              if next_page_token:
+                  params["nextPageToken"] = next_page_token
+
+              data = jira_get("/rest/api/3/search/jql", params=params)
               issues = data.get("issues", [])
               all_issues.extend(issues)
-              print(f"  Fetched {len(all_issues)} / {data.get('total', '?')}")
-              if start_at + page_size >= data.get("total", 0):
+              print(f"  Fetched {len(all_issues)} so far…")
+
+              next_page_token = data.get("nextPageToken")
+              if not next_page_token or data.get("isLast", False) or len(issues) < page_size:
                   break
-              start_at += page_size
 
           print(f"Total issues fetched: {len(all_issues)}")
 
