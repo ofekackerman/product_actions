@@ -12,6 +12,7 @@ JIRA_TOKEN   = os.environ["JIRA_TOKEN"]
 CONF_EMAIL   = os.environ["CONFLUENCE_EMAIL"]
 CONF_TOKEN   = os.environ["CONFLUENCE_TOKEN"]
 PARENT_ID    = "3533963267"
+SPACE_KEY    = "Product"
 JIRA_PROJECT = "FR"
 
 jira_auth = (JIRA_EMAIL, JIRA_TOKEN)
@@ -299,8 +300,7 @@ resp = requests.post(
     json={
         "type": "page",
         "title": title,
-        "space": {"key": "Product"},
-        "space": {"key": "Product"},
+        "space": {"key": SPACE_KEY},
         "ancestors": [{"id": PARENT_ID}],
         "body": {"storage": {"value": page_body, "representation": "storage"}}
     },
