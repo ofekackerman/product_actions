@@ -1,0 +1,535 @@
+name: FR Score Dashboard → Confluence
+
+on:
+  workflow_dispatch:
+  schedule:
+    # Runs every Monday at 08:00 UTC
+    - cron: '0 8 * * 1'
+
+jobs:
+  build-dashboard:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install requests python-dateutil
+
+      - name: Generate and publish FR Dashboard
+        env:
+          JIRA_TOKEN: ${{ secrets.JIRA_TOKEN }}
+          JIRA_EMAIL: ${{ secrets.JIRA_EMAIL }}
+          CONFLUENCE_TOKEN: ${{ secrets.CONFLUENCE_TOKEN }}
+          CONFLUENCE_EMAIL: ${{ secrets.CONFLUENCE_EMAIL }}
+          CONFLUENCE_PARENT_ID: "3533963267"
+          CONFLUENCE_CLOUD_ID: "65619a08-310b-47bc-9824-14bc90a545f3"
+          CONFLUENCE_BASE_URL: "https://cloudshare.atlassian.net"
+          JIRA_BASE_URL: "https://cloudshare.atlassian.net"
+          JIRA_PROJECT: "FR"
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          cat << 'PYTHON_SCRIPT' > run_dashboard.py
+          import requests
+          import json
+          import os
+          import re
+          from datetime import datetime, timezone
+          from collections import defaultdict
+          from base64 import b64encode
+
+          # ── Config ────────────────────────────────────────────────────────────
+          JIRA_BASE      = os.environ["JIRA_BASE_URL"]
+          JIRA_EMAIL     = os.environ["JIRA_EMAIL"]
+          JIRA_TOKEN     = os.environ["JIRA_TOKEN"]
+          CONF_BASE      = os.environ["CONFLUENCE_BASE_URL"]
+          CONF_EMAIL     = os.environ["CONFLUENCE_EMAIL"]
+          CONF_TOKEN     = os.environ["CONFLUENCE_TOKEN"]
+          PARENT_ID      = os.environ["CONFLUENCE_PARENT_ID"]
+          JIRA_PROJECT   = os.environ["JIRA_PROJECT"]
+          OPENAI_KEY     = os.environ.get("OPENAI_API_KEY", "")
+
+          jira_auth  = (JIRA_EMAIL,  JIRA_TOKEN)
+          conf_auth  = (CONF_EMAIL, CONF_TOKEN)
+
+          TODAY      = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+          RUN_URL    = f"https://github.com/{os.environ.get('GITHUB_REPOSITORY','ofekackerman/product_actions')}/actions/runs/{os.environ.get('GITHUB_RUN_ID','manual')}"
+
+          # ── Helpers ───────────────────────────────────────────────────────────
+          def jira_get(path, params=None):
+              r = requests.get(f"{JIRA_BASE}{path}", auth=jira_auth, params=params)
+              r.raise_for_status()
+              return r.json()
+
+          def extract_arr(description):
+              if not description:
+                  return 0
+              m = re.search(r'Account ARR[:\s]+([0-9,]+)', description, re.IGNORECASE)
+              if m:
+                  return int(m.group(1).replace(',', ''))
+              return 0
+
+          def extract_customer(description):
+              if not description:
+                  return "—"
+              # Try "Created By: Name" pattern
+              m = re.search(r'Created By[:\s]+(.+)', description, re.IGNORECASE)
+              if m:
+                  return m.group(1).strip().split('\n')[0]
+              return "—"
+
+          def extract_arr_status(description):
+              if not description:
+                  return "—"
+              m = re.search(r'Account Status[:\s]+(\w+)', description, re.IGNORECASE)
+              if m:
+                  return m.group(1).strip()
+              return "—"
+
+          def short_desc(description, max_len=180):
+              if not description:
+                  return "—"
+              # Strip URLs and markdown links
+              clean = re.sub(r'\[.*?\]\(https?://\S+\)', '', description)
+              clean = re.sub(r'https?://\S+', '', clean)
+              clean = re.sub(r'\s+', ' ', clean).strip()
+              return clean[:max_len] + ("…" if len(clean) > max_len else "")
+
+          def score_bar(score, max_score=100):
+              if not score:
+                  return "·"
+              filled = round((score / max_score) * 10)
+              return "█" * filled + "░" * (10 - filled)
+
+          # ── Fetch all FR issues ───────────────────────────────────────────────
+          print("Fetching FR issues from Jira…")
+          all_issues = []
+          start_at = 0
+          page_size = 100
+
+          while True:
+              data = jira_get(
+                  "/rest/api/3/search",
+                  params={
+                      "jql": f"project = {JIRA_PROJECT} ORDER BY cf[12330] DESC, cf[10300] ASC",
+                      "startAt": start_at,
+                      "maxResults": page_size,
+                      "fields": "summary,description,status,priority,customfield_12330,customfield_10300,labels,issuetype,created,updated"
+                  }
+              )
+              issues = data.get("issues", [])
+              all_issues.extend(issues)
+              print(f"  Fetched {len(all_issues)} / {data.get('total', '?')}")
+              if start_at + page_size >= data.get("total", 0):
+                  break
+              start_at += page_size
+
+          print(f"Total issues fetched: {len(all_issues)}")
+
+          # ── Enrich issues ─────────────────────────────────────────────────────
+          enriched = []
+          for issue in all_issues:
+              f = issue["fields"]
+              desc = ""
+              raw_desc = f.get("description")
+              if raw_desc:
+                  # ADF content → flatten to plain text
+                  if isinstance(raw_desc, dict):
+                      parts = []
+                      def walk(node):
+                          if isinstance(node, dict):
+                              if node.get("type") == "text":
+                                  parts.append(node.get("text", ""))
+                              for v in node.values():
+                                  if isinstance(v, (dict, list)):
+                                      walk(v)
+                          elif isinstance(node, list):
+                              for item in node:
+                                  walk(item)
+                      walk(raw_desc)
+                      desc = " ".join(parts)
+                  else:
+                      desc = str(raw_desc)
+
+              enriched.append({
+                  "key":        issue["key"],
+                  "summary":    f.get("summary", "—"),
+                  "score":      f.get("customfield_12330") or 0,
+                  "status":     f.get("status", {}).get("name", "—"),
+                  "priority":   f.get("priority", {}).get("name", "—"),
+                  "desc":       desc,
+                  "arr":        extract_arr(desc),
+                  "customer":   extract_customer(desc),
+                  "arr_status": extract_arr_status(desc),
+                  "labels":     f.get("labels", []),
+                  "created":    (f.get("created") or "")[:10],
+                  "updated":    (f.get("updated") or "")[:10],
+                  "url":        f"{JIRA_BASE}/browse/{issue['key']}",
+              })
+
+          # Sort by score descending (already sorted, but make sure)
+          enriched.sort(key=lambda x: x["score"], reverse=True)
+
+          # Top 30
+          top30 = enriched[:30]
+
+          # ── Score distribution buckets ────────────────────────────────────────
+          score_dist = {"0": 0, "1-10": 0, "11-20": 0, "21-30": 0, "31-50": 0, "51+": 0}
+          for i in enriched:
+              s = i["score"]
+              if s == 0:    score_dist["0"] += 1
+              elif s <= 10: score_dist["1-10"] += 1
+              elif s <= 20: score_dist["11-20"] += 1
+              elif s <= 30: score_dist["21-30"] += 1
+              elif s <= 50: score_dist["31-50"] += 1
+              else:         score_dist["51+"] += 1
+
+          # Total ARR represented in top 30
+          top30_arr = sum(i["arr"] for i in top30 if i["arr"])
+
+          # ── AI-powered theme grouping (uses OpenAI if key available) ──────────
+          print("Grouping similar issues…")
+          groups = defaultdict(list)
+
+          def ai_group_issues(issues_list):
+              """Call OpenAI to cluster issues by theme. Falls back to keyword."""
+              if not OPENAI_KEY:
+                  return None
+              summaries = [{"key": i["key"], "summary": i["summary"]} for i in issues_list]
+              prompt = f"""You are a product analyst. Group these Jira feature requests by common theme.
+          Return ONLY valid JSON in this format:
+          {{"groups": [{{"theme": "Short theme name (3-6 words)", "keys": ["FR-1", "FR-2"]}}]}}
+          Rules:
+          - Each issue must appear in exactly one group
+          - Theme names should be actionable and specific
+          - Minimum 2 issues per group; singletons go in a "Other / Unique Requests" group
+          - Maximum 10 groups total
+          Issues:
+          {json.dumps(summaries, indent=2)}"""
+
+              try:
+                  r = requests.post(
+                      "https://api.openai.com/v1/chat/completions",
+                      headers={"Authorization": f"Bearer {OPENAI_KEY}", "Content-Type": "application/json"},
+                      json={
+                          "model": "gpt-4o-mini",
+                          "messages": [{"role": "user", "content": prompt}],
+                          "temperature": 0.2,
+                          "max_tokens": 2000,
+                      },
+                      timeout=30
+                  )
+                  r.raise_for_status()
+                  raw = r.json()["choices"][0]["message"]["content"]
+                  raw = re.sub(r"```json|```", "", raw).strip()
+                  return json.loads(raw)
+              except Exception as e:
+                  print(f"  OpenAI grouping failed: {e}, falling back to keyword grouping")
+                  return None
+
+          ai_result = ai_group_issues(enriched)
+
+          if ai_result:
+              key_to_issue = {i["key"]: i for i in enriched}
+              for g in ai_result.get("groups", []):
+                  theme = g.get("theme", "Other")
+                  for k in g.get("keys", []):
+                      if k in key_to_issue:
+                          groups[theme].append(key_to_issue[k])
+          else:
+              # Keyword-based fallback grouping
+              THEME_KEYWORDS = {
+                  "Authentication & Security":   ["auth", "2fa", "sso", "security", "login", "password", "mfa", "saml", "oauth", "ransomware", "disable", "user access"],
+                  "Environment Management":      ["environment", "vm", "blueprint", "snapshot", "clone", "template", "provision", "machine"],
+                  "Training & Re-enrollment":    ["training", "enroll", "re-enroll", "student", "course", "experience", "class", "learner"],
+                  "API & Integrations":          ["api", "webhook", "integration", "terraform", "sdk", "automation", "zapier", "salesforce"],
+                  "Reporting & Analytics":       ["report", "analytic", "metric", "dashboard", "export", "csv", "insight", "usage"],
+                  "Collaboration & Sharing":     ["share", "collaborat", "team", "invite", "participant", "guest", "co-"],
+                  "Network & Connectivity":      ["network", "vpn", "connect", "bandwidth", "latency", "firewall", "port", "rdp", "ssh"],
+                  "UI & User Experience":        ["ui", "ux", "interface", "design", "notification", "alert", "email", "mobile"],
+                  "Billing & Subscriptions":     ["billing", "subscription", "credit", "payment", "cost", "quota", "limit", "plan"],
+              }
+              assigned = set()
+              for theme, keywords in THEME_KEYWORDS.items():
+                  for issue in enriched:
+                      if issue["key"] in assigned:
+                          continue
+                      text = (issue["summary"] + " " + issue["desc"]).lower()
+                      if any(kw in text for kw in keywords):
+                          groups[theme].append(issue)
+                          assigned.add(issue["key"])
+              # Singletons → "Other"
+              for issue in enriched:
+                  if issue["key"] not in assigned:
+                      groups["Other / Unique Requests"].append(issue)
+
+          # Sort groups by total score
+          groups = dict(sorted(groups.items(), key=lambda kv: sum(i["score"] for i in kv[1]), reverse=True))
+
+          # ── Build Confluence Storage Format HTML ──────────────────────────────
+          print("Building Confluence page…")
+
+          def pct_bar(value, max_val, width=120):
+              """Returns an inline progress bar using Confluence macro approach via table."""
+              if max_val == 0:
+                  return "0"
+              pct = min(100, round(value / max_val * 100))
+              return f'<div style="background:#e8eaf6;border-radius:4px;width:{width}px;display:inline-block;height:10px;vertical-align:middle;"><div style="background:#5c6bc0;width:{pct}%;height:10px;border-radius:4px;"></div></div> {value}'
+
+          def priority_badge(priority):
+              colors = {
+                  "Urgent":   ("#ff1744", "#fff"),
+                  "High":     ("#ff6d00", "#fff"),
+                  "Normal":   ("#1976d2", "#fff"),
+                  "Low":      ("#388e3c", "#fff"),
+              }
+              bg, fg = colors.get(priority, ("#757575", "#fff"))
+              return f'<span style="background:{bg};color:{fg};padding:2px 8px;border-radius:12px;font-size:11px;font-weight:600;">{priority}</span>'
+
+          max_score = top30[0]["score"] if top30 else 1
+
+          # ──────────────────────────────────────────────
+          # Section 1 — Header / Summary Stats
+          # ──────────────────────────────────────────────
+          with_score  = sum(1 for i in enriched if i["score"] > 0)
+          total_arr   = sum(i["arr"] for i in enriched if i["arr"])
+          active_arr  = sum(i["arr"] for i in enriched if i["arr_status"] == "Active")
+
+          stats_html = f"""
+          <table style="border:none;width:100%;margin-bottom:24px;">
+          <tr>
+            <td style="border:none;text-align:center;padding:12px 16px;background:#f3f0ff;border-radius:8px;min-width:140px;">
+              <div style="font-size:28px;font-weight:800;color:#5c6bc0;">{len(enriched)}</div>
+              <div style="font-size:12px;color:#555;margin-top:4px;">Total Feature Requests</div>
+            </td>
+            <td style="border:none;width:12px;"></td>
+            <td style="border:none;text-align:center;padding:12px 16px;background:#e8f5e9;border-radius:8px;">
+              <div style="font-size:28px;font-weight:800;color:#2e7d32;">{with_score}</div>
+              <div style="font-size:12px;color:#555;margin-top:4px;">With FR Score</div>
+            </td>
+            <td style="border:none;width:12px;"></td>
+            <td style="border:none;text-align:center;padding:12px 16px;background:#fff3e0;border-radius:8px;">
+              <div style="font-size:28px;font-weight:800;color:#e65100;">${total_arr:,}</div>
+              <div style="font-size:12px;color:#555;margin-top:4px;">Total ARR Represented</div>
+            </td>
+            <td style="border:none;width:12px;"></td>
+            <td style="border:none;text-align:center;padding:12px 16px;background:#e3f2fd;border-radius:8px;">
+              <div style="font-size:28px;font-weight:800;color:#1565c0;">${active_arr:,}</div>
+              <div style="font-size:12px;color:#555;margin-top:4px;">Active Account ARR</div>
+            </td>
+            <td style="border:none;width:12px;"></td>
+            <td style="border:none;text-align:center;padding:12px 16px;background:#fce4ec;border-radius:8px;">
+              <div style="font-size:28px;font-weight:800;color:#c62828;">{top30[0]["score"] if top30 else 0}</div>
+              <div style="font-size:12px;color:#555;margin-top:4px;">Highest FR Score</div>
+            </td>
+          </tr>
+          </table>
+          """
+
+          # ──────────────────────────────────────────────
+          # Section 2 — Top 30 by FR Score
+          # ──────────────────────────────────────────────
+          top30_rows = ""
+          for rank, issue in enumerate(top30, 1):
+              score = issue["score"]
+              bar_width = round((score / max_score) * 100) if max_score else 0
+              bar_html = f'<div style="background:#e8eaf6;border-radius:3px;width:80px;display:inline-block;height:8px;vertical-align:middle;margin-right:6px;"><div style="background:#5c6bc0;width:{bar_width}%;height:8px;border-radius:3px;"></div></div>'
+              arr_str  = f"${issue['arr']:,}" if issue["arr"] else "—"
+              top30_rows += f"""
+              <tr style="{'background:#f8f8ff;' if rank % 2 == 0 else ''}">
+                <td style="text-align:center;font-weight:700;color:#9e9e9e;font-size:13px;padding:8px 6px;">{rank}</td>
+                <td style="padding:8px 6px;"><a href="{issue['url']}" style="font-weight:600;color:#3f51b5;">{issue['key']}</a></td>
+                <td style="padding:8px 6px;max-width:320px;">{issue['summary']}</td>
+                <td style="padding:8px 6px;white-space:nowrap;">{bar_html}<strong style="color:#3f51b5;">{score}</strong></td>
+                <td style="padding:8px 6px;">{priority_badge(issue['priority'])}</td>
+                <td style="padding:8px 6px;font-family:monospace;font-size:12px;">{arr_str}</td>
+                <td style="padding:8px 6px;font-size:12px;color:#666;">{issue['customer']}</td>
+                <td style="padding:8px 6px;font-size:12px;color:#888;">{issue['updated']}</td>
+              </tr>"""
+
+          top30_html = f"""
+          <h2 style="color:#3f51b5;border-bottom:2px solid #e8eaf6;padding-bottom:8px;">🏆 Top 30 Feature Requests by FR Score</h2>
+          <table style="width:100%;border-collapse:collapse;font-size:13px;">
+            <thead>
+              <tr style="background:#3f51b5;color:#fff;">
+                <th style="padding:10px 6px;text-align:center;">#</th>
+                <th style="padding:10px 6px;">Key</th>
+                <th style="padding:10px 6px;">Summary</th>
+                <th style="padding:10px 6px;">FR Score</th>
+                <th style="padding:10px 6px;">Priority</th>
+                <th style="padding:10px 6px;">ARR</th>
+                <th style="padding:10px 6px;">Submitted By</th>
+                <th style="padding:10px 6px;">Last Updated</th>
+              </tr>
+            </thead>
+            <tbody>{top30_rows}</tbody>
+          </table>
+          <p style="font-size:12px;color:#999;margin-top:8px;">Sorted by FR Score (customfield_12330) · Showing top 30 of {len(enriched)} total</p>
+          """
+
+          # ──────────────────────────────────────────────
+          # Section 3 — Theme Groups
+          # ──────────────────────────────────────────────
+          group_sections = ""
+          for theme, issues in groups.items():
+              if not issues:
+                  continue
+              group_score = sum(i["score"] for i in issues)
+              group_arr   = sum(i["arr"] for i in issues if i["arr"])
+              rows = ""
+              for i in sorted(issues, key=lambda x: x["score"], reverse=True):
+                  rows += f"""
+                  <tr>
+                    <td style="padding:6px 8px;"><a href="{i['url']}" style="color:#3f51b5;font-weight:600;">{i['key']}</a></td>
+                    <td style="padding:6px 8px;">{i['summary']}</td>
+                    <td style="padding:6px 8px;text-align:center;font-weight:700;color:#3f51b5;">{i['score']}</td>
+                    <td style="padding:6px 8px;">{priority_badge(i['priority'])}</td>
+                    <td style="padding:6px 8px;font-size:12px;font-family:monospace;">{'${:,}'.format(i['arr']) if i['arr'] else '—'}</td>
+                  </tr>"""
+
+              group_sections += f"""
+          <ac:structured-macro ac:name="expand" ac:schema-version="1">
+            <ac:parameter ac:name="title">📂 {theme} &nbsp;·&nbsp; {len(issues)} requests &nbsp;·&nbsp; Total Score: {group_score} &nbsp;·&nbsp; ARR: ${group_arr:,}</ac:parameter>
+            <ac:rich-text-body>
+              <table style="width:100%;border-collapse:collapse;font-size:13px;">
+                <thead>
+                  <tr style="background:#eceff1;">
+                    <th style="padding:8px;">Key</th>
+                    <th style="padding:8px;">Summary</th>
+                    <th style="padding:8px;text-align:center;">FR Score</th>
+                    <th style="padding:8px;">Priority</th>
+                    <th style="padding:8px;">ARR</th>
+                  </tr>
+                </thead>
+                <tbody>{rows}</tbody>
+              </table>
+            </ac:rich-text-body>
+          </ac:structured-macro>
+          """
+
+          groups_html = f"""
+          <h2 style="color:#3f51b5;border-bottom:2px solid #e8eaf6;padding-bottom:8px;">🗂️ Feature Requests Grouped by Theme</h2>
+          <p style="color:#666;font-size:13px;">Issues grouped by shared topic. Click a group to expand. Groups ordered by total FR Score.</p>
+          {group_sections}
+          """
+
+          # ──────────────────────────────────────────────
+          # Section 4 — Score Distribution
+          # ──────────────────────────────────────────────
+          dist_rows = ""
+          dist_max = max(score_dist.values()) or 1
+          for bucket, count in score_dist.items():
+              bar_w = round((count / dist_max) * 200)
+              dist_rows += f"""
+              <tr>
+                <td style="padding:6px 12px;font-weight:600;white-space:nowrap;">Score {bucket}</td>
+                <td style="padding:6px 12px;">
+                  <div style="background:#e8eaf6;border-radius:4px;width:200px;height:14px;display:inline-block;vertical-align:middle;">
+                    <div style="background:#5c6bc0;width:{bar_w}px;height:14px;border-radius:4px;"></div>
+                  </div>
+                </td>
+                <td style="padding:6px 12px;font-weight:700;color:#3f51b5;">{count}</td>
+                <td style="padding:6px 12px;color:#888;font-size:12px;">{round(count/len(enriched)*100)}% of total</td>
+              </tr>"""
+
+          dist_html = f"""
+          <h2 style="color:#3f51b5;border-bottom:2px solid #e8eaf6;padding-bottom:8px;">📊 FR Score Distribution</h2>
+          <table style="border-collapse:collapse;font-size:13px;">
+            <tbody>{dist_rows}</tbody>
+          </table>
+          """
+
+          # ──────────────────────────────────────────────
+          # Section 5 — Priority breakdown
+          # ──────────────────────────────────────────────
+          priority_count = defaultdict(int)
+          priority_arr   = defaultdict(int)
+          for i in enriched:
+              priority_count[i["priority"]] += 1
+              priority_arr[i["priority"]]   += i["arr"]
+
+          prio_rows = ""
+          for p, cnt in sorted(priority_count.items(), key=lambda x: -x[1]):
+              prio_rows += f"""
+              <tr>
+                <td style="padding:6px 12px;">{priority_badge(p)}</td>
+                <td style="padding:6px 12px;font-weight:700;">{cnt}</td>
+                <td style="padding:6px 12px;font-family:monospace;font-size:12px;">${priority_arr[p]:,}</td>
+              </tr>"""
+
+          prio_html = f"""
+          <h2 style="color:#3f51b5;border-bottom:2px solid #e8eaf6;padding-bottom:8px;">🎯 Breakdown by Priority</h2>
+          <table style="border-collapse:collapse;font-size:13px;">
+            <thead><tr style="background:#eceff1;">
+              <th style="padding:8px 12px;">Priority</th>
+              <th style="padding:8px 12px;"># Requests</th>
+              <th style="padding:8px 12px;">Total ARR</th>
+            </tr></thead>
+            <tbody>{prio_rows}</tbody>
+          </table>
+          """
+
+          # ──────────────────────────────────────────────
+          # Assemble full page
+          # ──────────────────────────────────────────────
+          page_body = f"""
+          <p style="color:#888;font-size:12px;">
+            Generated by <a href="{RUN_URL}">GitHub Actions</a> &nbsp;·&nbsp; {TODAY}
+          </p>
+          <hr/>
+          {stats_html}
+          {top30_html}
+          <hr/>
+          {groups_html}
+          <hr/>
+          <table style="width:100%;border-collapse:collapse;">
+            <tr>
+              <td style="vertical-align:top;padding-right:24px;width:50%;">{dist_html}</td>
+              <td style="vertical-align:top;width:50%;">{prio_html}</td>
+            </tr>
+          </table>
+          <hr/>
+          <h2 style="color:#3f51b5;">📝 Notes &amp; Sprint Selection</h2>
+          <p><em>This section is editable. Add ticket keys you want to pull into the next sprint.</em></p>
+          <ul>
+            <li>Add tickets here (e.g. FR-1, FR-57)</li>
+          </ul>
+          """
+
+          # ── Publish to Confluence ─────────────────────────────────────────────
+          page_title = f"FR Dashboard · {TODAY}"
+          print(f"Creating Confluence page: {page_title}")
+
+          payload = {
+              "type": "page",
+              "title": page_title,
+              "ancestors": [{"id": PARENT_ID}],
+              "body": {
+                  "storage": {
+                      "value": page_body,
+                      "representation": "storage"
+                  }
+              }
+          }
+
+          resp = requests.post(
+              f"{CONF_BASE}/wiki/rest/api/content",
+              auth=conf_auth,
+              json=payload,
+              headers={"Content-Type": "application/json", "X-Atlassian-Token": "no-check"}
+          )
+
+          if resp.status_code in (200, 201):
+              page = resp.json()
+              page_url = f"{CONF_BASE}/wiki{page['_links']['webui']}"
+              print(f"✅ Page created: {page_url}")
+          else:
+              print(f"❌ Failed to create page: {resp.status_code}")
+              print(resp.text)
+              exit(1)
+
+          PYTHON_SCRIPT
+          python run_dashboard.py
