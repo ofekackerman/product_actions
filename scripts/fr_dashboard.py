@@ -300,6 +300,7 @@ resp = requests.post(
         "type": "page",
         "title": title,
         "space": {"key": "Product"},
+        "space": {"key": "Product"},
         "ancestors": [{"id": PARENT_ID}],
         "body": {"storage": {"value": page_body, "representation": "storage"}}
     },
