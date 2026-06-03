@@ -1,0 +1,57 @@
+name: FR Score Dashboard
+
+on:
+  # Run automatically every Sunday at 07:00 UTC (good for Monday planning)
+  schedule:
+    - cron: "0 7 * * 0"
+
+  # Also allow running manually from GitHub UI at any time
+  workflow_dispatch:
+    inputs:
+      ticket_limit:
+        description: "Number of top FR tickets to include (default: 30)"
+        required: false
+        default: "30"
+
+jobs:
+  generate-dashboard:
+    name: Generate & Publish FR Dashboard
+    runs-on: ubuntu-latest
+
+    steps:
+      # ── 1. Check out the repo ──────────────────────────────────────────────
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # ── 2. Set up Python ──────────────────────────────────────────────────
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      # ── 3. Install dependencies ───────────────────────────────────────────
+      - name: Install dependencies
+        run: |
+          pip install requests
+
+      # ── 4. Run the dashboard script ───────────────────────────────────────
+      - name: Generate FR Dashboard
+        id: dashboard
+        env:
+          JIRA_EMAIL:          ${{ secrets.JIRA_EMAIL }}
+          JIRA_TOKEN:          ${{ secrets.JIRA_TOKEN }}
+          CONFLUENCE_TOKEN:    ${{ secrets.JIRA_TOKEN }}   # same Atlassian token
+          OPENAI_API_KEY:      ${{ secrets.OPENAI_API_KEY }}
+          JIRA_HOST:           cloudshare.atlassian.net
+          CONFLUENCE_HOST:     cloudshare.atlassian.net
+          CONFLUENCE_SPACE:    Product
+          CONFLUENCE_PARENT_ID: "3533963267"
+          JIRA_PROJECT:        FR
+          GITHUB_RUN_URL:      ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: python fr_dashboard.py
+
+      # ── 5. Print the page URL in the Actions log ──────────────────────────
+      - name: Print published page URL
+        run: |
+          echo "✅ Dashboard published!"
+          echo "🔗 ${{ steps.dashboard.outputs.page_url }}"
