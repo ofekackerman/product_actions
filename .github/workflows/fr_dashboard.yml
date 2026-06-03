@@ -20,4 +20,33 @@ jobs:
           JIRA_EMAIL: ${{ secrets.JIRA_EMAIL }}
           CONFLUENCE_TOKEN: ${{ secrets.CONFLUENCE_TOKEN }}
           CONFLUENCE_EMAIL: ${{ secrets.CONFLUENCE_EMAIL }}
-        run: python scripts/fr_dashboard.py
+          CONFLUENCE_SPACE_KEY: "Product"
+        run: |
+          python - << 'EOF'
+          import os, requests, re
+          from datetime import datetime, timezone
+          from collections import defaultdict
+
+          JIRA_BASE = "https://cloudshare.atlassian.net"
+          CONF_BASE = "https://cloudshare.atlassian.net"
+          jira_auth = (os.environ["JIRA_EMAIL"], os.environ["JIRA_TOKEN"])
+          conf_auth = (os.environ["CONFLUENCE_EMAIL"], os.environ["CONFLUENCE_TOKEN"])
+          PARENT_ID = "3533963267"
+          SPACE_KEY  = "Product"
+          TODAY = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+
+          # test space key fix only
+          resp = requests.post(
+              f"{CONF_BASE}/wiki/rest/api/content",
+              auth=conf_auth,
+              json={
+                  "type": "page",
+                  "title": f"FR Dashboard Test · {TODAY}",
+                  "space": {"key": SPACE_KEY},
+                  "ancestors": [{"id": PARENT_ID}],
+                  "body": {"storage": {"value": "<p>test</p>", "representation": "storage"}}
+              },
+              headers={"Content-Type": "application/json"}
+          )
+          print(resp.status_code, resp.text[:300])
+          EOF
