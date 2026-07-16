@@ -11,18 +11,18 @@
   },
   "top15": [
     {
-      "key": "FR-171",
-      "summary": "Ability to specify the image size in a markdown file",
-      "customer": "Tyler Technologies",
-      "arr": 321480,
+      "key": "FR-216",
+      "summary": "Allow End-User Invitations from Non-Default Blueprint Snapshots",
+      "customer": "Check Point Software - Combined",
+      "arr": 490000,
       "align": "Enterprise Readiness",
       "score": 74
     },
     {
-      "key": "FR-181",
-      "summary": "Ability to specify the image size in a markdown file",
-      "customer": "Tyler Technologies",
-      "arr": 321480,
+      "key": "FR-209",
+      "summary": "Certifications Policies: provide an option to archive the env after s…",
+      "customer": "Genesys",
+      "arr": 470007,
       "align": "Enterprise Readiness",
       "score": 74
     },
@@ -35,18 +35,18 @@
       "score": 74
     },
     {
-      "key": "FR-209",
-      "summary": "Certifications Policies: provide an option to archive the env after s…",
-      "customer": "Genesys",
-      "arr": 470007,
+      "key": "FR-171",
+      "summary": "Ability to specify the image size in a markdown file",
+      "customer": "Tyler Technologies",
+      "arr": 321480,
       "align": "Enterprise Readiness",
       "score": 74
     },
     {
-      "key": "FR-216",
-      "summary": "Allow End-User Invitations from Non-Default Blueprint Snapshots",
-      "customer": "Check Point Software - Combined",
-      "arr": 490000,
+      "key": "FR-181",
+      "summary": "Ability to specify the image size in a markdown file",
+      "customer": "Tyler Technologies",
+      "arr": 321480,
       "align": "Enterprise Readiness",
       "score": 74
     },
@@ -65,46 +65,6 @@
       "arr": 470007,
       "align": "Enterprise Readiness",
       "score": 68
-    },
-    {
-      "key": "FR-174",
-      "summary": "LTI Information API Request",
-      "customer": "Perforce Software",
-      "arr": 411312,
-      "align": "AI & Automation",
-      "score": 64
-    },
-    {
-      "key": "FR-179",
-      "summary": "Add a description to each Chapter in Guided Journeys",
-      "customer": "Tyler Technologies",
-      "arr": 321480,
-      "align": "Enterprise Readiness",
-      "score": 64
-    },
-    {
-      "key": "FR-186",
-      "summary": "Terms Banner Page prior to Class access",
-      "customer": "HID Global Corporation",
-      "arr": 19200,
-      "align": "Enterprise Readiness",
-      "score": 64
-    },
-    {
-      "key": "FR-187",
-      "summary": "Ability to move resources around between directories or projects",
-      "customer": "Tyler Technologies",
-      "arr": 321480,
-      "align": "Enterprise Readiness",
-      "score": 64
-    },
-    {
-      "key": "FR-197",
-      "summary": "User Level Permissions for Resource Repository",
-      "customer": "Tyler Technologies",
-      "arr": 321480,
-      "align": "Enterprise Readiness",
-      "score": 64
     },
     {
       "key": "FR-204",
@@ -129,6 +89,46 @@
       "arr": 600000,
       "align": "AI & Automation",
       "score": 64
+    },
+    {
+      "key": "FR-174",
+      "summary": "LTI Information API Request",
+      "customer": "Perforce Software",
+      "arr": 411312,
+      "align": "AI & Automation",
+      "score": 64
+    },
+    {
+      "key": "FR-179",
+      "summary": "Add a description to each Chapter in Guided Journeys",
+      "customer": "Tyler Technologies",
+      "arr": 321480,
+      "align": "Enterprise Readiness",
+      "score": 64
+    },
+    {
+      "key": "FR-187",
+      "summary": "Ability to move resources around between directories or projects",
+      "customer": "Tyler Technologies",
+      "arr": 321480,
+      "align": "Enterprise Readiness",
+      "score": 64
+    },
+    {
+      "key": "FR-197",
+      "summary": "User Level Permissions for Resource Repository",
+      "customer": "Tyler Technologies",
+      "arr": 321480,
+      "align": "Enterprise Readiness",
+      "score": 64
+    },
+    {
+      "key": "FR-186",
+      "summary": "Terms Banner Page prior to Class access",
+      "customer": "HID Global Corporation",
+      "arr": 19200,
+      "align": "Enterprise Readiness",
+      "score": 64
     }
   ],
   "customers": [
@@ -145,8 +145,8 @@
           "arr": 600000
         },
         {
-          "key": "FR-206",
-          "summary": "Project-Level Permissions for Webhook Management",
+          "key": "FR-204",
+          "summary": "Terraform Output Propagation into VMs",
           "customer": "Infoblox",
           "score": 64,
           "arr": 600000
@@ -159,8 +159,8 @@
           "arr": 600000
         },
         {
-          "key": "FR-204",
-          "summary": "Terraform Output Propagation into VMs",
+          "key": "FR-206",
+          "summary": "Project-Level Permissions for Webhook Management",
           "customer": "Infoblox",
           "score": 64,
           "arr": 600000
@@ -187,13 +187,6 @@
       "arr": 321480,
       "frs": [
         {
-          "key": "FR-181",
-          "summary": "Ability to specify the image size in a markdown file",
-          "customer": "Tyler Technologies",
-          "score": 74,
-          "arr": 321480
-        },
-        {
           "key": "FR-171",
           "summary": "Ability to specify the image size in a markdown file",
           "customer": "Tyler Technologies",
@@ -201,8 +194,15 @@
           "arr": 321480
         },
         {
-          "key": "FR-197",
-          "summary": "User Level Permissions for Resource Repository",
+          "key": "FR-181",
+          "summary": "Ability to specify the image size in a markdown file",
+          "customer": "Tyler Technologies",
+          "score": 74,
+          "arr": 321480
+        },
+        {
+          "key": "FR-179",
+          "summary": "Add a description to each Chapter in Guided Journeys",
           "customer": "Tyler Technologies",
           "score": 64,
           "arr": 321480
@@ -215,8 +215,8 @@
           "arr": 321480
         },
         {
-          "key": "FR-179",
-          "summary": "Add a description to each Chapter in Guided Journeys",
+          "key": "FR-197",
+          "summary": "User Level Permissions for Resource Repository",
           "customer": "Tyler Technologies",
           "score": 64,
           "arr": 321480
@@ -243,15 +243,15 @@
           "arr": 14820
         },
         {
-          "key": "FR-192",
-          "summary": "Project/Blueprint Level Custom Email Invites",
+          "key": "FR-183",
+          "summary": "Default to full Screen for VMs",
           "customer": "Cyberhaven",
           "score": 34,
           "arr": 14820
         },
         {
-          "key": "FR-183",
-          "summary": "Default to full Screen for VMs",
+          "key": "FR-192",
+          "summary": "Project/Blueprint Level Custom Email Invites",
           "customer": "Cyberhaven",
           "score": 34,
           "arr": 14820
@@ -327,15 +327,15 @@
           "arr": 83067
         },
         {
-          "key": "FR-223",
-          "summary": "Thales - Request for Virtual TPM 2.0 Support",
+          "key": "FR-173",
+          "summary": "Analytic dash/report: Show BP/env started by specific users…",
           "customer": "Thales",
           "score": 54,
           "arr": 83067
         },
         {
-          "key": "FR-173",
-          "summary": "Analytic dash/report: Show BP/env started by specific users…",
+          "key": "FR-223",
+          "summary": "Thales - Request for Virtual TPM 2.0 Support",
           "customer": "Thales",
           "score": 54,
           "arr": 83067
@@ -383,15 +383,15 @@
           "arr": 15360
         },
         {
-          "key": "FR-164",
-          "summary": "Set custom Email template to Default",
+          "key": "FR-161",
+          "summary": "Calendar Invites in Custom Email",
           "customer": "Revalize",
           "score": 31,
           "arr": 15360
         },
         {
-          "key": "FR-161",
-          "summary": "Calendar Invites in Custom Email",
+          "key": "FR-164",
+          "summary": "Set custom Email template to Default",
           "customer": "Revalize",
           "score": 31,
           "arr": 15360
@@ -416,27 +416,6 @@
           "customer": "ADP",
           "score": 46,
           "arr": 189000
-        }
-      ]
-    },
-    {
-      "customer": "Netskope (Parent)",
-      "count": 2,
-      "arr": 48720,
-      "frs": [
-        {
-          "key": "FR-199",
-          "summary": "Generate New Password",
-          "customer": "Netskope (Parent)",
-          "score": 46,
-          "arr": 48720
-        },
-        {
-          "key": "FR-188",
-          "summary": "Generate New Password",
-          "customer": "Netskope (Parent)",
-          "score": 15,
-          "arr": 0
         }
       ]
     },
@@ -479,6 +458,27 @@
           "customer": "HID Global Corporation",
           "score": 51,
           "arr": 19200
+        }
+      ]
+    },
+    {
+      "customer": "Netskope (Parent)",
+      "count": 2,
+      "arr": 0,
+      "frs": [
+        {
+          "key": "FR-199",
+          "summary": "Generate New Password",
+          "customer": "Netskope (Parent)",
+          "score": 46,
+          "arr": 48720
+        },
+        {
+          "key": "FR-188",
+          "summary": "Generate New Password",
+          "customer": "Netskope (Parent)",
+          "score": 15,
+          "arr": 0
         }
       ]
     },
@@ -595,20 +595,6 @@
       ]
     },
     {
-      "customer": "RSA Security - Identity",
-      "count": 1,
-      "arr": 85680,
-      "frs": [
-        {
-          "key": "FR-220",
-          "summary": "VM access menus closer VM names",
-          "customer": "RSA Security - Identity",
-          "score": 34,
-          "arr": 85680
-        }
-      ]
-    },
-    {
       "customer": "RSA Security (Parent)",
       "count": 1,
       "arr": 85680,
@@ -618,6 +604,20 @@
           "summary": "Removing project member without deleting class",
           "customer": "RSA Security (Parent)",
           "score": "—",
+          "arr": 85680
+        }
+      ]
+    },
+    {
+      "customer": "RSA Security - Identity",
+      "count": 1,
+      "arr": 85680,
+      "frs": [
+        {
+          "key": "FR-220",
+          "summary": "VM access menus closer VM names",
+          "customer": "RSA Security - Identity",
+          "score": 34,
           "arr": 85680
         }
       ]
@@ -782,25 +782,11 @@
           "arr": 14820
         },
         {
-          "key": "FR-222",
-          "summary": "Accessibility Zoom in function",
-          "customer": "City & Guilds",
+          "key": "FR-175",
+          "summary": "Issues Customizing Invitation Email",
+          "customer": "Revalize",
           "score": 34,
-          "arr": 43932
-        },
-        {
-          "key": "FR-220",
-          "summary": "VM access menus closer VM names",
-          "customer": "RSA Security - Identity",
-          "score": 34,
-          "arr": 85680
-        },
-        {
-          "key": "FR-192",
-          "summary": "Project/Blueprint Level Custom Email Invites",
-          "customer": "Cyberhaven",
-          "score": 34,
-          "arr": 14820
+          "arr": 15360
         },
         {
           "key": "FR-183",
@@ -810,18 +796,32 @@
           "arr": 14820
         },
         {
-          "key": "FR-175",
-          "summary": "Issues Customizing Invitation Email",
-          "customer": "Revalize",
+          "key": "FR-192",
+          "summary": "Project/Blueprint Level Custom Email Invites",
+          "customer": "Cyberhaven",
           "score": 34,
-          "arr": 15360
+          "arr": 14820
         },
         {
-          "key": "FR-219",
-          "summary": "Guided Journey Export",
-          "customer": "LaunchLife International",
+          "key": "FR-220",
+          "summary": "VM access menus closer VM names",
+          "customer": "RSA Security - Identity",
+          "score": 34,
+          "arr": 85680
+        },
+        {
+          "key": "FR-222",
+          "summary": "Accessibility Zoom in function",
+          "customer": "City & Guilds",
+          "score": 34,
+          "arr": 43932
+        },
+        {
+          "key": "FR-161",
+          "summary": "Calendar Invites in Custom Email",
+          "customer": "Revalize",
           "score": 31,
-          "arr": 125000
+          "arr": 15360
         },
         {
           "key": "FR-164",
@@ -831,27 +831,20 @@
           "arr": 15360
         },
         {
-          "key": "FR-161",
-          "summary": "Calendar Invites in Custom Email",
-          "customer": "Revalize",
+          "key": "FR-219",
+          "summary": "Guided Journey Export",
+          "customer": "LaunchLife International",
           "score": 31,
-          "arr": 15360
+          "arr": 125000
         }
       ],
       [
         {
-          "key": "FR-191",
-          "summary": "Webhook - Training/Sales Experience deleted",
-          "customer": "Crowdstrike - Marketing AWS",
+          "key": "FR-167",
+          "summary": "Permissions: More granularity fo editing a environment",
+          "customer": "DigiCert",
           "score": 48,
-          "arr": 1321652
-        },
-        {
-          "key": "FR-178",
-          "summary": "Improving External ID Advanced Field",
-          "customer": "Cyberhaven",
-          "score": 48,
-          "arr": 14820
+          "arr": 95171
         },
         {
           "key": "FR-168",
@@ -861,25 +854,25 @@
           "arr": 275000
         },
         {
-          "key": "FR-167",
-          "summary": "Permissions: More granularity fo editing a environment",
-          "customer": "DigiCert",
+          "key": "FR-178",
+          "summary": "Improving External ID Advanced Field",
+          "customer": "Cyberhaven",
           "score": 48,
-          "arr": 95171
+          "arr": 14820
         },
         {
-          "key": "FR-200",
-          "summary": "Set Determined Customized Password Length",
-          "customer": "Watchguard Technologies, Inc.",
-          "score": 46,
-          "arr": 33286
+          "key": "FR-191",
+          "summary": "Webhook - Training/Sales Experience deleted",
+          "customer": "Crowdstrike - Marketing AWS",
+          "score": 48,
+          "arr": 1321652
         },
         {
-          "key": "FR-199",
-          "summary": "Generate New Password",
-          "customer": "Netskope (Parent)",
+          "key": "FR-172",
+          "summary": "Conditional Formatting in the Viewer",
+          "customer": "—",
           "score": 46,
-          "arr": 48720
+          "arr": 495000
         },
         {
           "key": "FR-196",
@@ -889,11 +882,18 @@
           "arr": 189000
         },
         {
-          "key": "FR-172",
-          "summary": "Conditional Formatting in the Viewer",
-          "customer": "—",
+          "key": "FR-199",
+          "summary": "Generate New Password",
+          "customer": "Netskope (Parent)",
           "score": 46,
-          "arr": 495000
+          "arr": 48720
+        },
+        {
+          "key": "FR-200",
+          "summary": "Set Determined Customized Password Length",
+          "customer": "Watchguard Technologies, Inc.",
+          "score": 46,
+          "arr": 33286
         },
         {
           "key": "FR-203",
@@ -917,27 +917,27 @@
           "arr": 565500
         },
         {
-          "key": "FR-218",
-          "summary": "API Request",
-          "customer": "Watchguard Technologies, Inc.",
-          "score": 41,
-          "arr": 33286
-        },
-        {
           "key": "FR-180",
           "summary": "Logs: allow tenant logs to be seen and sent to a customers…",
           "customer": "Darktrace",
           "score": 41,
           "arr": 37068
+        },
+        {
+          "key": "FR-218",
+          "summary": "API Request",
+          "customer": "Watchguard Technologies, Inc.",
+          "score": 41,
+          "arr": 33286
         }
       ],
       [
         {
-          "key": "FR-198",
-          "summary": "Automatically remove students from the student list after a…",
-          "customer": "AlgoSec - Training",
+          "key": "FR-169",
+          "summary": "Analytic dash/report: Show who started an env between date…",
+          "customer": "Thales",
           "score": 56,
-          "arr": 220320
+          "arr": 83067
         },
         {
           "key": "FR-182",
@@ -947,15 +947,15 @@
           "arr": 189000
         },
         {
-          "key": "FR-169",
-          "summary": "Analytic dash/report: Show who started an env between date…",
-          "customer": "Thales",
+          "key": "FR-198",
+          "summary": "Automatically remove students from the student list after a…",
+          "customer": "AlgoSec - Training",
           "score": 56,
-          "arr": 83067
+          "arr": 220320
         },
         {
-          "key": "FR-223",
-          "summary": "Thales - Request for Virtual TPM 2.0 Support",
+          "key": "FR-173",
+          "summary": "Analytic dash/report: Show BP/env started by specific users…",
           "customer": "Thales",
           "score": 54,
           "arr": 83067
@@ -968,8 +968,8 @@
           "arr": 470007
         },
         {
-          "key": "FR-173",
-          "summary": "Analytic dash/report: Show BP/env started by specific users…",
+          "key": "FR-223",
+          "summary": "Thales - Request for Virtual TPM 2.0 Support",
           "customer": "Thales",
           "score": 54,
           "arr": 83067
@@ -991,36 +991,15 @@
           "arr": 470007
         },
         {
-          "key": "FR-206",
-          "summary": "Project-Level Permissions for Webhook Management",
-          "customer": "Infoblox",
+          "key": "FR-174",
+          "summary": "LTI Information API Request",
+          "customer": "Perforce Software",
           "score": 64,
-          "arr": 600000
+          "arr": 411312
         },
         {
-          "key": "FR-205",
-          "summary": "Allow Modification of Policy After Training is In-Progress",
-          "customer": "Infoblox",
-          "score": 64,
-          "arr": 600000
-        },
-        {
-          "key": "FR-204",
-          "summary": "Terraform Output Propagation into VMs",
-          "customer": "Infoblox",
-          "score": 64,
-          "arr": 600000
-        },
-        {
-          "key": "FR-197",
-          "summary": "User Level Permissions for Resource Repository",
-          "customer": "Tyler Technologies",
-          "score": 64,
-          "arr": 321480
-        },
-        {
-          "key": "FR-187",
-          "summary": "Ability to move resources around between directories or pro…",
+          "key": "FR-179",
+          "summary": "Add a description to each Chapter in Guided Journeys",
           "customer": "Tyler Technologies",
           "score": 64,
           "arr": 321480
@@ -1033,18 +1012,39 @@
           "arr": 19200
         },
         {
-          "key": "FR-179",
-          "summary": "Add a description to each Chapter in Guided Journeys",
+          "key": "FR-187",
+          "summary": "Ability to move resources around between directories or pro…",
           "customer": "Tyler Technologies",
           "score": 64,
           "arr": 321480
         },
         {
-          "key": "FR-174",
-          "summary": "LTI Information API Request",
-          "customer": "Perforce Software",
+          "key": "FR-197",
+          "summary": "User Level Permissions for Resource Repository",
+          "customer": "Tyler Technologies",
           "score": 64,
-          "arr": 411312
+          "arr": 321480
+        },
+        {
+          "key": "FR-204",
+          "summary": "Terraform Output Propagation into VMs",
+          "customer": "Infoblox",
+          "score": 64,
+          "arr": 600000
+        },
+        {
+          "key": "FR-205",
+          "summary": "Allow Modification of Policy After Training is In-Progress",
+          "customer": "Infoblox",
+          "score": 64,
+          "arr": 600000
+        },
+        {
+          "key": "FR-206",
+          "summary": "Project-Level Permissions for Webhook Management",
+          "customer": "Infoblox",
+          "score": 64,
+          "arr": 600000
         },
         {
           "key": "FR-230",
@@ -1054,32 +1054,11 @@
           "arr": 71250
         },
         {
-          "key": "FR-208",
-          "summary": "Changing Main instructor in Training experiences",
-          "customer": "SailPoint Technologies",
+          "key": "FR-165",
+          "summary": "Clear Class Chat",
+          "customer": "Perforce Software",
           "score": 61,
-          "arr": 83424
-        },
-        {
-          "key": "FR-207",
-          "summary": "State Propagation from Prior Automation Steps",
-          "customer": "Infoblox",
-          "score": 61,
-          "arr": 600000
-        },
-        {
-          "key": "FR-177",
-          "summary": "API: Additional security, IP whitlisting",
-          "customer": "Darktrace",
-          "score": 61,
-          "arr": 37068
-        },
-        {
-          "key": "FR-176",
-          "summary": "API Enhancement: Swagger and better documentation",
-          "customer": "Menlo Security",
-          "score": 61,
-          "arr": 38688
+          "arr": 411312
         },
         {
           "key": "FR-166",
@@ -1089,34 +1068,41 @@
           "arr": 90720
         },
         {
-          "key": "FR-165",
-          "summary": "Clear Class Chat",
-          "customer": "Perforce Software",
+          "key": "FR-176",
+          "summary": "API Enhancement: Swagger and better documentation",
+          "customer": "Menlo Security",
           "score": 61,
-          "arr": 411312
+          "arr": 38688
+        },
+        {
+          "key": "FR-177",
+          "summary": "API: Additional security, IP whitlisting",
+          "customer": "Darktrace",
+          "score": 61,
+          "arr": 37068
+        },
+        {
+          "key": "FR-207",
+          "summary": "State Propagation from Prior Automation Steps",
+          "customer": "Infoblox",
+          "score": 61,
+          "arr": 600000
+        },
+        {
+          "key": "FR-208",
+          "summary": "Changing Main instructor in Training experiences",
+          "customer": "SailPoint Technologies",
+          "score": 61,
+          "arr": 83424
         }
       ],
       [
         {
-          "key": "FR-216",
-          "summary": "Allow End-User Invitations from Non-Default Blueprint Snaps…",
-          "customer": "Check Point Software - Combined",
+          "key": "FR-171",
+          "summary": "Ability to specify the image size in a markdown file",
+          "customer": "Tyler Technologies",
           "score": 74,
-          "arr": 490000
-        },
-        {
-          "key": "FR-209",
-          "summary": "Certifications Policies: provide an option to archive the e…",
-          "customer": "Genesys",
-          "score": 74,
-          "arr": 470007
-        },
-        {
-          "key": "FR-193",
-          "summary": "Disabling/customizing Email Reminders",
-          "customer": "Perforce Software",
-          "score": 74,
-          "arr": 411312
+          "arr": 321480
         },
         {
           "key": "FR-181",
@@ -1126,11 +1112,25 @@
           "arr": 321480
         },
         {
-          "key": "FR-171",
-          "summary": "Ability to specify the image size in a markdown file",
-          "customer": "Tyler Technologies",
+          "key": "FR-193",
+          "summary": "Disabling/customizing Email Reminders",
+          "customer": "Perforce Software",
           "score": 74,
-          "arr": 321480
+          "arr": 411312
+        },
+        {
+          "key": "FR-209",
+          "summary": "Certifications Policies: provide an option to archive the e…",
+          "customer": "Genesys",
+          "score": 74,
+          "arr": 470007
+        },
+        {
+          "key": "FR-216",
+          "summary": "Allow End-User Invitations from Non-Default Blueprint Snaps…",
+          "customer": "Check Point Software - Combined",
+          "score": 74,
+          "arr": 490000
         },
         {
           "key": "FR-202",
@@ -1327,6 +1327,23 @@
         {
           "key": "FR-166",
           "summary": "Enable customers to \"Assign\" blueprints across…"
+        }
+      ]
+    },
+    {
+      "theme": "Automation state propagation into environments",
+      "fr_count": 2,
+      "customers": 1,
+      "arr": 600000,
+      "top_score": 64,
+      "members": [
+        {
+          "key": "FR-204",
+          "summary": "Terraform Output Propagation into VMs"
+        },
+        {
+          "key": "FR-207",
+          "summary": "State Propagation from Prior Automation Steps"
         }
       ]
     },
