@@ -39,6 +39,8 @@
   td.arr,td.rank,td.cnum{font-family:"Space Grotesk",sans-serif;font-variant-numeric:tabular-nums;text-align:right;white-space:nowrap}
   td.rank{color:var(--faint);width:26px}
   .tag{font-size:11px;padding:2px 8px;border-radius:7px;background:var(--paper);border:1px solid var(--line);white-space:nowrap}
+  .tag-new{font-family:"Space Grotesk",sans-serif;font-size:10.5px;font-weight:700;letter-spacing:.03em;color:#fff;background:var(--green);padding:3px 8px;border-radius:99px;white-space:nowrap;margin-left:7px;vertical-align:middle}
+  .empty-note{color:var(--faint);font-size:13px;padding:6px 2px}
   .scoretag{font-family:"Space Grotesk",sans-serif;font-weight:700;font-size:15px;padding:3px 10px;border-radius:8px;display:inline-block;min-width:34px;text-align:center}
   .s-hi{background:var(--green-soft);color:var(--green-ink)} .s-mid{background:var(--indigo-soft);color:var(--indigo-ink)} .s-lo{background:var(--paper);color:var(--muted)}
   .members{font-size:12px;color:var(--muted);line-height:1.9} .members a{margin-right:4px}
@@ -64,6 +66,12 @@
     <span class="pill">Refreshed weekly</span>
   </header>
   <div class="kpis" id="kpis"></div>
+
+  <div class="card" id="newCard">
+    <h2>New FRs <span class="hint" id="newHint"></span></h2>
+    <div class="cap">Feature requests created since last week's snapshot.</div>
+    <table><thead><tr><th></th><th>FR</th><th>Request</th><th>Customer</th><th class="arr">ARR</th><th>Alignment</th><th>Score</th></tr></thead><tbody id="newfrs"></tbody></table>
+  </div>
 
   <div class="card">
     <h2>Top 15 by score</h2>
@@ -122,6 +130,13 @@ document.getElementById('kpis').innerHTML=kpis.map(k=>`<div class="kpi ${k.cls||
 const alignColor={'Cyber Vertical':'#eef7f3','AI & Automation':'#fbefd8','Enterprise Readiness':'#ece9fb','Other':'#eef0f4','—':'#eef0f4'};
 const scoreCls=s=>(typeof s==='number'&&s>=60)?'s-hi':(typeof s==='number'&&s>=40)?'s-mid':'s-lo';
 document.getElementById('top15').innerHTML=D.top15.map((r,i)=>`<tr><td class="rank num">${i+1}</td><td class="key"><a href="https://cloudshare.atlassian.net/browse/${r.key}" target="_blank">${r.key}</a></td><td>${r.summary}</td><td>${r.customer}</td><td class="arr num">${fmtArr(r.arr)}</td><td><span class="tag" style="background:${alignColor[r.align]||'#eef0f4'}">${r.align}</span></td><td><span class="scoretag ${scoreCls(r.score)}">${r.score}</span></td></tr>`).join('');
+
+// New FRs (created since last snapshot)
+const newFrs=D.new_frs||[];
+document.getElementById('newHint').textContent=newFrs.length?`${newFrs.length} new`:'';
+document.getElementById('newfrs').innerHTML=newFrs.length
+  ? newFrs.map(r=>`<tr><td><span class="tag-new">NEW</span></td><td class="key"><a href="https://cloudshare.atlassian.net/browse/${r.key}" target="_blank">${r.key}</a></td><td>${r.summary}</td><td>${r.customer}</td><td class="arr num">${fmtArr(r.arr)}</td><td><span class="tag" style="background:${alignColor[r.align]||'#eef0f4'}">${r.align}</span></td><td><span class="scoretag ${scoreCls(r.score)}">${r.score}</span></td></tr>`).join('')
+  : `<tr><td colspan="7" class="empty-note">No new FRs since last week's snapshot.</td></tr>`;
 document.getElementById('themes').innerHTML=D.clusters.map(c=>{const links=c.members.map(mm=>`<a class="mkey" href="https://cloudshare.atlassian.net/browse/${mm.key}" target="_blank" title="${mm.summary}">${mm.key}</a>`).join(' ');return `<tr><td><b>${c.theme}</b></td><td class="cnum">${c.fr_count}</td><td class="cnum">${c.customers}</td><td class="cnum">${fmtArr(c.arr)}</td><td class="members">${links}</td></tr>`;}).join('');
 
 // Drill modal
