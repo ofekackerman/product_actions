@@ -1,28 +1,28 @@
 {
   "meta": {
-    "week_of": "2026-07-16",
-    "open": 57,
-    "arr_total": 13024230,
-    "high_count": 22,
+    "week_of": "2026-07-19",
+    "open": 66,
+    "arr_total": 14272305,
+    "high_count": 20,
     "high_threshold": 60,
-    "risk_count": 23,
-    "scored": 55,
+    "risk_count": 29,
+    "scored": 63,
     "customers": 29
   },
   "top15": [
     {
-      "key": "FR-171",
-      "summary": "Ability to specify the image size in a markdown file",
-      "customer": "Tyler Technologies",
-      "arr": 321480,
+      "key": "FR-216",
+      "summary": "Allow End-User Invitations from Non-Default Blueprint Snapshots",
+      "customer": "Check Point Software - Combined",
+      "arr": 490000,
       "align": "Enterprise Readiness",
       "score": 74
     },
     {
-      "key": "FR-181",
-      "summary": "Ability to specify the image size in a markdown file",
-      "customer": "Tyler Technologies",
-      "arr": 321480,
+      "key": "FR-209",
+      "summary": "Certifications Policies: provide an option to archive the env after s…",
+      "customer": "Genesys",
+      "arr": 470007,
       "align": "Enterprise Readiness",
       "score": 74
     },
@@ -35,18 +35,10 @@
       "score": 74
     },
     {
-      "key": "FR-209",
-      "summary": "Certifications Policies: provide an option to archive the env after s…",
-      "customer": "Genesys",
-      "arr": 470007,
-      "align": "Enterprise Readiness",
-      "score": 74
-    },
-    {
-      "key": "FR-216",
-      "summary": "Allow End-User Invitations from Non-Default Blueprint Snapshots",
-      "customer": "Check Point Software - Combined",
-      "arr": 490000,
+      "key": "FR-171",
+      "summary": "Ability to specify the image size in a markdown file",
+      "customer": "Tyler Technologies",
+      "arr": 321480,
       "align": "Enterprise Readiness",
       "score": 74
     },
@@ -67,11 +59,51 @@
       "score": 68
     },
     {
+      "key": "FR-206",
+      "summary": "Project-Level Permissions for Webhook Management",
+      "customer": "Infoblox",
+      "arr": 600000,
+      "align": "AI & Automation",
+      "score": 64
+    },
+    {
+      "key": "FR-205",
+      "summary": "Allow Modification of Policy After Training is In-Progress",
+      "customer": "Infoblox",
+      "arr": 600000,
+      "align": "Enterprise Readiness",
+      "score": 64
+    },
+    {
+      "key": "FR-204",
+      "summary": "Terraform Output Propagation into VMs",
+      "customer": "Infoblox",
+      "arr": 600000,
+      "align": "AI & Automation",
+      "score": 64
+    },
+    {
       "key": "FR-174",
       "summary": "LTI Information API Request",
       "customer": "Perforce Software",
       "arr": 411312,
       "align": "AI & Automation",
+      "score": 64
+    },
+    {
+      "key": "FR-197",
+      "summary": "User Level Permissions for Resource Repository",
+      "customer": "Tyler Technologies",
+      "arr": 321480,
+      "align": "Enterprise Readiness",
+      "score": 64
+    },
+    {
+      "key": "FR-187",
+      "summary": "Ability to move resources around between directories or projects",
+      "customer": "Tyler Technologies",
+      "arr": 321480,
+      "align": "Enterprise Readiness",
       "score": 64
     },
     {
@@ -91,44 +123,12 @@
       "score": 64
     },
     {
-      "key": "FR-187",
-      "summary": "Ability to move resources around between directories or projects",
-      "customer": "Tyler Technologies",
-      "arr": 321480,
-      "align": "Enterprise Readiness",
-      "score": 64
-    },
-    {
-      "key": "FR-197",
-      "summary": "User Level Permissions for Resource Repository",
-      "customer": "Tyler Technologies",
-      "arr": 321480,
-      "align": "Enterprise Readiness",
-      "score": 64
-    },
-    {
-      "key": "FR-204",
-      "summary": "Terraform Output Propagation into VMs",
+      "key": "FR-207",
+      "summary": "State Propagation from Prior Automation Steps",
       "customer": "Infoblox",
       "arr": 600000,
       "align": "AI & Automation",
-      "score": 64
-    },
-    {
-      "key": "FR-205",
-      "summary": "Allow Modification of Policy After Training is In-Progress",
-      "customer": "Infoblox",
-      "arr": 600000,
-      "align": "Enterprise Readiness",
-      "score": 64
-    },
-    {
-      "key": "FR-206",
-      "summary": "Project-Level Permissions for Webhook Management",
-      "customer": "Infoblox",
-      "arr": 600000,
-      "align": "AI & Automation",
-      "score": 64
+      "score": 61
     }
   ],
   "customers": [
@@ -182,17 +182,45 @@
       ]
     },
     {
-      "customer": "Tyler Technologies",
-      "count": 5,
-      "arr": 321480,
+      "customer": "Genesys",
+      "count": 4,
+      "arr": 470007,
       "frs": [
         {
-          "key": "FR-181",
-          "summary": "Ability to specify the image size in a markdown file",
-          "customer": "Tyler Technologies",
+          "key": "FR-209",
+          "summary": "Certifications Policies: provide an option to archive the e…",
+          "customer": "Genesys",
           "score": 74,
-          "arr": 321480
+          "arr": 470007
         },
+        {
+          "key": "FR-210",
+          "summary": "Certifications: envs provisioned from non-default snapshot…",
+          "customer": "Genesys",
+          "score": 68,
+          "arr": 470007
+        },
+        {
+          "key": "FR-217",
+          "summary": "Pre-configured environments: select all users rather than i…",
+          "customer": "Genesys",
+          "score": 54,
+          "arr": 470007
+        },
+        {
+          "key": "FR-310",
+          "summary": "Encrypt Data at rest in our DB",
+          "customer": "Genesys",
+          "score": 43,
+          "arr": 470007
+        }
+      ]
+    },
+    {
+      "customer": "Tyler Technologies",
+      "count": 4,
+      "arr": 321480,
+      "frs": [
         {
           "key": "FR-171",
           "summary": "Ability to specify the image size in a markdown file",
@@ -220,6 +248,41 @@
           "customer": "Tyler Technologies",
           "score": 64,
           "arr": 321480
+        }
+      ]
+    },
+    {
+      "customer": "Thales",
+      "count": 4,
+      "arr": 83067,
+      "frs": [
+        {
+          "key": "FR-169",
+          "summary": "Analytic dash/report: Show who started an env between date…",
+          "customer": "Thales",
+          "score": 56,
+          "arr": 83067
+        },
+        {
+          "key": "FR-223",
+          "summary": "Thales - Request for Virtual TPM 2.0 Support",
+          "customer": "Thales",
+          "score": 54,
+          "arr": 83067
+        },
+        {
+          "key": "FR-173",
+          "summary": "Analytic dash/report: Show BP/env started by specific users…",
+          "customer": "Thales",
+          "score": 54,
+          "arr": 83067
+        },
+        {
+          "key": "FR-311",
+          "summary": "AV session recording",
+          "customer": "Thales",
+          "score": 31,
+          "arr": 83067
         }
       ]
     },
@@ -259,34 +322,6 @@
       ]
     },
     {
-      "customer": "Genesys",
-      "count": 3,
-      "arr": 470007,
-      "frs": [
-        {
-          "key": "FR-209",
-          "summary": "Certifications Policies: provide an option to archive the e…",
-          "customer": "Genesys",
-          "score": 74,
-          "arr": 470007
-        },
-        {
-          "key": "FR-210",
-          "summary": "Certifications: envs provisioned from non-default snapshot…",
-          "customer": "Genesys",
-          "score": 68,
-          "arr": 470007
-        },
-        {
-          "key": "FR-217",
-          "summary": "Pre-configured environments: select all users rather than i…",
-          "customer": "Genesys",
-          "score": 54,
-          "arr": 470007
-        }
-      ]
-    },
-    {
       "customer": "Perforce Software",
       "count": 3,
       "arr": 411312,
@@ -315,30 +350,58 @@
       ]
     },
     {
-      "customer": "Thales",
+      "customer": "ADP",
       "count": 3,
-      "arr": 83067,
+      "arr": 189000,
       "frs": [
         {
-          "key": "FR-169",
-          "summary": "Analytic dash/report: Show who started an env between date…",
-          "customer": "Thales",
+          "key": "FR-182",
+          "summary": "Option to Mass Start Live Thumbnail",
+          "customer": "ADP",
           "score": 56,
-          "arr": 83067
+          "arr": 189000
         },
         {
-          "key": "FR-223",
-          "summary": "Thales - Request for Virtual TPM 2.0 Support",
-          "customer": "Thales",
-          "score": 54,
-          "arr": 83067
+          "key": "FR-196",
+          "summary": "Quizzes, polls and surveys",
+          "customer": "ADP",
+          "score": 46,
+          "arr": 189000
         },
         {
-          "key": "FR-173",
-          "summary": "Analytic dash/report: Show BP/env started by specific users…",
-          "customer": "Thales",
-          "score": 54,
-          "arr": 83067
+          "key": "FR-309",
+          "summary": "Revamp the Connection troubleshooting page",
+          "customer": "ADP",
+          "score": 43,
+          "arr": 189000
+        }
+      ]
+    },
+    {
+      "customer": "Rapid7 - SE",
+      "count": 3,
+      "arr": 63168,
+      "frs": [
+        {
+          "key": "FR-313",
+          "summary": "API's for user management",
+          "customer": "Rapid7 - SE",
+          "score": 33,
+          "arr": 63168
+        },
+        {
+          "key": "FR-312",
+          "summary": "Adding users to projects",
+          "customer": "Rapid7 - SE",
+          "score": 33,
+          "arr": 63168
+        },
+        {
+          "key": "FR-314",
+          "summary": "Templates for Guided Journeys",
+          "customer": "Rapid7 - SE",
+          "score": 31,
+          "arr": 63168
         }
       ]
     },
@@ -399,23 +462,72 @@
       ]
     },
     {
-      "customer": "ADP",
-      "count": 2,
-      "arr": 189000,
+      "customer": "Cribl",
+      "count": 3,
+      "arr": 12000,
       "frs": [
         {
-          "key": "FR-182",
-          "summary": "Option to Mass Start Live Thumbnail",
-          "customer": "ADP",
-          "score": 56,
-          "arr": 189000
+          "key": "FR-170",
+          "summary": "RBAC permission for assigned blueprints to stop snapshottin…",
+          "customer": "Cribl",
+          "score": 44,
+          "arr": 12000
         },
         {
-          "key": "FR-196",
-          "summary": "Quizzes, polls and surveys",
-          "customer": "ADP",
-          "score": 46,
-          "arr": 189000
+          "key": "FR-315",
+          "summary": "Better automation pipeline for image and blueprint creation…",
+          "customer": "Cribl",
+          "score": 41,
+          "arr": 12000
+        },
+        {
+          "key": "FR-316",
+          "summary": "Better automation pipeline for internal infrastructure depl…",
+          "customer": "Cribl",
+          "score": "—",
+          "arr": 12000
+        }
+      ]
+    },
+    {
+      "customer": "Exclusive Networks - France",
+      "count": 2,
+      "arr": 565500,
+      "frs": [
+        {
+          "key": "FR-163",
+          "summary": "Analytics insights into VMs",
+          "customer": "Exclusive Networks - France",
+          "score": 43,
+          "arr": 565500
+        },
+        {
+          "key": "FR-308",
+          "summary": "RBAC permission for assigned blueprints to stop snapshottin…",
+          "customer": "Exclusive Networks - France",
+          "score": 36,
+          "arr": 565500
+        }
+      ]
+    },
+    {
+      "customer": "Deltek Consulting",
+      "count": 2,
+      "arr": 90720,
+      "frs": [
+        {
+          "key": "FR-166",
+          "summary": "Enable customers to \"Assign\" blueprints across projects in…",
+          "customer": "Deltek Consulting",
+          "score": 61,
+          "arr": 90720
+        },
+        {
+          "key": "FR-318",
+          "summary": "RBAC permission for assigned blueprints to stop snapshottin…",
+          "customer": "Deltek Consulting",
+          "score": 48,
+          "arr": 90720
         }
       ]
     },
@@ -462,6 +574,27 @@
       ]
     },
     {
+      "customer": "HYPR Corp",
+      "count": 2,
+      "arr": 29007,
+      "frs": [
+        {
+          "key": "FR-317",
+          "summary": "RBAC permission for assigned blueprints to stop snapshottin…",
+          "customer": "HYPR Corp",
+          "score": 36,
+          "arr": 29007
+        },
+        {
+          "key": "FR-195",
+          "summary": "Global VPN Setting",
+          "customer": "HYPR Corp",
+          "score": 25,
+          "arr": 29007
+        }
+      ]
+    },
+    {
       "customer": "HID Global Corporation",
       "count": 2,
       "arr": 19200,
@@ -493,20 +626,6 @@
           "customer": "Crowdstrike - Marketing AWS",
           "score": 48,
           "arr": 1321652
-        }
-      ]
-    },
-    {
-      "customer": "Exclusive Networks - France",
-      "count": 1,
-      "arr": 565500,
-      "frs": [
-        {
-          "key": "FR-163",
-          "summary": "Analytics insights into VMs",
-          "customer": "Exclusive Networks - France",
-          "score": 43,
-          "arr": 565500
         }
       ]
     },
@@ -581,20 +700,6 @@
       ]
     },
     {
-      "customer": "Deltek Consulting",
-      "count": 1,
-      "arr": 90720,
-      "frs": [
-        {
-          "key": "FR-166",
-          "summary": "Enable customers to \"Assign\" blueprints across projects in…",
-          "customer": "Deltek Consulting",
-          "score": 61,
-          "arr": 90720
-        }
-      ]
-    },
-    {
       "customer": "RSA Security - Identity",
       "count": 1,
       "arr": 85680,
@@ -633,20 +738,6 @@
           "customer": "SailPoint Technologies",
           "score": 61,
           "arr": 83424
-        }
-      ]
-    },
-    {
-      "customer": "vArmour",
-      "count": 1,
-      "arr": 71250,
-      "frs": [
-        {
-          "key": "FR-230",
-          "summary": "2 Factor Authentication",
-          "customer": "vArmour",
-          "score": 63,
-          "arr": 71250
         }
       ]
     },
@@ -691,34 +782,6 @@
           "arr": 38688
         }
       ]
-    },
-    {
-      "customer": "HYPR Corp",
-      "count": 1,
-      "arr": 29007,
-      "frs": [
-        {
-          "key": "FR-195",
-          "summary": "Global VPN Setting",
-          "customer": "HYPR Corp",
-          "score": 25,
-          "arr": 29007
-        }
-      ]
-    },
-    {
-      "customer": "Cribl",
-      "count": 1,
-      "arr": 12000,
-      "frs": [
-        {
-          "key": "FR-170",
-          "summary": "RBAC permission for assigned blueprints to stop snapshottin…",
-          "customer": "Cribl",
-          "score": 44,
-          "arr": 12000
-        }
-      ]
     }
   ],
   "dist": {
@@ -734,11 +797,11 @@
     "counts": [
       2,
       1,
-      10,
-      13,
-      7,
       16,
-      6
+      17,
+      7,
+      15,
+      5
     ],
     "frs": [
       [
@@ -773,6 +836,20 @@
           "customer": "NEXTGEN Distribution (Acquired by Exclusive Networks)",
           "score": 38,
           "arr": 47392
+        },
+        {
+          "key": "FR-317",
+          "summary": "RBAC permission for assigned blueprints to stop snapshottin…",
+          "customer": "HYPR Corp",
+          "score": 36,
+          "arr": 29007
+        },
+        {
+          "key": "FR-308",
+          "summary": "RBAC permission for assigned blueprints to stop snapshottin…",
+          "customer": "Exclusive Networks - France",
+          "score": 36,
+          "arr": 565500
         },
         {
           "key": "FR-185",
@@ -817,6 +894,34 @@
           "arr": 15360
         },
         {
+          "key": "FR-313",
+          "summary": "API's for user management",
+          "customer": "Rapid7 - SE",
+          "score": 33,
+          "arr": 63168
+        },
+        {
+          "key": "FR-312",
+          "summary": "Adding users to projects",
+          "customer": "Rapid7 - SE",
+          "score": 33,
+          "arr": 63168
+        },
+        {
+          "key": "FR-314",
+          "summary": "Templates for Guided Journeys",
+          "customer": "Rapid7 - SE",
+          "score": 31,
+          "arr": 63168
+        },
+        {
+          "key": "FR-311",
+          "summary": "AV session recording",
+          "customer": "Thales",
+          "score": 31,
+          "arr": 83067
+        },
+        {
           "key": "FR-219",
           "summary": "Guided Journey Export",
           "customer": "LaunchLife International",
@@ -839,6 +944,13 @@
         }
       ],
       [
+        {
+          "key": "FR-318",
+          "summary": "RBAC permission for assigned blueprints to stop snapshottin…",
+          "customer": "Deltek Consulting",
+          "score": 48,
+          "arr": 90720
+        },
         {
           "key": "FR-191",
           "summary": "Webhook - Training/Sales Experience deleted",
@@ -910,11 +1022,32 @@
           "arr": 12000
         },
         {
+          "key": "FR-310",
+          "summary": "Encrypt Data at rest in our DB",
+          "customer": "Genesys",
+          "score": 43,
+          "arr": 470007
+        },
+        {
+          "key": "FR-309",
+          "summary": "Revamp the Connection troubleshooting page",
+          "customer": "ADP",
+          "score": 43,
+          "arr": 189000
+        },
+        {
           "key": "FR-163",
           "summary": "Analytics insights into VMs",
           "customer": "Exclusive Networks - France",
           "score": 43,
           "arr": 565500
+        },
+        {
+          "key": "FR-315",
+          "summary": "Better automation pipeline for image and blueprint creation…",
+          "customer": "Cribl",
+          "score": 41,
+          "arr": 12000
         },
         {
           "key": "FR-218",
@@ -1047,13 +1180,6 @@
           "arr": 411312
         },
         {
-          "key": "FR-230",
-          "summary": "2 Factor Authentication",
-          "customer": "vArmour",
-          "score": 63,
-          "arr": 71250
-        },
-        {
           "key": "FR-208",
           "summary": "Changing Main instructor in Training experiences",
           "customer": "SailPoint Technologies",
@@ -1119,13 +1245,6 @@
           "arr": 411312
         },
         {
-          "key": "FR-181",
-          "summary": "Ability to specify the image size in a markdown file",
-          "customer": "Tyler Technologies",
-          "score": 74,
-          "arr": 321480
-        },
-        {
           "key": "FR-171",
           "summary": "Ability to specify the image size in a markdown file",
           "customer": "Tyler Technologies",
@@ -1145,15 +1264,15 @@
   "align": [
     {
       "label": "Enterprise Readiness",
-      "count": 31
+      "count": 36
     },
     {
       "label": "AI & Automation",
-      "count": 13
+      "count": 16
     },
     {
       "label": "Cyber Vertical",
-      "count": 9
+      "count": 10
     },
     {
       "label": "Other",
@@ -1163,11 +1282,11 @@
   "renew": [
     {
       "label": "<180 days",
-      "count": 18
+      "count": 24
     },
     {
       "label": "180–364",
-      "count": 14
+      "count": 16
     },
     {
       "label": "365–499",
@@ -1175,7 +1294,7 @@
     },
     {
       "label": "500+",
-      "count": 17
+      "count": 18
     },
     {
       "label": "No date",
@@ -1213,10 +1332,35 @@
       ]
     },
     {
-      "theme": "Granular permissions & RBAC",
+      "theme": "RBAC: lock down blueprint snapshotting to original BP",
       "fr_count": 4,
       "customers": 4,
-      "arr": 1028651,
+      "arr": 697227,
+      "top_score": 48,
+      "members": [
+        {
+          "key": "FR-170",
+          "summary": "RBAC permission for assigned blueprints to stop…"
+        },
+        {
+          "key": "FR-308",
+          "summary": "RBAC permission for assigned blueprints to stop…"
+        },
+        {
+          "key": "FR-317",
+          "summary": "RBAC permission for assigned blueprints to stop…"
+        },
+        {
+          "key": "FR-318",
+          "summary": "RBAC permission for assigned blueprints to stop…"
+        }
+      ]
+    },
+    {
+      "theme": "Granular permissions & RBAC",
+      "fr_count": 3,
+      "customers": 3,
+      "arr": 1016651,
       "top_score": 64,
       "members": [
         {
@@ -1230,10 +1374,6 @@
         {
           "key": "FR-167",
           "summary": "Permissions: More granularity fo editing a envi…"
-        },
-        {
-          "key": "FR-170",
-          "summary": "RBAC permission for assigned blueprints to stop…"
         }
       ]
     },
@@ -1280,23 +1420,6 @@
       ]
     },
     {
-      "theme": "Two-factor & MFA authentication",
-      "fr_count": 2,
-      "customers": 2,
-      "arr": 108318,
-      "top_score": 63,
-      "members": [
-        {
-          "key": "FR-230",
-          "summary": "2 Factor Authentication"
-        },
-        {
-          "key": "FR-194",
-          "summary": "Security: Native MFA for a \"a breaking-glass ac…"
-        }
-      ]
-    },
-    {
       "theme": "Provision from non-default snapshot",
       "fr_count": 2,
       "customers": 2,
@@ -1331,23 +1454,6 @@
       ]
     },
     {
-      "theme": "Markdown image sizing (duplicate submissions)",
-      "fr_count": 2,
-      "customers": 1,
-      "arr": 321480,
-      "top_score": 74,
-      "members": [
-        {
-          "key": "FR-181",
-          "summary": "Ability to specify the image size in a markdown…"
-        },
-        {
-          "key": "FR-171",
-          "summary": "Ability to specify the image size in a markdown…"
-        }
-      ]
-    },
-    {
       "theme": "Env-start usage reporting",
       "fr_count": 2,
       "customers": 1,
@@ -1363,6 +1469,133 @@
           "summary": "Analytic dash/report: Show who started an env b…"
         }
       ]
+    },
+    {
+      "theme": "Infrastructure-as-code automation pipeline (Terraform/Packer)",
+      "fr_count": 2,
+      "customers": 1,
+      "arr": 12000,
+      "top_score": 41,
+      "members": [
+        {
+          "key": "FR-315",
+          "summary": "Better automation pipeline for image and bluepr…"
+        },
+        {
+          "key": "FR-316",
+          "summary": "Better automation pipeline for internal infrast…"
+        }
+      ]
+    }
+  ],
+  "new_frs": [
+    {
+      "key": "FR-318",
+      "summary": "RBAC permission for assigned blueprints to stop snapshotting to the o…",
+      "customer": "Deltek Consulting",
+      "arr": 90720,
+      "align": "Enterprise Readiness",
+      "score": 48,
+      "created": "2026-07-19"
+    },
+    {
+      "key": "FR-317",
+      "summary": "RBAC permission for assigned blueprints to stop snapshotting to the o…",
+      "customer": "HYPR Corp",
+      "arr": 29007,
+      "align": "Enterprise Readiness",
+      "score": 36,
+      "created": "2026-07-19"
+    },
+    {
+      "key": "FR-316",
+      "summary": "Better automation pipeline for internal infrastructure deployment",
+      "customer": "Cribl",
+      "arr": 12000,
+      "align": "AI & Automation",
+      "score": "—",
+      "created": "2026-07-19"
+    },
+    {
+      "key": "FR-315",
+      "summary": "Better automation pipeline for image and blueprint creation and manag…",
+      "customer": "Cribl",
+      "arr": 12000,
+      "align": "AI & Automation",
+      "score": 41,
+      "created": "2026-07-19"
+    },
+    {
+      "key": "FR-314",
+      "summary": "Templates for Guided Journeys",
+      "customer": "Rapid7 - SE",
+      "arr": 63168,
+      "align": "Enterprise Readiness",
+      "score": 31,
+      "created": "2026-07-19"
+    },
+    {
+      "key": "FR-313",
+      "summary": "API's for user management",
+      "customer": "Rapid7 - SE",
+      "arr": 63168,
+      "align": "AI & Automation",
+      "score": 33,
+      "created": "2026-07-19"
+    },
+    {
+      "key": "FR-312",
+      "summary": "Adding users to projects",
+      "customer": "Rapid7 - SE",
+      "arr": 63168,
+      "align": "Cyber Vertical",
+      "score": 33,
+      "created": "2026-07-19"
+    },
+    {
+      "key": "FR-311",
+      "summary": "AV session recording",
+      "customer": "Thales",
+      "arr": 83067,
+      "align": "Enterprise Readiness",
+      "score": 31,
+      "created": "2026-07-19"
+    },
+    {
+      "key": "FR-310",
+      "summary": "Encrypt Data at rest in our DB",
+      "customer": "Genesys",
+      "arr": 470007,
+      "align": "Cyber Vertical",
+      "score": 43,
+      "created": "2026-07-19"
+    },
+    {
+      "key": "FR-309",
+      "summary": "Revamp the Connection troubleshooting page",
+      "customer": "ADP",
+      "arr": 189000,
+      "align": "Enterprise Readiness",
+      "score": 43,
+      "created": "2026-07-18"
+    },
+    {
+      "key": "FR-308",
+      "summary": "RBAC permission for assigned blueprints to stop snapshotting to the o…",
+      "customer": "Exclusive Networks - France",
+      "arr": 565500,
+      "align": "Enterprise Readiness",
+      "score": 36,
+      "created": "2026-07-18"
+    },
+    {
+      "key": "FR-223",
+      "summary": "Thales - Request for Virtual TPM 2.0 Support",
+      "customer": "Thales",
+      "arr": 83067,
+      "align": "Enterprise Readiness",
+      "score": 54,
+      "created": "2026-07-14"
     }
   ]
 }
