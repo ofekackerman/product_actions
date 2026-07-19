@@ -29,9 +29,15 @@ The routine must produce exactly this shape; the renderer and drill-downs depend
       "renew":  [{"label","count"}],   // buckets: <180 days,180–364,365–499,500+,No date
       "clusters":[{"theme","fr_count","customers","arr","top_score",
                    "members":[{"key","summary"}]}]                           // sorted by fr_count desc
+      "new_frs":[{"key","summary","customer","arr","align","score","created"}] // FRs created since
+                                                                                // last week's snapshot,
+                                                                                // sorted newest first
     }
 
 Notes:
 - `customers[].frs` and `dist.frs` are the lists shown when a bar is clicked — include them.
 - `clusters` is the semantic grouping (same-underlying-request), independent of `align`.
 - High-score threshold is 60 (`meta.high_threshold`); change in one place if you retune it.
+- `new_frs`: an FR is "new" if its Jira `created` date falls within the last 7 days of the run date
+  (the routine runs weekly, so this naturally covers "since last week"). Empty list is valid — the
+  dashboard shows a "No new FRs" message rather than an empty table.
