@@ -184,6 +184,19 @@ new Chart(renewChart,{type:'bar',
   data:{labels:D.renew.map(r=>r.label),datasets:[{data:D.renew.map(r=>r.count),borderRadius:5,backgroundColor:D.renew.map(r=>r.label==='<180 days'?'#b23b48':r.label==='180–364'?AMBER:INDIGO)}]},
   options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>` ${c.raw} FRs`}}},
     scales:{x:{...noGrid},y:{beginAtZero:true,ticks:{precision:0},grid:{color:LINE}}}}});
+
+// Report real pixel height to an embedding iframe parent so it can auto-resize (no cutoff at any backlog size).
+(function(){
+  function reportHeight(){
+    var h=document.documentElement.scrollHeight;
+    window.parent.postMessage({frDashboardHeight:h},'*');
+  }
+  window.addEventListener('load',reportHeight);
+  window.addEventListener('resize',reportHeight);
+  if(window.ResizeObserver){new ResizeObserver(reportHeight).observe(document.body);}
+  setTimeout(reportHeight,300);
+  setTimeout(reportHeight,1200);
+})();
 </script>
 </body>
 </html>
