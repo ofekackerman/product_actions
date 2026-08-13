@@ -40,6 +40,10 @@
   td.rank{color:var(--faint);width:26px}
   .tag{font-size:11px;padding:2px 8px;border-radius:7px;background:var(--paper);border:1px solid var(--line);white-space:nowrap}
   .tag-new{font-family:"Space Grotesk",sans-serif;font-size:10.5px;font-weight:700;letter-spacing:.03em;color:#fff;background:var(--green);padding:3px 8px;border-radius:99px;white-space:nowrap;margin-left:7px;vertical-align:middle}
+  .tag-done{font-family:"Space Grotesk",sans-serif;font-size:10.5px;font-weight:700;letter-spacing:.03em;color:#fff;background:var(--teal);padding:3px 8px;border-radius:99px;white-space:nowrap;vertical-align:middle}
+  .tag-wip{font-family:"Space Grotesk",sans-serif;font-size:10.5px;font-weight:700;letter-spacing:.03em;color:#fff;background:var(--amber);padding:3px 8px;border-radius:99px;white-space:nowrap;vertical-align:middle}
+  td.when{color:var(--muted);font-size:13px;font-variant-numeric:tabular-nums;white-space:nowrap}
+  .hint-quiet{font-size:11.5px;font-weight:600;color:var(--muted);background:var(--paper);border:1px solid var(--line);padding:2px 9px;border-radius:99px;margin-left:8px;white-space:nowrap}
   .empty-note{color:var(--faint);font-size:13px;padding:6px 2px}
   .scoretag{font-family:"Space Grotesk",sans-serif;font-weight:700;font-size:15px;padding:3px 10px;border-radius:8px;display:inline-block;min-width:34px;text-align:center}
   .s-hi{background:var(--green-soft);color:var(--green-ink)} .s-mid{background:var(--indigo-soft);color:var(--indigo-ink)} .s-lo{background:var(--paper);color:var(--muted)}
@@ -73,6 +77,18 @@
     <table><thead><tr><th></th><th>FR</th><th>Request</th><th>Customer</th><th class="arr">ARR</th><th>Alignment</th><th>Score</th></tr></thead><tbody id="newfrs"></tbody></table>
   </div>
 
+  <div class="card" id="progressCard">
+    <h2>In Progress FRs <span class="hint" id="progHint"></span><span class="hint-quiet" id="progNewHint"></span></h2>
+    <div class="cap">Feature requests currently being worked on. <b>TAKEN</b> marks the ones picked up in the last 7 days.</div>
+    <table><thead><tr><th></th><th>FR</th><th>Request</th><th>Customer</th><th class="arr">ARR</th><th>Score</th><th>Owner</th><th>Started</th></tr></thead><tbody id="inprogress"></tbody></table>
+  </div>
+
+  <div class="card" id="completedCard">
+    <h2>Completed FRs <span class="hint" id="doneHint"></span></h2>
+    <div class="cap">Feature requests moved to Done in the last 7 days — shipped since the previous snapshot.</div>
+    <table><thead><tr><th></th><th>FR</th><th>Request</th><th>Customer</th><th class="arr">ARR</th><th>Score</th><th>Owner</th><th>Completed</th></tr></thead><tbody id="completed"></tbody></table>
+  </div>
+
   <div class="card">
     <h2>Top 15 by score</h2>
     <div class="cap">The strongest cases to build next, highest first.</div>
@@ -104,7 +120,7 @@
       <div class="chartbox"><canvas id="renewChart"></canvas></div></div>
   </div>
 
-  <footer>Source: Jira FR project · open requests only · snapshot regenerated weekly. Themes are grouped by an LLM similarity pass over request text.</footer>
+  <footer>Source: Jira FR project · backlog charts cover open requests only; In Progress and Completed sections cover the last 7 days · snapshot regenerated weekly. Themes are grouped by an LLM similarity pass over request text.</footer>
 </div>
 
 <div class="overlay" id="overlay">
@@ -137,6 +153,23 @@ document.getElementById('newHint').textContent=newFrs.length?`${newFrs.length} n
 document.getElementById('newfrs').innerHTML=newFrs.length
   ? newFrs.map(r=>`<tr><td><span class="tag-new">NEW</span></td><td class="key"><a href="https://cloudshare.atlassian.net/browse/${r.key}" target="_blank">${r.key}</a></td><td>${r.summary}</td><td>${r.customer}</td><td class="arr num">${fmtArr(r.arr)}</td><td><span class="tag" style="background:${alignColor[r.align]||'#eef0f4'}">${r.align}</span></td><td><span class="scoretag ${scoreCls(r.score)}">${r.score}</span></td></tr>`).join('')
   : `<tr><td colspan="7" class="empty-note">No new FRs since last week's snapshot.</td></tr>`;
+
+// In Progress FRs (currently in flight; TAKEN badge = entered In Progress in last 7 days)
+const shortDate=d=>{if(!d)return '\u2014';const t=new Date(d);return isNaN(t)?d:t.toLocaleDateString('en-GB',{day:'2-digit',month:'short'});};
+const wip=D.in_progress||[];
+const wipNew=wip.filter(r=>r.is_new).length;
+document.getElementById('progHint').textContent=wip.length?`${wip.length} in flight`:'';
+document.getElementById('progNewHint').textContent=wipNew?`${wipNew} taken this week`:'';
+document.getElementById('inprogress').innerHTML=wip.length
+  ? wip.map(r=>`<tr><td>${r.is_new?'<span class="tag-wip">TAKEN</span>':''}</td><td class="key"><a href="https://cloudshare.atlassian.net/browse/${r.key}" target="_blank">${r.key}</a></td><td>${r.summary}</td><td>${r.customer}</td><td class="arr num">${fmtArr(r.arr)}</td><td><span class="scoretag ${scoreCls(r.score)}">${r.score}</span></td><td>${r.owner||'\u2014'}</td><td class="when">${shortDate(r.started)}</td></tr>`).join('')
+  : `<tr><td colspan="8" class="empty-note">No FRs are in progress right now.</td></tr>`;
+
+// Completed FRs (moved to Done in the last 7 days)
+const done=D.completed||[];
+document.getElementById('doneHint').textContent=done.length?`${done.length} completed`:'';
+document.getElementById('completed').innerHTML=done.length
+  ? done.map(r=>`<tr><td><span class="tag-done">DONE</span></td><td class="key"><a href="https://cloudshare.atlassian.net/browse/${r.key}" target="_blank">${r.key}</a></td><td>${r.summary}</td><td>${r.customer}</td><td class="arr num">${fmtArr(r.arr)}</td><td><span class="scoretag ${scoreCls(r.score)}">${r.score}</span></td><td>${r.owner||'\u2014'}</td><td class="when">${shortDate(r.completed)}</td></tr>`).join('')
+  : `<tr><td colspan="8" class="empty-note">No FRs were completed in the last 7 days.</td></tr>`;
 document.getElementById('themes').innerHTML=D.clusters.map(c=>{const links=c.members.map(mm=>`<a class="mkey" href="https://cloudshare.atlassian.net/browse/${mm.key}" target="_blank" title="${mm.summary}">${mm.key}</a>`).join(' ');return `<tr><td><b>${c.theme}</b></td><td class="cnum">${c.fr_count}</td><td class="cnum">${c.customers}</td><td class="cnum">${fmtArr(c.arr)}</td><td class="members">${links}</td></tr>`;}).join('');
 
 // Drill modal
