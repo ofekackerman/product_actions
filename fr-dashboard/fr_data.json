@@ -1,12 +1,12 @@
 {
  "meta": {
-  "week_of": "2026-10-08",
-  "open": 264,
-  "arr_total": 67415827,
-  "high_count": 25,
+  "week_of": "2026-10-12",
+  "open": 265,
+  "arr_total": 69247117,
+  "high_count": 26,
   "high_threshold": 60,
-  "risk_count": 95,
-  "scored": 248,
+  "risk_count": 94,
+  "scored": 250,
   "customers": 93
  },
  "top15": [
@@ -14,121 +14,121 @@
    "key": "FR-471",
    "summary": "[HID Global] create banner, accept terms page prior to entering lab",
    "customer": "HID Global",
+   "score": 6464,
    "arr": 19200,
-   "align": "Unassigned",
-   "score": 6464
+   "align": "Unassigned"
   },
   {
    "key": "FR-523",
    "summary": "[Exclusive Networks] API to query our data",
    "customer": "Exclusive Networks",
+   "score": 100,
    "arr": 47392,
-   "align": "AI & Automation",
-   "score": 100
+   "align": "AI & Automation"
   },
   {
    "key": "FR-171",
    "summary": "Ability to specify the image size in a markdown file",
    "customer": "Tyler Technologies",
+   "score": 74,
    "arr": 321480,
-   "align": "Enterprise Readiness",
-   "score": 74
+   "align": "Enterprise Readiness"
   },
   {
    "key": "FR-193",
    "summary": "Disabling/customizing Email Reminders",
    "customer": "Perforce Software",
+   "score": 74,
    "arr": 411312,
-   "align": "AI & Automation",
-   "score": 74
+   "align": "AI & Automation"
   },
   {
    "key": "FR-209",
    "summary": "Certifications Policies: provide an option to archive the env after s…",
    "customer": "Genesys",
+   "score": 74,
    "arr": 470007,
-   "align": "Enterprise Readiness",
-   "score": 74
+   "align": "Enterprise Readiness"
   },
   {
    "key": "FR-216",
    "summary": "Allow End-User Invitations from Non-Default Blueprint Snapshots",
    "customer": "Check Point Software - Combined",
+   "score": 74,
    "arr": 490000,
-   "align": "Enterprise Readiness",
-   "score": 74
+   "align": "Enterprise Readiness"
   },
   {
    "key": "FR-202",
    "summary": "Azure Subscription-Level Isolation per Student/Environment",
    "customer": "Infoblox",
+   "score": 71,
    "arr": 600000,
-   "align": "Cyber Vertical",
-   "score": 71
+   "align": "Cyber Vertical"
   },
   {
    "key": "FR-210",
    "summary": "Certifications: envs provisioned from non-default snapshot in experie…",
    "customer": "Genesys",
+   "score": 68,
    "arr": 470007,
-   "align": "Enterprise Readiness",
-   "score": 68
+   "align": "Enterprise Readiness"
   },
   {
    "key": "FR-174",
    "summary": "LTI Information API Request",
    "customer": "Perforce Software",
+   "score": 64,
    "arr": 411312,
-   "align": "AI & Automation",
-   "score": 64
+   "align": "AI & Automation"
   },
   {
    "key": "FR-179",
    "summary": "Add a description to each Chapter in Guided Journeys",
    "customer": "Tyler Technologies",
+   "score": 64,
    "arr": 321480,
-   "align": "Enterprise Readiness",
-   "score": 64
+   "align": "Enterprise Readiness"
   },
   {
    "key": "FR-186",
    "summary": "[HID Global] Terms Banner Page prior to Class access",
    "customer": "HID Global Corporation",
+   "score": 64,
    "arr": 19200,
-   "align": "Enterprise Readiness",
-   "score": 64
+   "align": "Enterprise Readiness"
   },
   {
    "key": "FR-187",
    "summary": "Ability to move resources around between directories or projects",
    "customer": "Tyler Technologies",
+   "score": 64,
    "arr": 321480,
-   "align": "Enterprise Readiness",
-   "score": 64
+   "align": "Enterprise Readiness"
   },
   {
    "key": "FR-197",
    "summary": "User Level Permissions for Resource Repository",
    "customer": "Tyler Technologies",
+   "score": 64,
    "arr": 321480,
-   "align": "Enterprise Readiness",
-   "score": 64
+   "align": "Enterprise Readiness"
   },
   {
    "key": "FR-204",
    "summary": "Terraform Output Propagation into VMs",
    "customer": "Infoblox",
+   "score": 64,
    "arr": 600000,
-   "align": "AI & Automation",
-   "score": 64
+   "align": "AI & Automation"
   },
   {
    "key": "FR-205",
    "summary": "Allow Modification of Policy After Training is In-Progress",
    "customer": "Infoblox",
+   "score": 64,
    "arr": 600000,
-   "align": "Enterprise Readiness",
-   "score": 64
+   "align": "Enterprise Readiness"
   }
  ],
  "customers": [
@@ -616,6 +616,76 @@
    ]
   },
   {
+   "customer": "Zscaler",
+   "count": 9,
+   "arr": 900000,
+   "frs": [
+    {
+     "key": "FR-566",
+     "summary": "Customize environment deletion reminder email",
+     "customer": "Zscaler",
+     "score": 61,
+     "arr": 900000
+    },
+    {
+     "key": "FR-583",
+     "summary": "Better email control and content including webhook notifica…",
+     "customer": "Zscaler",
+     "score": 48,
+     "arr": 900000
+    },
+    {
+     "key": "FR-551",
+     "summary": "Breadcrumbs for environments: please include the user name",
+     "customer": "Zscaler",
+     "score": 31,
+     "arr": 900000
+    },
+    {
+     "key": "FR-552",
+     "summary": "Dynamic MAC: Build a proper feature to provision unique MAC…",
+     "customer": "Zscaler",
+     "score": 31,
+     "arr": 900000
+    },
+    {
+     "key": "FR-554",
+     "summary": "Ability to snapshot and provision an env with a VM powered…",
+     "customer": "Zscaler",
+     "score": 31,
+     "arr": 900000
+    },
+    {
+     "key": "FR-555",
+     "summary": "Internal NTP Server",
+     "customer": "Zscaler",
+     "score": 31,
+     "arr": 900000
+    },
+    {
+     "key": "FR-565",
+     "summary": "Better email control and content including webhook notifica…",
+     "customer": "Zscaler",
+     "score": 31,
+     "arr": 900000
+    },
+    {
+     "key": "FR-568",
+     "summary": "Zscaler use.cloudshare.com site hosted in multiple regions",
+     "customer": "Zscaler",
+     "score": 31,
+     "arr": 900000
+    },
+    {
+     "key": "FR-571",
+     "summary": "Show times in the experience overview and table",
+     "customer": "Zscaler",
+     "score": 31,
+     "arr": 900000
+    }
+   ]
+  },
+  {
    "customer": "Exclusive Networks - France",
    "count": 9,
    "arr": 565500,
@@ -752,69 +822,6 @@
      "customer": "Cyberhaven",
      "score": null,
      "arr": 14820
-    }
-   ]
-  },
-  {
-   "customer": "Zscaler",
-   "count": 8,
-   "arr": 900000,
-   "frs": [
-    {
-     "key": "FR-551",
-     "summary": "Breadcrumbs for environments: please include the user name",
-     "customer": "Zscaler",
-     "score": 31,
-     "arr": 900000
-    },
-    {
-     "key": "FR-552",
-     "summary": "Dynamic MAC: Build a proper feature to provision unique MAC…",
-     "customer": "Zscaler",
-     "score": 31,
-     "arr": 900000
-    },
-    {
-     "key": "FR-554",
-     "summary": "Ability to snapshot and provision an env with a VM powered…",
-     "customer": "Zscaler",
-     "score": 31,
-     "arr": 900000
-    },
-    {
-     "key": "FR-555",
-     "summary": "Internal NTP Server",
-     "customer": "Zscaler",
-     "score": 31,
-     "arr": 900000
-    },
-    {
-     "key": "FR-565",
-     "summary": "Better email control and content including webhook notifica…",
-     "customer": "Zscaler",
-     "score": 31,
-     "arr": 900000
-    },
-    {
-     "key": "FR-566",
-     "summary": "Customize environment deletion reminder email",
-     "customer": "Zscaler",
-     "score": 31,
-     "arr": 900000
-    },
-    {
-     "key": "FR-568",
-     "summary": "Zscaler use.cloudshare.com site hosted in multiple regions",
-     "customer": "Zscaler",
-     "score": 31,
-     "arr": 900000
-    },
-    {
-     "key": "FR-571",
-     "summary": "Show times in the experience overview and table",
-     "customer": "Zscaler",
-     "score": 31,
-     "arr": 900000
     }
    ]
   },
@@ -1013,6 +1020,13 @@
    "arr": 250000,
    "frs": [
     {
+     "key": "FR-473",
+     "summary": "Learning Tree - Cloud Folders to multi-region",
+     "customer": "Learning Tree International",
+     "score": 44,
+     "arr": 250000
+    },
+    {
      "key": "FR-556",
      "summary": "Ability to manage Guided Journey repo and tasks via API",
      "customer": "Learning Tree International",
@@ -1034,15 +1048,8 @@
      "arr": 250000
     },
     {
-     "key": "FR-473",
-     "summary": "Learning Tree - Cloud Folders to multi-region",
-     "customer": "Learning Tree International",
-     "score": null,
-     "arr": 250000
-    },
-    {
      "key": "FR-476",
-     "summary": "[Learning Tree]  Ability for students (and proj managers) t…",
+     "summary": "[Learning Tree] Ability for students (and proj managers) to…",
      "customer": "Learning Tree International",
      "score": null,
      "arr": 250000
@@ -1136,7 +1143,7 @@
   {
    "customer": "Perforce",
    "count": 5,
-   "arr": null,
+   "arr": 0,
    "frs": [
     {
      "key": "FR-481",
@@ -1843,7 +1850,7 @@
   {
    "customer": "Nozomi",
    "count": 2,
-   "arr": null,
+   "arr": 0,
    "frs": [
     {
      "key": "FR-480",
@@ -1858,6 +1865,20 @@
      "customer": "Nozomi",
      "score": 10,
      "arr": null
+    }
+   ]
+  },
+  {
+   "customer": "Siemens Healthineers",
+   "count": 1,
+   "arr": 1002540,
+   "frs": [
+    {
+     "key": "FR-574",
+     "summary": "Dynamic Region Assignment",
+     "customer": "Siemens Healthineers",
+     "score": 31,
+     "arr": 1002540
     }
    ]
   },
@@ -1980,7 +2001,7 @@
    "frs": [
     {
      "key": "FR-541",
-     "summary": "[Cotiviti] Feature to ensure key envs are never irrecoverab…",
+     "summary": "[Cotiviti] Feature to ensure \"key\" envs are never irrecover…",
      "customer": "Cotiviti (Edifecs)",
      "score": 31,
      "arr": 104400
@@ -2054,20 +2075,6 @@
      "customer": "ARGUS (Altus Group)",
      "score": 22,
      "arr": 73000
-    }
-   ]
-  },
-  {
-   "customer": "vArmour",
-   "count": 1,
-   "arr": 71250,
-   "frs": [
-    {
-     "key": "FR-570",
-     "summary": "2 Factor Authentication",
-     "customer": "vArmour",
-     "score": 41,
-     "arr": 71250
     }
    ]
   },
@@ -2438,7 +2445,7 @@
   {
    "customer": "Omnicell, Cotiviti, Infios, Procede ",
    "count": 1,
-   "arr": null,
+   "arr": 0,
    "frs": [
     {
      "key": "FR-463",
@@ -2452,7 +2459,7 @@
   {
    "customer": "Kaspersky, Exclusive Networks, CheckPoint, Infoblox, Edifecs",
    "count": 1,
-   "arr": null,
+   "arr": 0,
    "frs": [
     {
      "key": "FR-468",
@@ -2466,7 +2473,7 @@
   {
    "customer": "Netwrix",
    "count": 1,
-   "arr": null,
+   "arr": 0,
    "frs": [
     {
      "key": "FR-479",
@@ -2480,7 +2487,7 @@
   {
    "customer": "Ping Identity",
    "count": 1,
-   "arr": null,
+   "arr": 0,
    "frs": [
     {
      "key": "FR-483",
@@ -2494,7 +2501,7 @@
   {
    "customer": "Kaspersky / Exclusive",
    "count": 1,
-   "arr": null,
+   "arr": 0,
    "frs": [
     {
      "key": "FR-484",
@@ -2508,7 +2515,7 @@
   {
    "customer": "Redseal",
    "count": 1,
-   "arr": null,
+   "arr": 0,
    "frs": [
     {
      "key": "FR-488",
@@ -2522,7 +2529,7 @@
   {
    "customer": "SalesForce (Mulesoft)",
    "count": 1,
-   "arr": null,
+   "arr": 0,
    "frs": [
     {
      "key": "FR-494",
@@ -2536,7 +2543,7 @@
   {
    "customer": "Systecon",
    "count": 1,
-   "arr": null,
+   "arr": 0,
    "frs": [
     {
      "key": "FR-495",
@@ -2550,7 +2557,7 @@
   {
    "customer": "SailPoint",
    "count": 1,
-   "arr": null,
+   "arr": 0,
    "frs": [
     {
      "key": "FR-509",
@@ -2564,7 +2571,7 @@
   {
    "customer": "Tyler Tech",
    "count": 1,
-   "arr": null,
+   "arr": 0,
    "frs": [
     {
      "key": "FR-514",
@@ -2578,7 +2585,7 @@
   {
    "customer": "Honeywell",
    "count": 1,
-   "arr": null,
+   "arr": 0,
    "frs": [
     {
      "key": "FR-516",
@@ -2592,7 +2599,7 @@
   {
    "customer": "Arctic Wolf",
    "count": 1,
-   "arr": null,
+   "arr": 0,
    "frs": [
     {
      "key": "FR-519",
@@ -2632,9 +2639,9 @@
    55,
    38,
    84,
-   36,
+   37,
    10,
-   18,
+   19,
    7
   ],
   "frs": [
@@ -3751,7 +3758,7 @@
     },
     {
      "key": "FR-541",
-     "summary": "[Cotiviti] Feature to ensure key envs are never irrecoverab…",
+     "summary": "[Cotiviti] Feature to ensure \"key\" envs are never irrecover…",
      "customer": "Cotiviti (Edifecs)",
      "score": 31,
      "arr": 104400
@@ -3827,13 +3834,6 @@
      "arr": 900000
     },
     {
-     "key": "FR-566",
-     "summary": "Customize environment deletion reminder email",
-     "customer": "Zscaler",
-     "score": 31,
-     "arr": 900000
-    },
-    {
      "key": "FR-568",
      "summary": "Zscaler use.cloudshare.com site hosted in multiple regions",
      "customer": "Zscaler",
@@ -3846,6 +3846,13 @@
      "customer": "Zscaler",
      "score": 31,
      "arr": 900000
+    },
+    {
+     "key": "FR-574",
+     "summary": "Dynamic Region Assignment",
+     "customer": "Siemens Healthineers",
+     "score": 31,
+     "arr": 1002540
     },
     {
      "key": "FR-332",
@@ -3962,6 +3969,13 @@
      "arr": 490000
     },
     {
+     "key": "FR-583",
+     "summary": "Better email control and content including webhook notifica…",
+     "customer": "Zscaler",
+     "score": 48,
+     "arr": 900000
+    },
+    {
      "key": "FR-172",
      "summary": "Conditional Formatting in the Viewer",
      "customer": "Trimble",
@@ -4009,6 +4023,13 @@
      "customer": "Infoblox",
      "score": 44,
      "arr": 600000
+    },
+    {
+     "key": "FR-473",
+     "summary": "Learning Tree - Cloud Folders to multi-region",
+     "customer": "Learning Tree International",
+     "score": 44,
+     "arr": 250000
     },
     {
      "key": "FR-163",
@@ -4121,13 +4142,6 @@
      "customer": "Learning Tree International",
      "score": 41,
      "arr": 250000
-    },
-    {
-     "key": "FR-570",
-     "summary": "2 Factor Authentication",
-     "customer": "vArmour",
-     "score": 41,
-     "arr": 71250
     },
     {
      "key": "FR-498",
@@ -4335,6 +4349,13 @@
      "customer": "SailPoint Technologies",
      "score": 61,
      "arr": 83424
+    },
+    {
+     "key": "FR-566",
+     "summary": "Customize environment deletion reminder email",
+     "customer": "Zscaler",
+     "score": 61,
+     "arr": 900000
     }
    ],
    [
@@ -4393,15 +4414,15 @@
  "align": [
   {
    "label": "Enterprise Readiness",
-   "count": 155
+   "count": 156
   },
   {
    "label": "AI & Automation",
-   "count": 48
+   "count": 49
   },
   {
    "label": "Cyber Vertical",
-   "count": 40
+   "count": 39
   },
   {
    "label": "Unassigned",
@@ -4415,7 +4436,7 @@
  "renew": [
   {
    "label": "<180 days",
-   "count": 94
+   "count": 93
   },
   {
    "label": "180–364",
@@ -4427,7 +4448,7 @@
   },
   {
    "label": "500+",
-   "count": 52
+   "count": 54
   },
   {
    "label": "No date",
@@ -4439,7 +4460,7 @@
    "theme": "Customer-facing audit logs / activity trail",
    "fr_count": 8,
    "customers": 5,
-   "arr": 1149894,
+   "arr": 1148586,
    "top_score": 62,
    "members": [
     {
@@ -4517,7 +4538,7 @@
    "theme": "Assign/move/share blueprints across projects & subscriptions",
    "fr_count": 7,
    "customers": 7,
-   "arr": 1047864,
+   "arr": 1000472,
    "top_score": 61,
    "members": [
     {
@@ -4764,6 +4785,27 @@
    ]
   },
   {
+   "theme": "Virtual TPM (vTPM) support for VMs",
+   "fr_count": 3,
+   "customers": 2,
+   "arr": 116353,
+   "top_score": 54,
+   "members": [
+    {
+     "key": "FR-223",
+     "summary": "Thales - Request for Virtual TPM 2.0 Support"
+    },
+    {
+     "key": "FR-322",
+     "summary": "[Watchguard Technologies] Virtual TPM (vTPM) wi…"
+    },
+    {
+     "key": "FR-563",
+     "summary": "Feature request (details needed)"
+    }
+   ]
+  },
+  {
    "theme": "Ability to set/hardcode a custom UUID from the UI",
    "fr_count": 3,
    "customers": 1,
@@ -4788,7 +4830,7 @@
    "theme": "Fullscreen/ESC key exit conflicts in Viewer",
    "fr_count": 3,
    "customers": 1,
-   "arr": 495000,
+   "arr": 0,
    "top_score": 16,
    "members": [
     {
@@ -4809,8 +4851,8 @@
    "theme": "Include class/experience identifier in deletion reminder email",
    "fr_count": 2,
    "customers": 2,
-   "arr": 1395000,
-   "top_score": 31,
+   "arr": 900000,
+   "top_score": 61,
    "members": [
     {
      "key": "FR-566",
@@ -4894,7 +4936,7 @@
    "theme": "Mass-enable live thumbnail view for all students",
    "fr_count": 2,
    "customers": 2,
-   "arr": 684000,
+   "arr": 189000,
    "top_score": 56,
    "members": [
     {
@@ -4962,7 +5004,7 @@
    "theme": "Native AV session recording",
    "fr_count": 2,
    "customers": 2,
-   "arr": 578067,
+   "arr": 83067,
    "top_score": 31,
    "members": [
     {
@@ -5099,7 +5141,7 @@
    "fr_count": 2,
    "customers": 2,
    "arr": 250000,
-   "top_score": 12,
+   "top_score": 44,
    "members": [
     {
      "key": "FR-320",
@@ -5142,23 +5184,6 @@
     {
      "key": "FR-184",
      "summary": "Removing project member without deleting class"
-    }
-   ]
-  },
-  {
-   "theme": "Virtual TPM (vTPM) support for VMs",
-   "fr_count": 2,
-   "customers": 2,
-   "arr": 116353,
-   "top_score": 54,
-   "members": [
-    {
-     "key": "FR-223",
-     "summary": "Thales - Request for Virtual TPM 2.0 Support"
-    },
-    {
-     "key": "FR-322",
-     "summary": "[Watchguard Technologies] Virtual TPM (vTPM) wi…"
     }
    ]
   },
@@ -5484,43 +5509,69 @@
      "summary": "[Cyberhaven] Disable Clipboard from Viewer sett…"
     }
    ]
+  },
+  {
+   "theme": "Better email control & webhook notification",
+   "fr_count": 2,
+   "customers": 1,
+   "arr": 900000,
+   "top_score": 48,
+   "members": [
+    {
+     "key": "FR-565",
+     "summary": "Better email control and content including webh…"
+    },
+    {
+     "key": "FR-583",
+     "summary": "Better email control and content including webh…"
+    }
+   ]
   }
  ],
  "new_frs": [
   {
+   "key": "FR-583",
+   "summary": "Better email control and content including webhook notification",
+   "customer": "Zscaler",
+   "score": 48,
+   "arr": 900000,
+   "align": "AI & Automation",
+   "created": "2026-10-11"
+  },
+  {
+   "key": "FR-574",
+   "summary": "Dynamic Region Assignment",
+   "customer": "Siemens Healthineers",
+   "score": 31,
+   "arr": 1002540,
+   "align": "Enterprise Readiness",
+   "created": "2026-10-09"
+  },
+  {
    "key": "FR-573",
    "summary": "Latest Ubuntu Desktop",
    "customer": "Keyfactor",
+   "score": 15,
    "arr": 39857,
    "align": "Enterprise Readiness",
-   "score": 15,
    "created": "2026-10-08"
-  },
-  {
-   "key": "FR-572",
-   "summary": "Want access to AMD Evaluation Boards (Hardware)",
-   "customer": "AMD",
-   "arr": 29344,
-   "align": "Enterprise Readiness",
-   "score": 15,
-   "created": "2026-10-06"
   },
   {
    "key": "FR-571",
    "summary": "Show times in the experience overview and table",
    "customer": "Zscaler",
+   "score": 31,
    "arr": 900000,
    "align": "Enterprise Readiness",
-   "score": 31,
    "created": "2026-10-06"
   },
   {
-   "key": "FR-570",
-   "summary": "2 Factor Authentication",
-   "customer": "vArmour",
-   "arr": 71250,
-   "align": "Cyber Vertical",
-   "score": 41,
+   "key": "FR-572",
+   "summary": "Want access to AMD Evaluation Boards (Hardware)",
+   "customer": "AMD",
+   "score": 15,
+   "arr": 29344,
+   "align": "Enterprise Readiness",
    "created": "2026-10-06"
   }
  ],
@@ -5529,10 +5580,9 @@
   {
    "key": "FR-563",
    "summary": "Feature request (details needed)",
-   "customer": null,
-   "arr": null,
-   "align": "Enterprise Readiness",
+   "customer": "—",
    "score": 11,
+   "arr": null,
    "owner": "Eric Bar",
    "started": "2026-09-18",
    "is_new": false
@@ -5541,10 +5591,19 @@
    "key": "FR-553",
    "summary": "Can the MAC address type be static by default?",
    "customer": "Exclusive Networks",
-   "arr": null,
-   "align": "Cyber Vertical",
    "score": 8,
+   "arr": null,
    "owner": "Ofek Ackerman",
+   "started": "2026-09-11",
+   "is_new": false
+  },
+  {
+   "key": "FR-506",
+   "summary": "[Trimble] All students to Live Thumbnail",
+   "customer": "Trimble",
+   "score": 11,
+   "arr": null,
+   "owner": "Eric Bar",
    "started": "2026-09-11",
    "is_new": false
   },
@@ -5552,9 +5611,8 @@
    "key": "FR-426",
    "summary": "Add more levels of Markdown Headers",
    "customer": "Ping Identity (formerly ForgeRock)",
-   "arr": 275000,
-   "align": "Enterprise Readiness",
    "score": 31,
+   "arr": 275000,
    "owner": "Eric Bar",
    "started": "2026-09-11",
    "is_new": false
@@ -5563,20 +5621,8 @@
    "key": "FR-483",
    "summary": "[Ping Identity] Improving AI Checks",
    "customer": "Ping Identity",
-   "arr": null,
-   "align": "AI & Automation",
    "score": 12,
-   "owner": "Eric Bar",
-   "started": "2026-09-11",
-   "is_new": false
-  },
-  {
-   "key": "FR-506",
-   "summary": "[Trimble] All students to Live Thumbnail",
-   "customer": "Trimble",
    "arr": null,
-   "align": "Enterprise Readiness",
-   "score": 11,
    "owner": "Eric Bar",
    "started": "2026-09-11",
    "is_new": false
@@ -5585,9 +5631,8 @@
    "key": "FR-484",
    "summary": "Move Blueprints between subscriptions",
    "customer": "Kaspersky / Exclusive",
-   "arr": null,
-   "align": "Enterprise Readiness",
    "score": 11,
+   "arr": null,
    "owner": "Oleg Ruchlis",
    "started": "2026-09-11",
    "is_new": false
