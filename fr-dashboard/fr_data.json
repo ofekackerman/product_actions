@@ -1,6 +1,6 @@
 {
  "meta": {
-  "week_of": "2026-10-12",
+  "week_of": "2026-10-15",
   "open": 265,
   "arr_total": 69247117,
   "high_count": 26,
@@ -20,7 +20,7 @@
   },
   {
    "key": "FR-523",
-   "summary": "[Exclusive Networks] API to query our data",
+   "summary": "[Exclusive Networks] API to query our data ",
    "customer": "Exclusive Networks",
    "score": 100,
    "arr": 47392,
@@ -1049,7 +1049,7 @@
     },
     {
      "key": "FR-476",
-     "summary": "[Learning Tree] Ability for students (and proj managers) to…",
+     "summary": "[Learning Tree]  Ability for students (and proj managers) t…",
      "customer": "Learning Tree International",
      "score": null,
      "arr": 250000
@@ -1329,7 +1329,7 @@
    "frs": [
     {
      "key": "FR-523",
-     "summary": "[Exclusive Networks] API to query our data",
+     "summary": "[Exclusive Networks] API to query our data ",
      "customer": "Exclusive Networks",
      "score": 100,
      "arr": 47392
@@ -2575,7 +2575,7 @@
    "frs": [
     {
      "key": "FR-514",
-     "summary": "[Ping Identity] [Tyler Tech] Additional Markdown lines",
+     "summary": "[Ping Identity] [Tyler Tech] Additional Markdown lines ",
      "customer": "Tyler Tech",
      "score": 64,
      "arr": null
@@ -4296,7 +4296,7 @@
     },
     {
      "key": "FR-514",
-     "summary": "[Ping Identity] [Tyler Tech] Additional Markdown lines",
+     "summary": "[Ping Identity] [Tyler Tech] Additional Markdown lines ",
      "customer": "Tyler Tech",
      "score": 64,
      "arr": null
@@ -4368,7 +4368,7 @@
     },
     {
      "key": "FR-523",
-     "summary": "[Exclusive Networks] API to query our data",
+     "summary": "[Exclusive Networks] API to query our data ",
      "customer": "Exclusive Networks",
      "score": 100,
      "arr": 47392
@@ -4460,7 +4460,7 @@
    "theme": "Customer-facing audit logs / activity trail",
    "fr_count": 8,
    "customers": 5,
-   "arr": 1148586,
+   "arr": 1149894,
    "top_score": 62,
    "members": [
     {
@@ -4538,7 +4538,7 @@
    "theme": "Assign/move/share blueprints across projects & subscriptions",
    "fr_count": 7,
    "customers": 7,
-   "arr": 1000472,
+   "arr": 1047864,
    "top_score": 61,
    "members": [
     {
@@ -4830,7 +4830,7 @@
    "theme": "Fullscreen/ESC key exit conflicts in Viewer",
    "fr_count": 3,
    "customers": 1,
-   "arr": 0,
+   "arr": 495000,
    "top_score": 16,
    "members": [
     {
@@ -4851,7 +4851,7 @@
    "theme": "Include class/experience identifier in deletion reminder email",
    "fr_count": 2,
    "customers": 2,
-   "arr": 900000,
+   "arr": 1395000,
    "top_score": 61,
    "members": [
     {
@@ -4936,7 +4936,7 @@
    "theme": "Mass-enable live thumbnail view for all students",
    "fr_count": 2,
    "customers": 2,
-   "arr": 189000,
+   "arr": 684000,
    "top_score": 56,
    "members": [
     {
@@ -5004,7 +5004,7 @@
    "theme": "Native AV session recording",
    "fr_count": 2,
    "customers": 2,
-   "arr": 83067,
+   "arr": 578067,
    "top_score": 31,
    "members": [
     {
@@ -5533,46 +5533,28 @@
    "key": "FR-583",
    "summary": "Better email control and content including webhook notification",
    "customer": "Zscaler",
-   "score": 48,
    "arr": 900000,
    "align": "AI & Automation",
+   "score": 48,
    "created": "2026-10-11"
   },
   {
    "key": "FR-574",
    "summary": "Dynamic Region Assignment",
    "customer": "Siemens Healthineers",
-   "score": 31,
    "arr": 1002540,
    "align": "Enterprise Readiness",
+   "score": 31,
    "created": "2026-10-09"
   },
   {
    "key": "FR-573",
    "summary": "Latest Ubuntu Desktop",
    "customer": "Keyfactor",
-   "score": 15,
    "arr": 39857,
    "align": "Enterprise Readiness",
-   "created": "2026-10-08"
-  },
-  {
-   "key": "FR-571",
-   "summary": "Show times in the experience overview and table",
-   "customer": "Zscaler",
-   "score": 31,
-   "arr": 900000,
-   "align": "Enterprise Readiness",
-   "created": "2026-10-06"
-  },
-  {
-   "key": "FR-572",
-   "summary": "Want access to AMD Evaluation Boards (Hardware)",
-   "customer": "AMD",
    "score": 15,
-   "arr": 29344,
-   "align": "Enterprise Readiness",
-   "created": "2026-10-06"
+   "created": "2026-10-08"
   }
  ],
  "completed": [],
@@ -5581,8 +5563,9 @@
    "key": "FR-563",
    "summary": "Feature request (details needed)",
    "customer": "—",
-   "score": 11,
    "arr": null,
+   "align": "Enterprise Readiness",
+   "score": 11,
    "owner": "Eric Bar",
    "started": "2026-09-18",
    "is_new": false
@@ -5591,8 +5574,9 @@
    "key": "FR-553",
    "summary": "Can the MAC address type be static by default?",
    "customer": "Exclusive Networks",
-   "score": 8,
    "arr": null,
+   "align": "Cyber Vertical",
+   "score": 8,
    "owner": "Ofek Ackerman",
    "started": "2026-09-11",
    "is_new": false
@@ -5601,8 +5585,9 @@
    "key": "FR-506",
    "summary": "[Trimble] All students to Live Thumbnail",
    "customer": "Trimble",
-   "score": 11,
    "arr": null,
+   "align": "Enterprise Readiness",
+   "score": 11,
    "owner": "Eric Bar",
    "started": "2026-09-11",
    "is_new": false
@@ -5611,8 +5596,9 @@
    "key": "FR-426",
    "summary": "Add more levels of Markdown Headers",
    "customer": "Ping Identity (formerly ForgeRock)",
-   "score": 31,
    "arr": 275000,
+   "align": "Enterprise Readiness",
+   "score": 31,
    "owner": "Eric Bar",
    "started": "2026-09-11",
    "is_new": false
@@ -5621,8 +5607,9 @@
    "key": "FR-483",
    "summary": "[Ping Identity] Improving AI Checks",
    "customer": "Ping Identity",
-   "score": 12,
    "arr": null,
+   "align": "AI & Automation",
+   "score": 12,
    "owner": "Eric Bar",
    "started": "2026-09-11",
    "is_new": false
@@ -5631,8 +5618,9 @@
    "key": "FR-484",
    "summary": "Move Blueprints between subscriptions",
    "customer": "Kaspersky / Exclusive",
-   "score": 11,
    "arr": null,
+   "align": "Enterprise Readiness",
+   "score": 11,
    "owner": "Oleg Ruchlis",
    "started": "2026-09-11",
    "is_new": false
