@@ -35,6 +35,8 @@ The routine must produce exactly this shape; the renderer and drill-downs depend
     }
 
 Notes:
+- `meta.arr_total` is recomputed by `build_dashboard.py` as the sum of `customers[].arr` (each
+  customer counted once). Never sum ARR across FRs — every FR carries its customer's full ARR.
 - `customers[].frs` and `dist.frs` are the lists shown when a bar is clicked — include them.
 - `clusters` is the semantic grouping (same-underlying-request), independent of `align`.
 - High-score threshold is 60 (`meta.high_threshold`); change in one place if you retune it.

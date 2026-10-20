@@ -139,7 +139,7 @@ Chart.defaults.font.family="Inter, sans-serif";Chart.defaults.color=MUTED;Chart.
 const m=D.meta;
 document.getElementById('subtitle').textContent=`Open feature requests · ${m.open} tickets · week of ${m.week_of}`;
 const kpis=[{lbl:'Open FRs',val:m.open,foot:`${m.scored} scored · ${m.customers} customers`},
-  {lbl:'ARR represented',val:fmtArr(m.arr_total),foot:'across all open FRs'},
+  {lbl:'ARR represented',val:fmtArr(m.arr_total),foot:`unique ARR of ${m.customers} requesting customers`},
   {lbl:`High score (\u2265${m.high_threshold})`,val:m.high_count,foot:'top-priority requests',cls:'high'},
   {lbl:'Churn / near-renewal',val:m.risk_count,foot:'time-sensitive accounts',cls:'risk'}];
 document.getElementById('kpis').innerHTML=kpis.map(k=>`<div class="kpi ${k.cls||''}"><div class="lbl">${k.lbl}</div><div class="val num">${k.val}</div><div class="foot">${k.foot}</div></div>`).join('');

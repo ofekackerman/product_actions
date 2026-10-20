@@ -21,6 +21,12 @@ def main():
     with open(os.path.join(HERE, "template.html"), encoding="utf-8") as f:
         template = f.read()
 
+    # ARR represented = unique customers' ARR, not the sum over FRs. Each FR
+    # carries its customer's full ARR, so summing FRs counts a customer once per
+    # request. Recompute here so the routine's value can't double-count.
+    meta = data.setdefault("meta", {})
+    meta["arr_total"] = sum((c.get("arr") or 0) for c in data.get("customers", []))
+
     payload = json.dumps(data, ensure_ascii=False)
     html = template.replace("__PAYLOAD__", payload)
 
