@@ -2,12 +2,12 @@
  "meta": {
   "week_of": "2026-10-20",
   "open": 266,
-  "arr_total": 14534860,
-  "high_count": 35,
+  "arr_total": 15746460,
+  "high_count": 36,
   "high_threshold": 60,
   "risk_count": 104,
   "scored": 266,
-  "customers": 94
+  "customers": 95
  },
  "top15": [
   {
@@ -28,7 +28,7 @@
   },
   {
    "key": "FR-209",
-   "summary": "Certifications Policies: provide an option to archive the env after so",
+   "summary": "Certifications Policies: provide an option to archive the env after s…",
    "customer": "Genesys",
    "arr": 470007,
    "align": "Enterprise Readiness",
@@ -76,7 +76,7 @@
   },
   {
    "key": "FR-514",
-   "summary": "[Ping Identity] [Tyler Tech] Additional Markdown lines ",
+   "summary": "[Ping Identity] [Tyler Tech] Additional Markdown lines",
    "customer": "Tyler Tech",
    "arr": 321480,
    "align": "Enterprise Readiness",
@@ -108,7 +108,7 @@
   },
   {
    "key": "FR-210",
-   "summary": "Certifications: envs provisioned from non-default snapshot in experien",
+   "summary": "Certifications: envs provisioned from non-default snapshot in experie…",
    "customer": "Genesys",
    "arr": 470007,
    "align": "Enterprise Readiness",
@@ -124,7 +124,7 @@
   },
   {
    "key": "FR-513",
-   "summary": "[Tyler Tech] - ability for Team Managers to upload files to a centrali",
+   "summary": "[Tyler Tech] - ability for Team Managers to upload files to a central…",
    "customer": "Tyler Technologies",
    "arr": 321476,
    "align": "Cyber Vertical",
@@ -195,14 +195,14 @@
     },
     {
      "key": "FR-321",
-     "summary": "Better automation pipeline for image and blueprint creation ",
+     "summary": "Better automation pipeline for image and blueprint creation…",
      "customer": "Infoblox",
      "score": 48,
      "arr": 600000
     },
     {
      "key": "FR-370",
-     "summary": "Ability to set multiple nic from same network without suppor",
+     "summary": "Ability to set multiple nic from same network without suppo…",
      "customer": "Infoblox",
      "score": 46,
      "arr": 600000
@@ -230,7 +230,7 @@
     },
     {
      "key": "FR-456",
-     "summary": "Allow Terraform scripts to use variables based on CloudShare",
+     "summary": "Allow Terraform scripts to use variables based on CloudShar…",
      "customer": "Infoblox",
      "score": 42,
      "arr": 600000
@@ -244,7 +244,7 @@
     },
     {
      "key": "FR-440",
-     "summary": "Customer-Accessible Platform and Provisioning Logs (Real-Tim",
+     "summary": "Customer-Accessible Platform and Provisioning Logs (Real-Ti…",
      "customer": "Infoblox",
      "score": 42,
      "arr": 600000
@@ -258,7 +258,7 @@
     },
     {
      "key": "FR-443",
-     "summary": "Ability to Configure Multiple NICs on the Same Network from ",
+     "summary": "Ability to Configure Multiple NICs on the Same Network from…",
      "customer": "Infoblox",
      "score": 39,
      "arr": 600000
@@ -286,7 +286,7 @@
     },
     {
      "key": "FR-436",
-     "summary": "Per-User Active Environment Limit Across LTI Experiences per",
+     "summary": "Per-User Active Environment Limit Across LTI Experiences pe…",
      "customer": "Infoblox",
      "score": 37,
      "arr": 600000
@@ -307,7 +307,7 @@
     },
     {
      "key": "FR-439",
-     "summary": "Support Seamless LTI Launch for Existing CloudShare Project ",
+     "summary": "Support Seamless LTI Launch for Existing CloudShare Project…",
      "customer": "Infoblox",
      "score": 32,
      "arr": 600000
@@ -349,7 +349,7 @@
     },
     {
      "key": "FR-445",
-     "summary": "VM Password Policy Toggle (Weak Password Support for Interna",
+     "summary": "VM Password Policy Toggle (Weak Password Support for Intern…",
      "customer": "Infoblox",
      "score": 31,
      "arr": 600000
@@ -363,7 +363,7 @@
     },
     {
      "key": "FR-435",
-     "summary": "Expose Customer-Accessible Audit Logs for Lab Environment Ac",
+     "summary": "Expose Customer-Accessible Audit Logs for Lab Environment A…",
      "customer": "Infoblox",
      "score": 31,
      "arr": 600000
@@ -454,7 +454,7 @@
     },
     {
      "key": "FR-496",
-     "summary": "[Trimble] Saving Class Appearance Customizations to a snapsh",
+     "summary": "[Trimble] Saving Class Appearance Customizations to a snaps…",
      "customer": "Trimble",
      "score": 48,
      "arr": 495000
@@ -482,7 +482,7 @@
     },
     {
      "key": "FR-464",
-     "summary": "Backend: Sometime, environments created froma snapshot show ",
+     "summary": "Backend: Sometime, environments created froma snapshot show…",
      "customer": "Trimble",
      "score": 39,
      "arr": 495000
@@ -524,7 +524,7 @@
     },
     {
      "key": "FR-513",
-     "summary": "[Tyler Tech] - ability for Team Managers to upload files to ",
+     "summary": "[Tyler Tech] - ability for Team Managers to upload files to…",
      "customer": "Tyler Technologies",
      "score": 64,
      "arr": 321476
@@ -538,7 +538,7 @@
     },
     {
      "key": "FR-187",
-     "summary": "Ability to move resources around between directories or proj",
+     "summary": "Ability to move resources around between directories or pro…",
      "customer": "Tyler Technologies",
      "score": 64,
      "arr": 321480
@@ -552,14 +552,14 @@
     },
     {
      "key": "FR-498",
-     "summary": "[Tyler Tech] [Guided Journeys] - Links in Guided Journey(s) ",
+     "summary": "[Tyler Tech] [Guided Journeys] - Links in Guided Journey(s)…",
      "customer": "Tyler Technologies",
      "score": 40,
      "arr": 321480
     },
     {
      "key": "FR-461",
-     "summary": "[Tyler Tech] - Enhanced pace-control options for admins and ",
+     "summary": "[Tyler Tech] - Enhanced pace-control options for admins and…",
      "customer": "Tyler Technologies",
      "score": 37,
      "arr": 321480
@@ -580,35 +580,35 @@
     },
     {
      "key": "FR-526",
-     "summary": "[Tyler Tech] [Guided Journeys] - Multiple AI Checks & Contro",
+     "summary": "[Tyler Tech] [Guided Journeys] - Multiple AI Checks & Contr…",
      "customer": "Tyler Technologies",
      "score": 22,
      "arr": 321480
     },
     {
      "key": "FR-527",
-     "summary": "[Tyler Tech] [Guided Journeys] - Customizable Chapter/Sectio",
+     "summary": "[Tyler Tech] [Guided Journeys] - Customizable Chapter/Secti…",
      "customer": "Tyler Technologies",
      "score": 21,
      "arr": 321480
     },
     {
      "key": "FR-525",
-     "summary": "[Tyler Tech] [Guided Journeys] - Restore Instructor Console ",
+     "summary": "[Tyler Tech] [Guided Journeys] - Restore Instructor Console…",
      "customer": "Tyler Technologies",
      "score": 20,
      "arr": 321480
     },
     {
      "key": "FR-499",
-     "summary": "[Tyler Tech] [Guided Journeys] - Import AI Checks with Markd",
+     "summary": "[Tyler Tech] [Guided Journeys] - Import AI Checks with Mark…",
      "customer": "Tyler Technologies",
      "score": 7,
      "arr": 321480
     },
     {
      "key": "FR-500",
-     "summary": "[Tyler Tech] [Guided Journeys] - Option to Set Default Estim",
+     "summary": "[Tyler Tech] [Guided Journeys] - Option to Set Default Esti…",
      "customer": "Tyler Technologies",
      "score": 6,
      "arr": 321480
@@ -629,7 +629,7 @@
     },
     {
      "key": "FR-583",
-     "summary": "Better email control and content including webhook notificat",
+     "summary": "Better email control and content including webhook notifica…",
      "customer": "Zscaler",
      "score": 48,
      "arr": 900000
@@ -657,7 +657,7 @@
     },
     {
      "key": "FR-565",
-     "summary": "Better email control and content including webhook notificat",
+     "summary": "Better email control and content including webhook notifica…",
      "customer": "Zscaler",
      "score": 31,
      "arr": 900000
@@ -671,14 +671,14 @@
     },
     {
      "key": "FR-554",
-     "summary": "Ability to snapshot and provision an env with a VM powered o",
+     "summary": "Ability to snapshot and provision an env with a VM powered…",
      "customer": "Zscaler",
      "score": 31,
      "arr": 900000
     },
     {
      "key": "FR-552",
-     "summary": "Dynamic MAC: Build a proper feature to provision unique MAC ",
+     "summary": "Dynamic MAC: Build a proper feature to provision unique MAC…",
      "customer": "Zscaler",
      "score": 31,
      "arr": 900000
@@ -713,14 +713,14 @@
     },
     {
      "key": "FR-308",
-     "summary": "RBAC permission for assigned blueprints to stop snapshotting",
+     "summary": "RBAC permission for assigned blueprints to stop snapshottin…",
      "customer": "Exclusive Networks - France",
      "score": 36,
      "arr": 565500
     },
     {
      "key": "FR-358",
-     "summary": "Networking: improve ability to handle more segmented network",
+     "summary": "Networking: improve ability to handle more segmented networ…",
      "customer": "Exclusive Networks - France",
      "score": 33,
      "arr": 565500
@@ -741,14 +741,14 @@
     },
     {
      "key": "FR-341",
-     "summary": "Dashboard/reports: Better dashboards showing project member ",
+     "summary": "Dashboard/reports: Better dashboards showing project member…",
      "customer": "Exclusive Networks - France",
      "score": 31,
      "arr": 565500
     },
     {
      "key": "FR-339",
-     "summary": "Ability to snapshot and provision an env with a VM powered o",
+     "summary": "Ability to snapshot and provision an env with a VM powered…",
      "customer": "Exclusive Networks - France",
      "score": 31,
      "arr": 565500
@@ -888,28 +888,28 @@
    "frs": [
     {
      "key": "FR-198",
-     "summary": "Automatically remove students from the student list after a ",
+     "summary": "Automatically remove students from the student list after a…",
      "customer": "AlgoSec - Training",
      "score": 56,
      "arr": 220320
     },
     {
      "key": "FR-378",
-     "summary": "High Priority - Improve the performance of copying snapshots",
+     "summary": "High Priority - Improve the performance of copying snapshot…",
      "customer": "AlgoSec - Training",
      "score": 33,
      "arr": 220320
     },
     {
      "key": "FR-361",
-     "summary": "Networking: improve ability to handle more segmented network",
+     "summary": "Networking: improve ability to handle more segmented networ…",
      "customer": "AlgoSec - Training",
      "score": 33,
      "arr": 220320
     },
     {
      "key": "FR-407",
-     "summary": "Add Instructor Console Support Ticket Submission and Trackin",
+     "summary": "Add Instructor Console Support Ticket Submission and Tracki…",
      "customer": "AlgoSec - Training",
      "score": 31,
      "arr": 220320
@@ -986,21 +986,21 @@
    "frs": [
     {
      "key": "FR-209",
-     "summary": "Certifications Policies: provide an option to archive the en",
+     "summary": "Certifications Policies: provide an option to archive the e…",
      "customer": "Genesys",
      "score": 74,
      "arr": 470007
     },
     {
      "key": "FR-210",
-     "summary": "Certifications: envs provisioned from non-default snapshot i",
+     "summary": "Certifications: envs provisioned from non-default snapshot…",
      "customer": "Genesys",
      "score": 68,
      "arr": 470007
     },
     {
      "key": "FR-217",
-     "summary": "Pre-configured environments: select all users rather than in",
+     "summary": "Pre-configured environments: select all users rather than i…",
      "customer": "Genesys",
      "score": 54,
      "arr": 470007
@@ -1084,7 +1084,7 @@
     },
     {
      "key": "FR-476",
-     "summary": "[Learning Tree]  Ability for students (and proj managers) to",
+     "summary": "[Learning Tree]  Ability for students (and proj managers) t…",
      "customer": "Learning Tree International",
      "score": 39,
      "arr": 250000
@@ -1098,7 +1098,7 @@
     },
     {
      "key": "FR-508",
-     "summary": "[Learning Tree] - Pre-configured Environments - pre-configur",
+     "summary": "[Learning Tree] - Pre-configured Environments - pre-configu…",
      "customer": "Learning Tree International",
      "score": 6,
      "arr": 250000
@@ -1154,14 +1154,14 @@
    "frs": [
     {
      "key": "FR-562",
-     "summary": "Unify support documentation & tix visibility across Classic ",
+     "summary": "Unify support documentation & tix visibility across Classic…",
      "customer": "Platform9",
      "score": 31,
      "arr": 50400
     },
     {
      "key": "FR-561",
-     "summary": "Enable fully automated build, maintenance, and deployment of",
+     "summary": "Enable fully automated build, maintenance, and deployment o…",
      "customer": "Platform9",
      "score": 31,
      "arr": 50400
@@ -1182,7 +1182,7 @@
     },
     {
      "key": "FR-558",
-     "summary": "Navigating to and between Integration Hub pages & Workato is",
+     "summary": "Navigating to and between Integration Hub pages & Workato i…",
      "customer": "Platform9",
      "score": 31,
      "arr": 50400
@@ -1196,7 +1196,7 @@
    "frs": [
     {
      "key": "FR-200",
-     "summary": "[Watchguard Technologies] Set Determined Customized Password",
+     "summary": "[Watchguard Technologies] Set Determined Customized Passwor…",
      "customer": "Watchguard Technologies, Inc.",
      "score": 46,
      "arr": 33286
@@ -1224,7 +1224,7 @@
     },
     {
      "key": "FR-455",
-     "summary": "Instructor-controlled \"Hide/Show\" option (\"instructor lock\")",
+     "summary": "Instructor-controlled \"Hide/Show\" option (\"instructor lock\"…",
      "customer": "Watchguard Technologies, Inc.",
      "score": 12,
      "arr": 33286
@@ -1238,14 +1238,14 @@
    "frs": [
     {
      "key": "FR-337",
-     "summary": "Ability to snapshot and provision an env with a VM powered o",
+     "summary": "Ability to snapshot and provision an env with a VM powered…",
      "customer": "Kaspersky Combined",
      "score": 51,
      "arr": 650000
     },
     {
      "key": "FR-342",
-     "summary": "Dashboard/reports: Better dashboards showing project member ",
+     "summary": "Dashboard/reports: Better dashboards showing project member…",
      "customer": "Kaspersky Combined",
      "score": 34,
      "arr": 650000
@@ -1259,7 +1259,7 @@
     },
     {
      "key": "FR-347",
-     "summary": "Enable customers to \"Assign\" blueprints across projects in d",
+     "summary": "Enable customers to \"Assign\" blueprints across projects in…",
      "customer": "Kaspersky Combined",
      "score": 31,
      "arr": 650000
@@ -1308,7 +1308,7 @@
    "frs": [
     {
      "key": "FR-169",
-     "summary": "Analytic dash/report: Show who started an env between date a",
+     "summary": "Analytic dash/report: Show who started an env between date…",
      "customer": "Thales",
      "score": 56,
      "arr": 83067
@@ -1322,7 +1322,7 @@
     },
     {
      "key": "FR-173",
-     "summary": "Analytic dash/report: Show BP/env started by specific users ",
+     "summary": "Analytic dash/report: Show BP/env started by specific users…",
      "customer": "Thales",
      "score": 54,
      "arr": 83067
@@ -1357,14 +1357,14 @@
     },
     {
      "key": "FR-523",
-     "summary": "[Exclusive Networks] API to query our data ",
+     "summary": "[Exclusive Networks] API to query our data",
      "customer": "Exclusive Networks",
      "score": 41,
      "arr": 47392
     },
     {
      "key": "FR-505",
-     "summary": "[Exclusive Networks, Kaspersky FR] Blueprints can be shared ",
+     "summary": "[Exclusive Networks, Kaspersky FR] Blueprints can be shared…",
      "customer": "Exclusive Networks",
      "score": 13,
      "arr": 47392
@@ -1378,28 +1378,28 @@
    "frs": [
     {
      "key": "FR-375",
-     "summary": "High Priority - Improve the performance of copying snapshots",
+     "summary": "High Priority - Improve the performance of copying snapshot…",
      "customer": "Check Point Software - TAC PS",
      "score": 32,
      "arr": 35880
     },
     {
      "key": "FR-376",
-     "summary": "High Priority - Improve the performance of copying snapshots",
+     "summary": "High Priority - Improve the performance of copying snapshot…",
      "customer": "Check Point Software - TAC PS",
      "score": 31,
      "arr": 35880
     },
     {
      "key": "FR-338",
-     "summary": "Ability to snapshot and provision an env with a VM powered o",
+     "summary": "Ability to snapshot and provision an env with a VM powered…",
      "customer": "Check Point Software - TAC PS",
      "score": 31,
      "arr": 35880
     },
     {
      "key": "FR-348",
-     "summary": "Enable customers to \"Assign\" blueprints across projects in d",
+     "summary": "Enable customers to \"Assign\" blueprints across projects in…",
      "customer": "Check Point Software - TAC PS",
      "score": 16,
      "arr": 35880
@@ -1413,7 +1413,7 @@
    "frs": [
     {
      "key": "FR-216",
-     "summary": "Allow End-User Invitations from Non-Default Blueprint Snapsh",
+     "summary": "Allow End-User Invitations from Non-Default Blueprint Snaps…",
      "customer": "Check Point Software - Combined",
      "score": 74,
      "arr": 490000
@@ -1469,7 +1469,7 @@
    "frs": [
     {
      "key": "FR-168",
-     "summary": "API: Migrition ID mapping endpoint from Classic to Accelerat",
+     "summary": "API: Migrition ID mapping endpoint from Classic to Accelera…",
      "customer": "Ping Identity (formerly ForgeRock)",
      "score": 48,
      "arr": 275000
@@ -1483,7 +1483,7 @@
     },
     {
      "key": "FR-457",
-     "summary": "Individual user snapshots for roll back and progress checkin",
+     "summary": "Individual user snapshots for roll back and progress checki…",
      "customer": "Ping Identity (formerly ForgeRock)",
      "score": 26,
      "arr": 275000
@@ -1504,7 +1504,7 @@
     },
     {
      "key": "FR-323",
-     "summary": "Duplicate blueprint(s) from bp list without opening environm",
+     "summary": "Duplicate blueprint(s) from bp list without opening environ…",
      "customer": "Infios (Koerber Supply Chain)",
      "score": 38,
      "arr": 183600
@@ -1532,7 +1532,7 @@
     },
     {
      "key": "FR-425",
-     "summary": "Notifications on Experience list for assist me requests or n",
+     "summary": "Notifications on Experience list for assist me requests or…",
      "customer": "BWise B.V. (SAI360)",
      "score": 21,
      "arr": 64440
@@ -1581,7 +1581,7 @@
    "frs": [
     {
      "key": "FR-497",
-     "summary": "When an end user logs out of CloudShare, the runtime timer o",
+     "summary": "When an end user logs out of CloudShare, the runtime timer…",
      "customer": "City & Guilds",
      "score": 35,
      "arr": 43932
@@ -1616,7 +1616,7 @@
     },
     {
      "key": "FR-389",
-     "summary": "[MCCi] Include environments/VM's shared with a user in their",
+     "summary": "[MCCi] Include environments/VM's shared with a user in thei…",
      "customer": "MCCi",
      "score": 14,
      "arr": 42228
@@ -1644,7 +1644,7 @@
     },
     {
      "key": "FR-180",
-     "summary": "Logs: allow tenant logs to be seen and sent to a customers o",
+     "summary": "Logs: allow tenant logs to be seen and sent to a customers…",
      "customer": "Darktrace",
      "score": 41,
      "arr": 37068
@@ -1665,21 +1665,21 @@
    "frs": [
     {
      "key": "FR-316",
-     "summary": "Better automation pipeline for internal infrastructure deplo",
+     "summary": "Better automation pipeline for internal infrastructure depl…",
      "customer": "Cribl",
      "score": 50,
      "arr": 12000
     },
     {
      "key": "FR-170",
-     "summary": "RBAC permission for assigned blueprints to stop snapshotting",
+     "summary": "RBAC permission for assigned blueprints to stop snapshottin…",
      "customer": "Cribl",
      "score": 44,
      "arr": 12000
     },
     {
      "key": "FR-315",
-     "summary": "Better automation pipeline for image and blueprint creation ",
+     "summary": "Better automation pipeline for image and blueprint creation…",
      "customer": "Cribl",
      "score": 41,
      "arr": 12000
@@ -1693,14 +1693,14 @@
    "frs": [
     {
      "key": "FR-166",
-     "summary": "Enable customers to \"Assign\" blueprints across projects in d",
+     "summary": "Enable customers to \"Assign\" blueprints across projects in…",
      "customer": "Deltek Consulting",
      "score": 61,
      "arr": 90720
     },
     {
      "key": "FR-318",
-     "summary": "RBAC permission for assigned blueprints to stop snapshotting",
+     "summary": "RBAC permission for assigned blueprints to stop snapshottin…",
      "customer": "Deltek Consulting",
      "score": 48,
      "arr": 90720
@@ -1735,7 +1735,7 @@
    "frs": [
     {
      "key": "FR-480",
-     "summary": "[Nozomi] Enable sharing a web access links for a VM even whe",
+     "summary": "[Nozomi] Enable sharing a web access links for a VM even wh…",
      "customer": "Nozomi",
      "score": 48,
      "arr": 72900
@@ -1756,14 +1756,14 @@
    "frs": [
     {
      "key": "FR-324",
-     "summary": "Ability to snapshot and provision an env with a VM powered o",
+     "summary": "Ability to snapshot and provision an env with a VM powered…",
      "customer": "Nozomi Networks",
      "score": 31,
      "arr": 72900
     },
     {
      "key": "FR-448",
-     "summary": "Enable sharing a web access links for a VM even when it's hi",
+     "summary": "Enable sharing a web access links for a VM even when it's h…",
      "customer": "Nozomi Networks",
      "score": 22,
      "arr": 72900
@@ -1777,7 +1777,7 @@
    "frs": [
     {
      "key": "FR-336",
-     "summary": "Ability to snapshot and provision an env with a VM powered o",
+     "summary": "Ability to snapshot and provision an env with a VM powered…",
      "customer": "Kaspersky - Support Team",
      "score": 31,
      "arr": 56517
@@ -1819,7 +1819,7 @@
    "frs": [
     {
      "key": "FR-317",
-     "summary": "RBAC permission for assigned blueprints to stop snapshotting",
+     "summary": "RBAC permission for assigned blueprints to stop snapshottin…",
      "customer": "HYPR Corp",
      "score": 36,
      "arr": 29007
@@ -1840,7 +1840,7 @@
    "frs": [
     {
      "key": "FR-329",
-     "summary": "Provide licensing to AI models like we do with Microsoft pro",
+     "summary": "Provide licensing to AI models like we do with Microsoft pr…",
      "customer": "Georgia Tech",
      "score": 28,
      "arr": 20688
@@ -1868,31 +1868,10 @@
     },
     {
      "key": "FR-190",
-     "summary": "[HID Global] API Enhancement: Swagger and better documentati",
+     "summary": "[HID Global] API Enhancement: Swagger and better documentat…",
      "customer": "HID Global Corporation",
      "score": 51,
      "arr": 19200
-    }
-   ]
-  },
-  {
-   "customer": "Unknown",
-   "count": 2,
-   "arr": 0,
-   "frs": [
-    {
-     "key": "FR-563",
-     "summary": "Feature request (details needed)",
-     "customer": "Unknown",
-     "score": 11,
-     "arr": null
-    },
-    {
-     "key": "FR-528",
-     "summary": "New Instructor Console: there seems to be no way to extend a",
-     "customer": "Unknown",
-     "score": 6,
-     "arr": null
     }
    ]
   },
@@ -1911,6 +1890,20 @@
    ]
   },
   {
+   "customer": "Kaspersky / Exclusive",
+   "count": 1,
+   "arr": 650000,
+   "frs": [
+    {
+     "key": "FR-484",
+     "summary": "Move Blueprints between subscriptions",
+     "customer": "Kaspersky / Exclusive",
+     "score": 53,
+     "arr": 650000
+    }
+   ]
+  },
+  {
    "customer": "Palo Alto Networks",
    "count": 1,
    "arr": 569200,
@@ -1921,6 +1914,20 @@
      "customer": "Palo Alto Networks",
      "score": 48,
      "arr": 569200
+    }
+   ]
+  },
+  {
+   "customer": "One Identity",
+   "count": 1,
+   "arr": 561600,
+   "frs": [
+    {
+     "key": "FR-563",
+     "summary": "Feature request (details needed)",
+     "customer": "One Identity",
+     "score": 60,
+     "arr": 561600
     }
    ]
   },
@@ -1945,7 +1952,7 @@
    "frs": [
     {
      "key": "FR-514",
-     "summary": "[Ping Identity] [Tyler Tech] Additional Markdown lines ",
+     "summary": "[Ping Identity] [Tyler Tech] Additional Markdown lines",
      "customer": "Tyler Tech",
      "score": 72,
      "arr": 321480
@@ -2043,7 +2050,7 @@
    "frs": [
     {
      "key": "FR-346",
-     "summary": "Enable customers to \"Assign\" blueprints across projects in d",
+     "summary": "Enable customers to \"Assign\" blueprints across projects in…",
      "customer": "Check Point Software - Architects (Combined)",
      "score": 31,
      "arr": 133152
@@ -2085,7 +2092,7 @@
    "frs": [
     {
      "key": "FR-541",
-     "summary": "[Cotiviti] Feature to ensure \"key\" envs are never irrecovera",
+     "summary": "[Cotiviti] Feature to ensure \"key\" envs are never irrecover…",
      "customer": "Cotiviti (Edifecs)",
      "score": 31,
      "arr": 104400
@@ -2099,7 +2106,7 @@
    "frs": [
     {
      "key": "FR-319",
-     "summary": "An ability to create a pool of FQDNs that can be used for VM",
+     "summary": "An ability to create a pool of FQDNs that can be used for V…",
      "customer": "Procede Software",
      "score": 59,
      "arr": 103320
@@ -2113,7 +2120,7 @@
    "frs": [
     {
      "key": "FR-470",
-     "summary": "[Deltek] Enable customers to \"Assign\" blueprints across proj",
+     "summary": "[Deltek] Enable customers to \"Assign\" blueprints across pro…",
      "customer": "Deltek",
      "score": 53,
      "arr": 90720
@@ -2225,7 +2232,7 @@
    "frs": [
     {
      "key": "FR-377",
-     "summary": "High Priority - Improve the performance of copying snapshots",
+     "summary": "High Priority - Improve the performance of copying snapshot…",
      "customer": "AlgoSec - SE",
      "score": 34,
      "arr": 59017
@@ -2379,7 +2386,7 @@
    "frs": [
     {
      "key": "FR-353",
-     "summary": "High Priority - Improve the performance of copying snapshots",
+     "summary": "High Priority - Improve the performance of copying snapshot…",
      "customer": "Wolters Kluwer",
      "score": 22,
      "arr": 25920
@@ -2407,7 +2414,7 @@
    "frs": [
     {
      "key": "FR-542",
-     "summary": "Allow Team Memebers / Managers to be in Multiple Teams (+2 m",
+     "summary": "Allow Team Memebers / Managers to be in Multiple Teams (+2…",
      "customer": "Siemens (VarianThink)",
      "score": 15,
      "arr": 21264
@@ -2421,7 +2428,7 @@
    "frs": [
     {
      "key": "FR-471",
-     "summary": "[HID Global] create banner, accept terms page prior to enter",
+     "summary": "[HID Global] create banner, accept terms page prior to ente…",
      "customer": "HID Global",
      "score": 57,
      "arr": 19200
@@ -2491,7 +2498,7 @@
    "frs": [
     {
      "key": "FR-405",
-     "summary": "Ability to view other instructor's VMs as thumbnail in the c",
+     "summary": "Ability to view other instructor's VMs as thumbnail in the…",
      "customer": "ConEst Software",
      "score": 18,
      "arr": 14627
@@ -2523,6 +2530,20 @@
      "customer": "CloudShare (Internal)",
      "score": 15,
      "arr": 0
+    }
+   ]
+  },
+  {
+   "customer": "Unknown",
+   "count": 1,
+   "arr": 0,
+   "frs": [
+    {
+     "key": "FR-528",
+     "summary": "New Instructor Console: there seems to be no way to extend…",
+     "customer": "Unknown",
+     "score": 6,
+     "arr": null
     }
    ]
   },
@@ -2583,27 +2604,13 @@
    ]
   },
   {
-   "customer": "Kaspersky / Exclusive",
-   "count": 1,
-   "arr": 0,
-   "frs": [
-    {
-     "key": "FR-484",
-     "summary": "Move Blueprints between subscriptions",
-     "customer": "Kaspersky / Exclusive",
-     "score": 11,
-     "arr": null
-    }
-   ]
-  },
-  {
    "customer": "Kaspersky, Exclusive Networks, CheckPoint, Infoblox, Edifecs",
    "count": 1,
    "arr": 0,
    "frs": [
     {
      "key": "FR-468",
-     "summary": "Increasing self service CPU from 4 to 8 or 16 - decision fol",
+     "summary": "Increasing self service CPU from 4 to 8 or 16 - decision fo…",
      "customer": "Kaspersky, Exclusive Networks, CheckPoint, Infoblox, Edifecs",
      "score": 18,
      "arr": null
@@ -2617,7 +2624,7 @@
    "frs": [
     {
      "key": "FR-463",
-     "summary": "[Omnicell] [Cotiviti] [Infios] Productise Private APIs for V",
+     "summary": "[Omnicell] [Cotiviti] [Infios] Productise Private APIs for…",
      "customer": "Omnicell, Cotiviti, Infios, Procede ",
      "score": 14,
      "arr": null
@@ -2664,12 +2671,12 @@
    "70+"
   ],
   "counts": [
-   39,
+   37,
    31,
    96,
    51,
-   14,
-   23,
+   15,
+   24,
    12
   ],
   "frs": [
@@ -2683,7 +2690,7 @@
     },
     {
      "key": "FR-468",
-     "summary": "Increasing self service CPU from 4 to 8 or 16 - decision fol",
+     "summary": "Increasing self service CPU from 4 to 8 or 16 - decision fo…",
      "customer": "Kaspersky, Exclusive Networks, CheckPoint, Infoblox, Edifecs",
      "score": 18,
      "arr": null
@@ -2697,7 +2704,7 @@
     },
     {
      "key": "FR-405",
-     "summary": "Ability to view other instructor's VMs as thumbnail in the c",
+     "summary": "Ability to view other instructor's VMs as thumbnail in the…",
      "customer": "ConEst Software",
      "score": 18,
      "arr": 14627
@@ -2718,7 +2725,7 @@
     },
     {
      "key": "FR-348",
-     "summary": "Enable customers to \"Assign\" blueprints across projects in d",
+     "summary": "Enable customers to \"Assign\" blueprints across projects in…",
      "customer": "Check Point Software - TAC PS",
      "score": 16,
      "arr": 35880
@@ -2753,7 +2760,7 @@
     },
     {
      "key": "FR-542",
-     "summary": "Allow Team Memebers / Managers to be in Multiple Teams (+2 m",
+     "summary": "Allow Team Memebers / Managers to be in Multiple Teams (+2…",
      "customer": "Siemens (VarianThink)",
      "score": 15,
      "arr": 21264
@@ -2781,7 +2788,7 @@
     },
     {
      "key": "FR-463",
-     "summary": "[Omnicell] [Cotiviti] [Infios] Productise Private APIs for V",
+     "summary": "[Omnicell] [Cotiviti] [Infios] Productise Private APIs for…",
      "customer": "Omnicell, Cotiviti, Infios, Procede ",
      "score": 14,
      "arr": null
@@ -2795,7 +2802,7 @@
     },
     {
      "key": "FR-389",
-     "summary": "[MCCi] Include environments/VM's shared with a user in their",
+     "summary": "[MCCi] Include environments/VM's shared with a user in thei…",
      "customer": "MCCi",
      "score": 14,
      "arr": 42228
@@ -2816,7 +2823,7 @@
     },
     {
      "key": "FR-505",
-     "summary": "[Exclusive Networks, Kaspersky FR] Blueprints can be shared ",
+     "summary": "[Exclusive Networks, Kaspersky FR] Blueprints can be shared…",
      "customer": "Exclusive Networks",
      "score": 13,
      "arr": 47392
@@ -2858,7 +2865,7 @@
     },
     {
      "key": "FR-455",
-     "summary": "Instructor-controlled \"Hide/Show\" option (\"instructor lock\")",
+     "summary": "Instructor-controlled \"Hide/Show\" option (\"instructor lock\"…",
      "customer": "Watchguard Technologies, Inc.",
      "score": 12,
      "arr": 33286
@@ -2871,25 +2878,11 @@
      "arr": 0
     },
     {
-     "key": "FR-563",
-     "summary": "Feature request (details needed)",
-     "customer": null,
-     "score": 11,
-     "arr": null
-    },
-    {
      "key": "FR-491",
      "summary": "[Revalize] Custom Email Improvements",
      "customer": "Revalize",
      "score": 11,
      "arr": 15360
-    },
-    {
-     "key": "FR-484",
-     "summary": "Move Blueprints between subscriptions",
-     "customer": "Kaspersky / Exclusive",
-     "score": 11,
-     "arr": null
     },
     {
      "key": "FR-390",
@@ -2921,28 +2914,28 @@
     },
     {
      "key": "FR-499",
-     "summary": "[Tyler Tech] [Guided Journeys] - Import AI Checks with Markd",
+     "summary": "[Tyler Tech] [Guided Journeys] - Import AI Checks with Mark…",
      "customer": "Tyler Technologies",
      "score": 7,
      "arr": 321480
     },
     {
      "key": "FR-528",
-     "summary": "New Instructor Console: there seems to be no way to extend a",
-     "customer": null,
+     "summary": "New Instructor Console: there seems to be no way to extend…",
+     "customer": "Unknown",
      "score": 6,
      "arr": null
     },
     {
      "key": "FR-508",
-     "summary": "[Learning Tree] - Pre-configured Environments - pre-configur",
+     "summary": "[Learning Tree] - Pre-configured Environments - pre-configu…",
      "customer": "Learning Tree International",
      "score": 6,
      "arr": 250000
     },
     {
      "key": "FR-500",
-     "summary": "[Tyler Tech] [Guided Journeys] - Option to Set Default Estim",
+     "summary": "[Tyler Tech] [Guided Journeys] - Option to Set Default Esti…",
      "customer": "Tyler Technologies",
      "score": 6,
      "arr": 321480
@@ -2965,7 +2958,7 @@
     },
     {
      "key": "FR-329",
-     "summary": "Provide licensing to AI models like we do with Microsoft pro",
+     "summary": "Provide licensing to AI models like we do with Microsoft pr…",
      "customer": "Georgia Tech",
      "score": 28,
      "arr": 20688
@@ -3000,7 +2993,7 @@
     },
     {
      "key": "FR-457",
-     "summary": "Individual user snapshots for roll back and progress checkin",
+     "summary": "Individual user snapshots for roll back and progress checki…",
      "customer": "Ping Identity (formerly ForgeRock)",
      "score": 26,
      "arr": 275000
@@ -3049,7 +3042,7 @@
     },
     {
      "key": "FR-526",
-     "summary": "[Tyler Tech] [Guided Journeys] - Multiple AI Checks & Contro",
+     "summary": "[Tyler Tech] [Guided Journeys] - Multiple AI Checks & Contr…",
      "customer": "Tyler Technologies",
      "score": 22,
      "arr": 321480
@@ -3063,7 +3056,7 @@
     },
     {
      "key": "FR-448",
-     "summary": "Enable sharing a web access links for a VM even when it's hi",
+     "summary": "Enable sharing a web access links for a VM even when it's h…",
      "customer": "Nozomi Networks",
      "score": 22,
      "arr": 72900
@@ -3084,14 +3077,14 @@
     },
     {
      "key": "FR-353",
-     "summary": "High Priority - Improve the performance of copying snapshots",
+     "summary": "High Priority - Improve the performance of copying snapshot…",
      "customer": "Wolters Kluwer",
      "score": 22,
      "arr": 25920
     },
     {
      "key": "FR-527",
-     "summary": "[Tyler Tech] [Guided Journeys] - Customizable Chapter/Sectio",
+     "summary": "[Tyler Tech] [Guided Journeys] - Customizable Chapter/Secti…",
      "customer": "Tyler Technologies",
      "score": 21,
      "arr": 321480
@@ -3119,7 +3112,7 @@
     },
     {
      "key": "FR-425",
-     "summary": "Notifications on Experience list for assist me requests or n",
+     "summary": "Notifications on Experience list for assist me requests or…",
      "customer": "BWise B.V. (SAI360)",
      "score": 21,
      "arr": 64440
@@ -3140,7 +3133,7 @@
     },
     {
      "key": "FR-525",
-     "summary": "[Tyler Tech] [Guided Journeys] - Restore Instructor Console ",
+     "summary": "[Tyler Tech] [Guided Journeys] - Restore Instructor Console…",
      "customer": "Tyler Technologies",
      "score": 20,
      "arr": 321480
@@ -3170,7 +3163,7 @@
    [
     {
      "key": "FR-476",
-     "summary": "[Learning Tree]  Ability for students (and proj managers) to",
+     "summary": "[Learning Tree]  Ability for students (and proj managers) t…",
      "customer": "Learning Tree International",
      "score": 39,
      "arr": 250000
@@ -3191,14 +3184,14 @@
     },
     {
      "key": "FR-464",
-     "summary": "Backend: Sometime, environments created froma snapshot show ",
+     "summary": "Backend: Sometime, environments created froma snapshot show…",
      "customer": "Trimble",
      "score": 39,
      "arr": 495000
     },
     {
      "key": "FR-443",
-     "summary": "Ability to Configure Multiple NICs on the Same Network from ",
+     "summary": "Ability to Configure Multiple NICs on the Same Network from…",
      "customer": "Infoblox",
      "score": 39,
      "arr": 600000
@@ -3226,7 +3219,7 @@
     },
     {
      "key": "FR-323",
-     "summary": "Duplicate blueprint(s) from bp list without opening environm",
+     "summary": "Duplicate blueprint(s) from bp list without opening environ…",
      "customer": "Infios (Koerber Supply Chain)",
      "score": 38,
      "arr": 183600
@@ -3247,28 +3240,28 @@
     },
     {
      "key": "FR-461",
-     "summary": "[Tyler Tech] - Enhanced pace-control options for admins and ",
+     "summary": "[Tyler Tech] - Enhanced pace-control options for admins and…",
      "customer": "Tyler Technologies",
      "score": 37,
      "arr": 321480
     },
     {
      "key": "FR-436",
-     "summary": "Per-User Active Environment Limit Across LTI Experiences per",
+     "summary": "Per-User Active Environment Limit Across LTI Experiences pe…",
      "customer": "Infoblox",
      "score": 37,
      "arr": 600000
     },
     {
      "key": "FR-317",
-     "summary": "RBAC permission for assigned blueprints to stop snapshotting",
+     "summary": "RBAC permission for assigned blueprints to stop snapshottin…",
      "customer": "HYPR Corp",
      "score": 36,
      "arr": 29007
     },
     {
      "key": "FR-308",
-     "summary": "RBAC permission for assigned blueprints to stop snapshotting",
+     "summary": "RBAC permission for assigned blueprints to stop snapshottin…",
      "customer": "Exclusive Networks - France",
      "score": 36,
      "arr": 565500
@@ -3282,7 +3275,7 @@
     },
     {
      "key": "FR-497",
-     "summary": "When an end user logs out of CloudShare, the runtime timer o",
+     "summary": "When an end user logs out of CloudShare, the runtime timer…",
      "customer": "City & Guilds",
      "score": 35,
      "arr": 43932
@@ -3296,14 +3289,14 @@
     },
     {
      "key": "FR-377",
-     "summary": "High Priority - Improve the performance of copying snapshots",
+     "summary": "High Priority - Improve the performance of copying snapshot…",
      "customer": "AlgoSec - SE",
      "score": 34,
      "arr": 59017
     },
     {
      "key": "FR-342",
-     "summary": "Dashboard/reports: Better dashboards showing project member ",
+     "summary": "Dashboard/reports: Better dashboards showing project member…",
      "customer": "Kaspersky Combined",
      "score": 34,
      "arr": 650000
@@ -3352,21 +3345,21 @@
     },
     {
      "key": "FR-378",
-     "summary": "High Priority - Improve the performance of copying snapshots",
+     "summary": "High Priority - Improve the performance of copying snapshot…",
      "customer": "AlgoSec - Training",
      "score": 33,
      "arr": 220320
     },
     {
      "key": "FR-361",
-     "summary": "Networking: improve ability to handle more segmented network",
+     "summary": "Networking: improve ability to handle more segmented networ…",
      "customer": "AlgoSec - Training",
      "score": 33,
      "arr": 220320
     },
     {
      "key": "FR-358",
-     "summary": "Networking: improve ability to handle more segmented network",
+     "summary": "Networking: improve ability to handle more segmented networ…",
      "customer": "Exclusive Networks - France",
      "score": 33,
      "arr": 565500
@@ -3415,7 +3408,7 @@
     },
     {
      "key": "FR-439",
-     "summary": "Support Seamless LTI Launch for Existing CloudShare Project ",
+     "summary": "Support Seamless LTI Launch for Existing CloudShare Project…",
      "customer": "Infoblox",
      "score": 32,
      "arr": 600000
@@ -3436,7 +3429,7 @@
     },
     {
      "key": "FR-375",
-     "summary": "High Priority - Improve the performance of copying snapshots",
+     "summary": "High Priority - Improve the performance of copying snapshot…",
      "customer": "Check Point Software - TAC PS",
      "score": 32,
      "arr": 35880
@@ -3485,21 +3478,21 @@
     },
     {
      "key": "FR-565",
-     "summary": "Better email control and content including webhook notificat",
+     "summary": "Better email control and content including webhook notifica…",
      "customer": "Zscaler",
      "score": 31,
      "arr": 900000
     },
     {
      "key": "FR-562",
-     "summary": "Unify support documentation & tix visibility across Classic ",
+     "summary": "Unify support documentation & tix visibility across Classic…",
      "customer": "Platform9",
      "score": 31,
      "arr": 50400
     },
     {
      "key": "FR-561",
-     "summary": "Enable fully automated build, maintenance, and deployment of",
+     "summary": "Enable fully automated build, maintenance, and deployment o…",
      "customer": "Platform9",
      "score": 31,
      "arr": 50400
@@ -3520,7 +3513,7 @@
     },
     {
      "key": "FR-558",
-     "summary": "Navigating to and between Integration Hub pages & Workato is",
+     "summary": "Navigating to and between Integration Hub pages & Workato i…",
      "customer": "Platform9",
      "score": 31,
      "arr": 50400
@@ -3534,14 +3527,14 @@
     },
     {
      "key": "FR-554",
-     "summary": "Ability to snapshot and provision an env with a VM powered o",
+     "summary": "Ability to snapshot and provision an env with a VM powered…",
      "customer": "Zscaler",
      "score": 31,
      "arr": 900000
     },
     {
      "key": "FR-552",
-     "summary": "Dynamic MAC: Build a proper feature to provision unique MAC ",
+     "summary": "Dynamic MAC: Build a proper feature to provision unique MAC…",
      "customer": "Zscaler",
      "score": 31,
      "arr": 900000
@@ -3555,7 +3548,7 @@
     },
     {
      "key": "FR-541",
-     "summary": "[Cotiviti] Feature to ensure \"key\" envs are never irrecovera",
+     "summary": "[Cotiviti] Feature to ensure \"key\" envs are never irrecover…",
      "customer": "Cotiviti (Edifecs)",
      "score": 31,
      "arr": 104400
@@ -3583,7 +3576,7 @@
     },
     {
      "key": "FR-445",
-     "summary": "VM Password Policy Toggle (Weak Password Support for Interna",
+     "summary": "VM Password Policy Toggle (Weak Password Support for Intern…",
      "customer": "Infoblox",
      "score": 31,
      "arr": 600000
@@ -3597,7 +3590,7 @@
     },
     {
      "key": "FR-435",
-     "summary": "Expose Customer-Accessible Audit Logs for Lab Environment Ac",
+     "summary": "Expose Customer-Accessible Audit Logs for Lab Environment A…",
      "customer": "Infoblox",
      "score": 31,
      "arr": 600000
@@ -3660,7 +3653,7 @@
     },
     {
      "key": "FR-407",
-     "summary": "Add Instructor Console Support Ticket Submission and Trackin",
+     "summary": "Add Instructor Console Support Ticket Submission and Tracki…",
      "customer": "AlgoSec - Training",
      "score": 31,
      "arr": 220320
@@ -3674,7 +3667,7 @@
     },
     {
      "key": "FR-376",
-     "summary": "High Priority - Improve the performance of copying snapshots",
+     "summary": "High Priority - Improve the performance of copying snapshot…",
      "customer": "Check Point Software - TAC PS",
      "score": 31,
      "arr": 35880
@@ -3702,14 +3695,14 @@
     },
     {
      "key": "FR-347",
-     "summary": "Enable customers to \"Assign\" blueprints across projects in d",
+     "summary": "Enable customers to \"Assign\" blueprints across projects in…",
      "customer": "Kaspersky Combined",
      "score": 31,
      "arr": 650000
     },
     {
      "key": "FR-346",
-     "summary": "Enable customers to \"Assign\" blueprints across projects in d",
+     "summary": "Enable customers to \"Assign\" blueprints across projects in…",
      "customer": "Check Point Software - Architects (Combined)",
      "score": 31,
      "arr": 133152
@@ -3730,28 +3723,28 @@
     },
     {
      "key": "FR-341",
-     "summary": "Dashboard/reports: Better dashboards showing project member ",
+     "summary": "Dashboard/reports: Better dashboards showing project member…",
      "customer": "Exclusive Networks - France",
      "score": 31,
      "arr": 565500
     },
     {
      "key": "FR-339",
-     "summary": "Ability to snapshot and provision an env with a VM powered o",
+     "summary": "Ability to snapshot and provision an env with a VM powered…",
      "customer": "Exclusive Networks - France",
      "score": 31,
      "arr": 565500
     },
     {
      "key": "FR-338",
-     "summary": "Ability to snapshot and provision an env with a VM powered o",
+     "summary": "Ability to snapshot and provision an env with a VM powered…",
      "customer": "Check Point Software - TAC PS",
      "score": 31,
      "arr": 35880
     },
     {
      "key": "FR-336",
-     "summary": "Ability to snapshot and provision an env with a VM powered o",
+     "summary": "Ability to snapshot and provision an env with a VM powered…",
      "customer": "Kaspersky - Support Team",
      "score": 31,
      "arr": 56517
@@ -3779,7 +3772,7 @@
     },
     {
      "key": "FR-324",
-     "summary": "Ability to snapshot and provision an env with a VM powered o",
+     "summary": "Ability to snapshot and provision an env with a VM powered…",
      "customer": "Nozomi Networks",
      "score": 31,
      "arr": 72900
@@ -3844,7 +3837,7 @@
    [
     {
      "key": "FR-583",
-     "summary": "Better email control and content including webhook notificat",
+     "summary": "Better email control and content including webhook notifica…",
      "customer": "Zscaler",
      "score": 48,
      "arr": 900000
@@ -3879,7 +3872,7 @@
     },
     {
      "key": "FR-496",
-     "summary": "[Trimble] Saving Class Appearance Customizations to a snapsh",
+     "summary": "[Trimble] Saving Class Appearance Customizations to a snaps…",
      "customer": "Trimble",
      "score": 48,
      "arr": 495000
@@ -3893,7 +3886,7 @@
     },
     {
      "key": "FR-480",
-     "summary": "[Nozomi] Enable sharing a web access links for a VM even whe",
+     "summary": "[Nozomi] Enable sharing a web access links for a VM even wh…",
      "customer": "Nozomi",
      "score": 48,
      "arr": 72900
@@ -3942,14 +3935,14 @@
     },
     {
      "key": "FR-321",
-     "summary": "Better automation pipeline for image and blueprint creation ",
+     "summary": "Better automation pipeline for image and blueprint creation…",
      "customer": "Infoblox",
      "score": 48,
      "arr": 600000
     },
     {
      "key": "FR-318",
-     "summary": "RBAC permission for assigned blueprints to stop snapshotting",
+     "summary": "RBAC permission for assigned blueprints to stop snapshottin…",
      "customer": "Deltek Consulting",
      "score": 48,
      "arr": 90720
@@ -3970,7 +3963,7 @@
     },
     {
      "key": "FR-168",
-     "summary": "API: Migrition ID mapping endpoint from Classic to Accelerat",
+     "summary": "API: Migrition ID mapping endpoint from Classic to Accelera…",
      "customer": "Ping Identity (formerly ForgeRock)",
      "score": 48,
      "arr": 275000
@@ -3998,14 +3991,14 @@
     },
     {
      "key": "FR-370",
-     "summary": "Ability to set multiple nic from same network without suppor",
+     "summary": "Ability to set multiple nic from same network without suppo…",
      "customer": "Infoblox",
      "score": 46,
      "arr": 600000
     },
     {
      "key": "FR-200",
-     "summary": "[Watchguard Technologies] Set Determined Customized Password",
+     "summary": "[Watchguard Technologies] Set Determined Customized Passwor…",
      "customer": "Watchguard Technologies, Inc.",
      "score": 46,
      "arr": 33286
@@ -4061,7 +4054,7 @@
     },
     {
      "key": "FR-170",
-     "summary": "RBAC permission for assigned blueprints to stop snapshotting",
+     "summary": "RBAC permission for assigned blueprints to stop snapshottin…",
      "customer": "Cribl",
      "score": 44,
      "arr": 12000
@@ -4124,7 +4117,7 @@
     },
     {
      "key": "FR-456",
-     "summary": "Allow Terraform scripts to use variables based on CloudShare",
+     "summary": "Allow Terraform scripts to use variables based on CloudShar…",
      "customer": "Infoblox",
      "score": 42,
      "arr": 600000
@@ -4138,7 +4131,7 @@
     },
     {
      "key": "FR-440",
-     "summary": "Customer-Accessible Platform and Provisioning Logs (Real-Tim",
+     "summary": "Customer-Accessible Platform and Provisioning Logs (Real-Ti…",
      "customer": "Infoblox",
      "score": 42,
      "arr": 600000
@@ -4152,7 +4145,7 @@
     },
     {
      "key": "FR-523",
-     "summary": "[Exclusive Networks] API to query our data ",
+     "summary": "[Exclusive Networks] API to query our data",
      "customer": "Exclusive Networks",
      "score": 41,
      "arr": 47392
@@ -4173,7 +4166,7 @@
     },
     {
      "key": "FR-315",
-     "summary": "Better automation pipeline for image and blueprint creation ",
+     "summary": "Better automation pipeline for image and blueprint creation…",
      "customer": "Cribl",
      "score": 41,
      "arr": 12000
@@ -4187,14 +4180,14 @@
     },
     {
      "key": "FR-180",
-     "summary": "Logs: allow tenant logs to be seen and sent to a customers o",
+     "summary": "Logs: allow tenant logs to be seen and sent to a customers…",
      "customer": "Darktrace",
      "score": 41,
      "arr": 37068
     },
     {
      "key": "FR-498",
-     "summary": "[Tyler Tech] [Guided Journeys] - Links in Guided Journey(s) ",
+     "summary": "[Tyler Tech] [Guided Journeys] - Links in Guided Journey(s)…",
      "customer": "Tyler Technologies",
      "score": 40,
      "arr": 321480
@@ -4203,14 +4196,14 @@
    [
     {
      "key": "FR-319",
-     "summary": "An ability to create a pool of FQDNs that can be used for VM",
+     "summary": "An ability to create a pool of FQDNs that can be used for V…",
      "customer": "Procede Software",
      "score": 59,
      "arr": 103320
     },
     {
      "key": "FR-471",
-     "summary": "[HID Global] create banner, accept terms page prior to enter",
+     "summary": "[HID Global] create banner, accept terms page prior to ente…",
      "customer": "HID Global",
      "score": 57,
      "arr": 19200
@@ -4224,7 +4217,7 @@
     },
     {
      "key": "FR-198",
-     "summary": "Automatically remove students from the student list after a ",
+     "summary": "Automatically remove students from the student list after a…",
      "customer": "AlgoSec - Training",
      "score": 56,
      "arr": 220320
@@ -4238,7 +4231,7 @@
     },
     {
      "key": "FR-169",
-     "summary": "Analytic dash/report: Show who started an env between date a",
+     "summary": "Analytic dash/report: Show who started an env between date…",
      "customer": "Thales",
      "score": 56,
      "arr": 83067
@@ -4259,42 +4252,49 @@
     },
     {
      "key": "FR-217",
-     "summary": "Pre-configured environments: select all users rather than in",
+     "summary": "Pre-configured environments: select all users rather than i…",
      "customer": "Genesys",
      "score": 54,
      "arr": 470007
     },
     {
      "key": "FR-173",
-     "summary": "Analytic dash/report: Show BP/env started by specific users ",
+     "summary": "Analytic dash/report: Show BP/env started by specific users…",
      "customer": "Thales",
      "score": 54,
      "arr": 83067
     },
     {
+     "key": "FR-484",
+     "summary": "Move Blueprints between subscriptions",
+     "customer": "Kaspersky / Exclusive",
+     "score": 53,
+     "arr": 650000
+    },
+    {
      "key": "FR-470",
-     "summary": "[Deltek] Enable customers to \"Assign\" blueprints across proj",
+     "summary": "[Deltek] Enable customers to \"Assign\" blueprints across pro…",
      "customer": "Deltek",
      "score": 53,
      "arr": 90720
     },
     {
      "key": "FR-337",
-     "summary": "Ability to snapshot and provision an env with a VM powered o",
+     "summary": "Ability to snapshot and provision an env with a VM powered…",
      "customer": "Kaspersky Combined",
      "score": 51,
      "arr": 650000
     },
     {
      "key": "FR-190",
-     "summary": "[HID Global] API Enhancement: Swagger and better documentati",
+     "summary": "[HID Global] API Enhancement: Swagger and better documentat…",
      "customer": "HID Global Corporation",
      "score": 51,
      "arr": 19200
     },
     {
      "key": "FR-316",
-     "summary": "Better automation pipeline for internal infrastructure deplo",
+     "summary": "Better automation pipeline for internal infrastructure depl…",
      "customer": "Cribl",
      "score": 50,
      "arr": 12000
@@ -4303,7 +4303,7 @@
    [
     {
      "key": "FR-210",
-     "summary": "Certifications: envs provisioned from non-default snapshot i",
+     "summary": "Certifications: envs provisioned from non-default snapshot…",
      "customer": "Genesys",
      "score": 68,
      "arr": 470007
@@ -4317,7 +4317,7 @@
     },
     {
      "key": "FR-513",
-     "summary": "[Tyler Tech] - ability for Team Managers to upload files to ",
+     "summary": "[Tyler Tech] - ability for Team Managers to upload files to…",
      "customer": "Tyler Technologies",
      "score": 64,
      "arr": 321476
@@ -4373,7 +4373,7 @@
     },
     {
      "key": "FR-187",
-     "summary": "Ability to move resources around between directories or proj",
+     "summary": "Ability to move resources around between directories or pro…",
      "customer": "Tyler Technologies",
      "score": 64,
      "arr": 321480
@@ -4450,7 +4450,7 @@
     },
     {
      "key": "FR-166",
-     "summary": "Enable customers to \"Assign\" blueprints across projects in d",
+     "summary": "Enable customers to \"Assign\" blueprints across projects in…",
      "customer": "Deltek Consulting",
      "score": 61,
      "arr": 90720
@@ -4461,6 +4461,13 @@
      "customer": "Perforce Software",
      "score": 61,
      "arr": 411312
+    },
+    {
+     "key": "FR-563",
+     "summary": "Feature request (details needed)",
+     "customer": "One Identity",
+     "score": 60,
+     "arr": 561600
     }
    ],
    [
@@ -4473,14 +4480,14 @@
     },
     {
      "key": "FR-216",
-     "summary": "Allow End-User Invitations from Non-Default Blueprint Snapsh",
+     "summary": "Allow End-User Invitations from Non-Default Blueprint Snaps…",
      "customer": "Check Point Software - Combined",
      "score": 74,
      "arr": 490000
     },
     {
      "key": "FR-209",
-     "summary": "Certifications Policies: provide an option to archive the en",
+     "summary": "Certifications Policies: provide an option to archive the e…",
      "customer": "Genesys",
      "score": 74,
      "arr": 470007
@@ -4522,7 +4529,7 @@
     },
     {
      "key": "FR-514",
-     "summary": "[Ping Identity] [Tyler Tech] Additional Markdown lines ",
+     "summary": "[Ping Identity] [Tyler Tech] Additional Markdown lines",
      "customer": "Tyler Tech",
      "score": 72,
      "arr": 321480
@@ -4588,11 +4595,11 @@
   },
   {
    "label": "500+",
-   "count": 62
+   "count": 64
   },
   {
    "label": "No date",
-   "count": 41
+   "count": 39
   }
  ],
  "clusters": [
@@ -4682,7 +4689,7 @@
    "theme": "Share / assign blueprints across subscriptions",
    "fr_count": 7,
    "customers": 7,
-   "arr": 1047864,
+   "arr": 1697864,
    "top_score": 61,
    "members": [
     {
@@ -4756,7 +4763,7 @@
    "theme": "Customer-facing audit logs / activity trail",
    "fr_count": 7,
    "customers": 4,
-   "arr": 864600,
+   "arr": 863292,
    "top_score": 43,
    "members": [
     {
@@ -5043,8 +5050,8 @@
    "theme": "Virtual TPM (vTPM) support",
    "fr_count": 3,
    "customers": 3,
-   "arr": 116353,
-   "top_score": 54,
+   "arr": 677953,
+   "top_score": 60,
    "members": [
     {
      "key": "FR-223",
@@ -5259,10 +5266,10 @@
   {
    "key": "FR-563",
    "summary": "Feature request (details needed)",
-   "customer": null,
-   "arr": null,
+   "customer": "One Identity",
+   "arr": 561600,
    "align": "Enterprise Readiness",
-   "score": 11,
+   "score": 60,
    "owner": "Eric Bar",
    "started": "2026-09-18",
    "is_new": false
@@ -5293,9 +5300,9 @@
    "key": "FR-484",
    "summary": "Move Blueprints between subscriptions",
    "customer": "Kaspersky / Exclusive",
-   "arr": null,
+   "arr": 650000,
    "align": "Enterprise Readiness",
-   "score": 11,
+   "score": 53,
    "owner": "Oleg Ruchlis",
    "started": "2026-09-11",
    "is_new": false
