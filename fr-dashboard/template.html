@@ -133,7 +133,7 @@
 <script type="application/json" id="fr-data">__PAYLOAD__</script>
 <script>
 const D=JSON.parse(document.getElementById('fr-data').textContent);
-const fmtArr=v=>v>=1e6?'$'+(v/1e6).toFixed(2)+'M':v>=1e3?'$'+Math.round(v/1e3)+'k':'$'+v;
+const fmtArr=v=>v==null?'\u2014':v>=1e6?'$'+(v/1e6).toFixed(2)+'M':v>=1e3?'$'+Math.round(v/1e3)+'k':'$'+v;
 const INK='#18223b',MUTED='#5f6b7d',LINE='#e4e7ee',INDIGO='#5b4bd6',GREEN='#12876a',AMBER='#d98a1a',TEAL='#0f9b9b',GRAY='#9aa4b2';
 Chart.defaults.font.family="Inter, sans-serif";Chart.defaults.color=MUTED;Chart.defaults.font.size=12;
 const m=D.meta;
@@ -145,13 +145,13 @@ const kpis=[{lbl:'Open FRs',val:m.open,foot:`${m.scored} scored · ${m.customers
 document.getElementById('kpis').innerHTML=kpis.map(k=>`<div class="kpi ${k.cls||''}"><div class="lbl">${k.lbl}</div><div class="val num">${k.val}</div><div class="foot">${k.foot}</div></div>`).join('');
 const alignColor={'Cyber Vertical':'#eef7f3','AI & Automation':'#fbefd8','Enterprise Readiness':'#ece9fb','Other':'#eef0f4','—':'#eef0f4'};
 const scoreCls=s=>(typeof s==='number'&&s>=60)?'s-hi':(typeof s==='number'&&s>=40)?'s-mid':'s-lo';
-document.getElementById('top15').innerHTML=D.top15.map((r,i)=>`<tr><td class="rank num">${i+1}</td><td class="key"><a href="https://cloudshare.atlassian.net/browse/${r.key}" target="_blank">${r.key}</a></td><td>${r.summary}</td><td>${r.customer}</td><td class="arr num">${fmtArr(r.arr)}</td><td><span class="tag" style="background:${alignColor[r.align]||'#eef0f4'}">${r.align}</span></td><td><span class="scoretag ${scoreCls(r.score)}">${r.score}</span></td></tr>`).join('');
+document.getElementById('top15').innerHTML=D.top15.map((r,i)=>`<tr><td class="rank num">${i+1}</td><td class="key"><a href="https://cloudshare.atlassian.net/browse/${r.key}" target="_blank">${r.key}</a></td><td>${r.summary}</td><td>${r.customer||'\u2014'}</td><td class="arr num">${fmtArr(r.arr)}</td><td><span class="tag" style="background:${alignColor[r.align]||'#eef0f4'}">${r.align}</span></td><td><span class="scoretag ${scoreCls(r.score)}">${r.score}</span></td></tr>`).join('');
 
 // New FRs (created since last snapshot)
 const newFrs=D.new_frs||[];
 document.getElementById('newHint').textContent=newFrs.length?`${newFrs.length} new`:'';
 document.getElementById('newfrs').innerHTML=newFrs.length
-  ? newFrs.map(r=>`<tr><td><span class="tag-new">NEW</span></td><td class="key"><a href="https://cloudshare.atlassian.net/browse/${r.key}" target="_blank">${r.key}</a></td><td>${r.summary}</td><td>${r.customer}</td><td class="arr num">${fmtArr(r.arr)}</td><td><span class="tag" style="background:${alignColor[r.align]||'#eef0f4'}">${r.align}</span></td><td><span class="scoretag ${scoreCls(r.score)}">${r.score}</span></td></tr>`).join('')
+  ? newFrs.map(r=>`<tr><td><span class="tag-new">NEW</span></td><td class="key"><a href="https://cloudshare.atlassian.net/browse/${r.key}" target="_blank">${r.key}</a></td><td>${r.summary}</td><td>${r.customer||'\u2014'}</td><td class="arr num">${fmtArr(r.arr)}</td><td><span class="tag" style="background:${alignColor[r.align]||'#eef0f4'}">${r.align}</span></td><td><span class="scoretag ${scoreCls(r.score)}">${r.score}</span></td></tr>`).join('')
   : `<tr><td colspan="7" class="empty-note">No new FRs since last week's snapshot.</td></tr>`;
 
 // In Progress FRs (currently in flight; TAKEN badge = entered In Progress in last 7 days)
@@ -161,14 +161,14 @@ const wipNew=wip.filter(r=>r.is_new).length;
 document.getElementById('progHint').textContent=wip.length?`${wip.length} in flight`:'';
 document.getElementById('progNewHint').textContent=wipNew?`${wipNew} taken this week`:'';
 document.getElementById('inprogress').innerHTML=wip.length
-  ? wip.map(r=>`<tr><td>${r.is_new?'<span class="tag-wip">TAKEN</span>':''}</td><td class="key"><a href="https://cloudshare.atlassian.net/browse/${r.key}" target="_blank">${r.key}</a></td><td>${r.summary}</td><td>${r.customer}</td><td class="arr num">${fmtArr(r.arr)}</td><td><span class="scoretag ${scoreCls(r.score)}">${r.score}</span></td><td>${r.owner||'\u2014'}</td><td class="when">${shortDate(r.started)}</td></tr>`).join('')
+  ? wip.map(r=>`<tr><td>${r.is_new?'<span class="tag-wip">TAKEN</span>':''}</td><td class="key"><a href="https://cloudshare.atlassian.net/browse/${r.key}" target="_blank">${r.key}</a></td><td>${r.summary}</td><td>${r.customer||'\u2014'}</td><td class="arr num">${fmtArr(r.arr)}</td><td><span class="scoretag ${scoreCls(r.score)}">${r.score}</span></td><td>${r.owner||'\u2014'}</td><td class="when">${shortDate(r.started)}</td></tr>`).join('')
   : `<tr><td colspan="8" class="empty-note">No FRs are in progress right now.</td></tr>`;
 
 // Completed FRs (moved to Done in the last 7 days)
 const done=D.completed||[];
 document.getElementById('doneHint').textContent=done.length?`${done.length} completed`:'';
 document.getElementById('completed').innerHTML=done.length
-  ? done.map(r=>`<tr><td><span class="tag-done">DONE</span></td><td class="key"><a href="https://cloudshare.atlassian.net/browse/${r.key}" target="_blank">${r.key}</a></td><td>${r.summary}</td><td>${r.customer}</td><td class="arr num">${fmtArr(r.arr)}</td><td><span class="scoretag ${scoreCls(r.score)}">${r.score}</span></td><td>${r.owner||'\u2014'}</td><td class="when">${shortDate(r.completed)}</td></tr>`).join('')
+  ? done.map(r=>`<tr><td><span class="tag-done">DONE</span></td><td class="key"><a href="https://cloudshare.atlassian.net/browse/${r.key}" target="_blank">${r.key}</a></td><td>${r.summary}</td><td>${r.customer||'\u2014'}</td><td class="arr num">${fmtArr(r.arr)}</td><td><span class="scoretag ${scoreCls(r.score)}">${r.score}</span></td><td>${r.owner||'\u2014'}</td><td class="when">${shortDate(r.completed)}</td></tr>`).join('')
   : `<tr><td colspan="8" class="empty-note">No FRs were completed in the last 7 days.</td></tr>`;
 document.getElementById('themes').innerHTML=D.clusters.map(c=>{const links=c.members.map(mm=>`<a class="mkey" href="https://cloudshare.atlassian.net/browse/${mm.key}" target="_blank" title="${mm.summary}">${mm.key}</a>`).join(' ');return `<tr><td><b>${c.theme}</b></td><td class="cnum">${c.fr_count}</td><td class="cnum">${c.customers}</td><td class="cnum">${fmtArr(c.arr)}</td><td class="members">${links}</td></tr>`;}).join('');
 
@@ -176,7 +176,7 @@ document.getElementById('themes').innerHTML=D.clusters.map(c=>{const links=c.mem
 function drill(title,sub,frs){
   document.getElementById('mtitle').textContent=title;
   document.getElementById('msub').textContent=sub;
-  document.getElementById('mrows').innerHTML=frs.map(r=>`<tr><td class="key"><a href="https://cloudshare.atlassian.net/browse/${r.key}" target="_blank">${r.key}</a></td><td>${r.summary}</td><td>${r.customer}</td><td class="arr num">${fmtArr(r.arr)}</td><td><span class="scoretag ${scoreCls(r.score)}">${r.score}</span></td></tr>`).join('');
+  document.getElementById('mrows').innerHTML=frs.map(r=>`<tr><td class="key"><a href="https://cloudshare.atlassian.net/browse/${r.key}" target="_blank">${r.key}</a></td><td>${r.summary}</td><td>${r.customer||'\u2014'}</td><td class="arr num">${fmtArr(r.arr)}</td><td><span class="scoretag ${scoreCls(r.score)}">${r.score}</span></td></tr>`).join('');
   document.getElementById('overlay').classList.add('show');
 }
 function closeDrill(){document.getElementById('overlay').classList.remove('show');}
