@@ -1,23 +1,15 @@
 {
  "meta": {
-  "week_of": "2026-11-05",
-  "open": 274,
+  "week_of": "2026-11-09",
+  "open": 369,
   "arr_total": 15933812,
-  "high_count": 36,
+  "high_count": 35,
   "high_threshold": 60,
-  "risk_count": 105,
+  "risk_count": 104,
   "scored": 274,
-  "customers": 95
+  "customers": 123
  },
  "top15": [
-  {
-   "key": "FR-506",
-   "summary": "[Trimble] All students to Live Thumbnail",
-   "customer": "Trimble",
-   "arr": 495000,
-   "align": "Enterprise Readiness",
-   "score": 78
-  },
   {
    "key": "FR-216",
    "summary": "Allow End-User Invitations from Non-Default Blueprint Snapshots",
@@ -75,14 +67,6 @@
    "score": 73
   },
   {
-   "key": "FR-514",
-   "summary": "[Ping Identity] [Tyler Tech] Additional Markdown lines ",
-   "customer": "Tyler Tech",
-   "arr": 321480,
-   "align": "Enterprise Readiness",
-   "score": 72
-  },
-  {
    "key": "FR-487",
    "summary": "[Perforce] Disabling/customizing Email Reminders",
    "customer": "Perforce",
@@ -95,6 +79,14 @@
    "summary": "[Perforce] Clear Class Chat",
    "customer": "Perforce",
    "arr": 411312,
+   "align": "Enterprise Readiness",
+   "score": 72
+  },
+  {
+   "key": "FR-514",
+   "summary": "[Ping Identity] [Tyler Tech] Additional Markdown lines ",
+   "customer": "Tyler Tech",
+   "arr": 321480,
    "align": "Enterprise Readiness",
    "score": 72
   },
@@ -123,18 +115,26 @@
    "score": 66
   },
   {
-   "key": "FR-513",
-   "summary": "[Tyler Tech] - ability for Team Managers to upload files to a centrali",
-   "customer": "Tyler Technologies",
-   "arr": 321476,
-   "align": "Cyber Vertical",
+   "key": "FR-206",
+   "summary": "Project-Level Permissions for Webhook Management",
+   "customer": "Infoblox",
+   "arr": 600000,
+   "align": "AI & Automation",
+   "score": 64
+  },
+  {
+   "key": "FR-205",
+   "summary": "Allow Modification of Policy After Training is In-Progress",
+   "customer": "Infoblox",
+   "arr": 600000,
+   "align": "Enterprise Readiness",
    "score": 64
   }
  ],
  "customers": [
   {
    "customer": "Infoblox",
-   "count": 36,
+   "count": 37,
    "arr": 600000,
    "frs": [
     {
@@ -388,21 +388,21 @@
      "customer": "Infoblox",
      "score": 27,
      "arr": 600000
+    },
+    {
+     "key": "FR-654",
+     "summary": "Infoblox",
+     "customer": "Infoblox",
+     "score": null,
+     "arr": 0
     }
    ]
   },
   {
    "customer": "Trimble",
-   "count": 16,
+   "count": 15,
    "arr": 495000,
    "frs": [
-    {
-     "key": "FR-506",
-     "summary": "[Trimble] All students to Live Thumbnail",
-     "customer": "Trimble",
-     "score": 78,
-     "arr": 495000
-    },
     {
      "key": "FR-517",
      "summary": "[Trimble] Remapping key to Escape fullscreen",
@@ -512,7 +512,7 @@
   },
   {
    "customer": "Tyler Technologies",
-   "count": 14,
+   "count": 15,
    "arr": 321480,
    "frs": [
     {
@@ -612,12 +612,19 @@
      "customer": "Tyler Technologies",
      "score": 6,
      "arr": 321480
+    },
+    {
+     "key": "FR-688",
+     "summary": "Tyler Technologies",
+     "customer": "Tyler Technologies",
+     "score": null,
+     "arr": 0
     }
    ]
   },
   {
    "customer": "Zscaler",
-   "count": 9,
+   "count": 10,
    "arr": 900000,
    "frs": [
     {
@@ -682,12 +689,19 @@
      "customer": "Zscaler",
      "score": 31,
      "arr": 900000
+    },
+    {
+     "key": "FR-692",
+     "summary": "Zscaler",
+     "customer": "Zscaler",
+     "score": null,
+     "arr": 0
     }
    ]
   },
   {
    "customer": "Exclusive Networks - France",
-   "count": 9,
+   "count": 10,
    "arr": 565500,
    "frs": [
     {
@@ -752,12 +766,19 @@
      "customer": "Exclusive Networks - France",
      "score": 30,
      "arr": 565500
+    },
+    {
+     "key": "FR-642",
+     "summary": "Exclusive Networks - France",
+     "customer": "Exclusive Networks - France",
+     "score": null,
+     "arr": 0
     }
    ]
   },
   {
    "customer": "Cyberhaven",
-   "count": 9,
+   "count": 10,
    "arr": 14820,
    "frs": [
     {
@@ -822,12 +843,19 @@
      "customer": "Cyberhaven",
      "score": 13,
      "arr": 14820
+    },
+    {
+     "key": "FR-636",
+     "summary": "Cyberhaven",
+     "customer": "Cyberhaven",
+     "score": null,
+     "arr": 0
     }
    ]
   },
   {
    "customer": "Crowdstrike - Marketing AWS",
-   "count": 8,
+   "count": 9,
    "arr": 1321652,
    "frs": [
     {
@@ -885,12 +913,19 @@
      "customer": "Crowdstrike - Marketing AWS",
      "score": 17,
      "arr": 1321652
+    },
+    {
+     "key": "FR-634",
+     "summary": "Crowdstrike - Marketing AWS",
+     "customer": "Crowdstrike - Marketing AWS",
+     "score": null,
+     "arr": 0
     }
    ]
   },
   {
    "customer": "AlgoSec - Training",
-   "count": 6,
+   "count": 7,
    "arr": 220320,
    "frs": [
     {
@@ -934,12 +969,19 @@
      "customer": "AlgoSec - Training",
      "score": 31,
      "arr": 220320
+    },
+    {
+     "key": "FR-622",
+     "summary": "AlgoSec - Training",
+     "customer": "AlgoSec - Training",
+     "score": null,
+     "arr": 0
     }
    ]
   },
   {
    "customer": "Revalize",
-   "count": 6,
+   "count": 7,
    "arr": 15360,
    "frs": [
     {
@@ -983,6 +1025,195 @@
      "customer": "Revalize",
      "score": 11,
      "arr": 15360
+    },
+    {
+     "key": "FR-673",
+     "summary": "Revalize",
+     "customer": "Revalize",
+     "score": null,
+     "arr": 0
+    }
+   ]
+  },
+  {
+   "customer": "Learning Tree International",
+   "count": 6,
+   "arr": 250000,
+   "frs": [
+    {
+     "key": "FR-508",
+     "summary": "[Learning Tree] - Pre-configured Environments - pre-configur",
+     "customer": "Learning Tree International",
+     "score": 50,
+     "arr": 250000
+    },
+    {
+     "key": "FR-473",
+     "summary": "Learning Tree - Cloud Folders to multi-region",
+     "customer": "Learning Tree International",
+     "score": 44,
+     "arr": 250000
+    },
+    {
+     "key": "FR-556",
+     "summary": "Ability to manage Guided Journey repo and tasks via API",
+     "customer": "Learning Tree International",
+     "score": 41,
+     "arr": 250000
+    },
+    {
+     "key": "FR-476",
+     "summary": "[Learning Tree]  Ability for students (and proj managers) to",
+     "customer": "Learning Tree International",
+     "score": 39,
+     "arr": 250000
+    },
+    {
+     "key": "FR-472",
+     "summary": "Learning Tree - multi region pre-configured environments",
+     "customer": "Learning Tree International",
+     "score": 39,
+     "arr": 250000
+    },
+    {
+     "key": "FR-658",
+     "summary": "Learning Tree International",
+     "customer": "Learning Tree International",
+     "score": null,
+     "arr": 0
+    }
+   ]
+  },
+  {
+   "customer": "Watchguard Technologies, Inc.",
+   "count": 6,
+   "arr": 33286,
+   "frs": [
+    {
+     "key": "FR-200",
+     "summary": "[Watchguard Technologies] Set Determined Customized Password",
+     "customer": "Watchguard Technologies, Inc.",
+     "score": 46,
+     "arr": 33286
+    },
+    {
+     "key": "FR-218",
+     "summary": "[Watchguard Technologies] API Request",
+     "customer": "Watchguard Technologies, Inc.",
+     "score": 41,
+     "arr": 33286
+    },
+    {
+     "key": "FR-585",
+     "summary": "Replace/switch guided journey mid-training",
+     "customer": "Watchguard Technologies, Inc.",
+     "score": 22,
+     "arr": 33286
+    },
+    {
+     "key": "FR-322",
+     "summary": "[Watchguard Technologies] Virtual TPM (vTPM) within VM",
+     "customer": "Watchguard Technologies, Inc.",
+     "score": 16,
+     "arr": 33286
+    },
+    {
+     "key": "FR-455",
+     "summary": "Instructor-controlled \"Hide/Show\" option (\"instructor lock\")",
+     "customer": "Watchguard Technologies, Inc.",
+     "score": 12,
+     "arr": 33286
+    },
+    {
+     "key": "FR-690",
+     "summary": "Watchguard Technologies, Inc.",
+     "customer": "Watchguard Technologies, Inc.",
+     "score": null,
+     "arr": 0
+    }
+   ]
+  },
+  {
+   "customer": "Kaspersky Combined",
+   "count": 5,
+   "arr": 650000,
+   "frs": [
+    {
+     "key": "FR-337",
+     "summary": "Ability to snapshot and provision an env with a VM powered o",
+     "customer": "Kaspersky Combined",
+     "score": 51,
+     "arr": 650000
+    },
+    {
+     "key": "FR-342",
+     "summary": "Dashboard/reports: Better dashboards showing project member ",
+     "customer": "Kaspersky Combined",
+     "score": 34,
+     "arr": 650000
+    },
+    {
+     "key": "FR-451",
+     "summary": "Upload hash check",
+     "customer": "Kaspersky Combined",
+     "score": 32,
+     "arr": 650000
+    },
+    {
+     "key": "FR-347",
+     "summary": "Enable customers to \"Assign\" blueprints across projects in d",
+     "customer": "Kaspersky Combined",
+     "score": 31,
+     "arr": 650000
+    },
+    {
+     "key": "FR-655",
+     "summary": "Kaspersky Combined",
+     "customer": "Kaspersky Combined",
+     "score": null,
+     "arr": 0
+    }
+   ]
+  },
+  {
+   "customer": "Genesys",
+   "count": 5,
+   "arr": 470007,
+   "frs": [
+    {
+     "key": "FR-209",
+     "summary": "Certifications Policies: provide an option to archive the en",
+     "customer": "Genesys",
+     "score": 74,
+     "arr": 470007
+    },
+    {
+     "key": "FR-210",
+     "summary": "Certifications: envs provisioned from non-default snapshot i",
+     "customer": "Genesys",
+     "score": 68,
+     "arr": 470007
+    },
+    {
+     "key": "FR-162",
+     "summary": "Mobile companion app",
+     "customer": "Genesys",
+     "score": 48,
+     "arr": 470007
+    },
+    {
+     "key": "FR-310",
+     "summary": "Encrypt Data at rest in our DB",
+     "customer": "Genesys",
+     "score": 43,
+     "arr": 470007
+    },
+    {
+     "key": "FR-646",
+     "summary": "Genesys",
+     "customer": "Genesys",
+     "score": null,
+     "arr": 0
     }
    ]
   },
@@ -1029,162 +1260,8 @@
    ]
   },
   {
-   "customer": "Learning Tree International",
-   "count": 5,
-   "arr": 250000,
-   "frs": [
-    {
-     "key": "FR-508",
-     "summary": "[Learning Tree] - Pre-configured Environments - pre-configur",
-     "customer": "Learning Tree International",
-     "score": 50,
-     "arr": 250000
-    },
-    {
-     "key": "FR-473",
-     "summary": "Learning Tree - Cloud Folders to multi-region",
-     "customer": "Learning Tree International",
-     "score": 44,
-     "arr": 250000
-    },
-    {
-     "key": "FR-556",
-     "summary": "Ability to manage Guided Journey repo and tasks via API",
-     "customer": "Learning Tree International",
-     "score": 41,
-     "arr": 250000
-    },
-    {
-     "key": "FR-476",
-     "summary": "[Learning Tree]  Ability for students (and proj managers) to",
-     "customer": "Learning Tree International",
-     "score": 39,
-     "arr": 250000
-    },
-    {
-     "key": "FR-472",
-     "summary": "Learning Tree - multi region pre-configured environments",
-     "customer": "Learning Tree International",
-     "score": 39,
-     "arr": 250000
-    }
-   ]
-  },
-  {
-   "customer": "Watchguard Technologies, Inc.",
-   "count": 5,
-   "arr": 33286,
-   "frs": [
-    {
-     "key": "FR-200",
-     "summary": "[Watchguard Technologies] Set Determined Customized Password",
-     "customer": "Watchguard Technologies, Inc.",
-     "score": 46,
-     "arr": 33286
-    },
-    {
-     "key": "FR-218",
-     "summary": "[Watchguard Technologies] API Request",
-     "customer": "Watchguard Technologies, Inc.",
-     "score": 41,
-     "arr": 33286
-    },
-    {
-     "key": "FR-585",
-     "summary": "Replace/switch guided journey mid-training",
-     "customer": "Watchguard Technologies, Inc.",
-     "score": 22,
-     "arr": 33286
-    },
-    {
-     "key": "FR-322",
-     "summary": "[Watchguard Technologies] Virtual TPM (vTPM) within VM",
-     "customer": "Watchguard Technologies, Inc.",
-     "score": 16,
-     "arr": 33286
-    },
-    {
-     "key": "FR-455",
-     "summary": "Instructor-controlled \"Hide/Show\" option (\"instructor lock\")",
-     "customer": "Watchguard Technologies, Inc.",
-     "score": 12,
-     "arr": 33286
-    }
-   ]
-  },
-  {
-   "customer": "Kaspersky Combined",
-   "count": 4,
-   "arr": 650000,
-   "frs": [
-    {
-     "key": "FR-337",
-     "summary": "Ability to snapshot and provision an env with a VM powered o",
-     "customer": "Kaspersky Combined",
-     "score": 51,
-     "arr": 650000
-    },
-    {
-     "key": "FR-342",
-     "summary": "Dashboard/reports: Better dashboards showing project member ",
-     "customer": "Kaspersky Combined",
-     "score": 34,
-     "arr": 650000
-    },
-    {
-     "key": "FR-451",
-     "summary": "Upload hash check",
-     "customer": "Kaspersky Combined",
-     "score": 32,
-     "arr": 650000
-    },
-    {
-     "key": "FR-347",
-     "summary": "Enable customers to \"Assign\" blueprints across projects in d",
-     "customer": "Kaspersky Combined",
-     "score": 31,
-     "arr": 650000
-    }
-   ]
-  },
-  {
-   "customer": "Genesys",
-   "count": 4,
-   "arr": 470007,
-   "frs": [
-    {
-     "key": "FR-209",
-     "summary": "Certifications Policies: provide an option to archive the en",
-     "customer": "Genesys",
-     "score": 74,
-     "arr": 470007
-    },
-    {
-     "key": "FR-210",
-     "summary": "Certifications: envs provisioned from non-default snapshot i",
-     "customer": "Genesys",
-     "score": 68,
-     "arr": 470007
-    },
-    {
-     "key": "FR-162",
-     "summary": "Mobile companion app",
-     "customer": "Genesys",
-     "score": 48,
-     "arr": 470007
-    },
-    {
-     "key": "FR-310",
-     "summary": "Encrypt Data at rest in our DB",
-     "customer": "Genesys",
-     "score": 43,
-     "arr": 470007
-    }
-   ]
-  },
-  {
    "customer": "ADP",
-   "count": 4,
+   "count": 5,
    "arr": 189000,
    "frs": [
     {
@@ -1214,12 +1291,19 @@
      "customer": "ADP",
      "score": 22,
      "arr": 189000
+    },
+    {
+     "key": "FR-620",
+     "summary": "ADP",
+     "customer": "ADP",
+     "score": null,
+     "arr": 0
     }
    ]
   },
   {
    "customer": "DigiCert",
-   "count": 4,
+   "count": 5,
    "arr": 95171,
    "frs": [
     {
@@ -1249,12 +1333,19 @@
      "customer": "DigiCert",
      "score": 30,
      "arr": 95171
+    },
+    {
+     "key": "FR-639",
+     "summary": "DigiCert",
+     "customer": "DigiCert",
+     "score": null,
+     "arr": 0
     }
    ]
   },
   {
    "customer": "Thales",
-   "count": 4,
+   "count": 5,
    "arr": 83067,
    "frs": [
     {
@@ -1284,12 +1375,19 @@
      "customer": "Thales",
      "score": 31,
      "arr": 83067
+    },
+    {
+     "key": "FR-685",
+     "summary": "Thales",
+     "customer": "Thales",
+     "score": null,
+     "arr": 0
     }
    ]
   },
   {
    "customer": "ExtraHop",
-   "count": 4,
+   "count": 5,
    "arr": 64260,
    "frs": [
     {
@@ -1319,12 +1417,19 @@
      "customer": "ExtraHop",
      "score": 31,
      "arr": 64260
+    },
+    {
+     "key": "FR-643",
+     "summary": "ExtraHop",
+     "customer": "ExtraHop",
+     "score": null,
+     "arr": 0
     }
    ]
   },
   {
    "customer": "Platform9",
-   "count": 4,
+   "count": 5,
    "arr": 50400,
    "frs": [
     {
@@ -1354,6 +1459,223 @@
      "customer": "Platform9",
      "score": 31,
      "arr": 50400
+    },
+    {
+     "key": "FR-669",
+     "summary": "Platform9",
+     "customer": "Platform9",
+     "score": null,
+     "arr": 0
+    }
+   ]
+  },
+  {
+   "customer": "Check Point Software - Combined",
+   "count": 4,
+   "arr": 490000,
+   "frs": [
+    {
+     "key": "FR-216",
+     "summary": "Allow End-User Invitations from Non-Default Blueprint Snapsh",
+     "customer": "Check Point Software - Combined",
+     "score": 74,
+     "arr": 490000
+    },
+    {
+     "key": "FR-532",
+     "summary": "Accelerate Migration - Gap from Classic",
+     "customer": "Check Point Software - Combined",
+     "score": 48,
+     "arr": 490000
+    },
+    {
+     "key": "FR-421",
+     "summary": "Cross-Data Center VM Migration",
+     "customer": "Check Point Software - Combined",
+     "score": 31,
+     "arr": 490000
+    },
+    {
+     "key": "FR-628",
+     "summary": "Check Point Software - Combined",
+     "customer": "Check Point Software - Combined",
+     "score": null,
+     "arr": 0
+    }
+   ]
+  },
+  {
+   "customer": "Perforce Software",
+   "count": 4,
+   "arr": 411312,
+   "frs": [
+    {
+     "key": "FR-193",
+     "summary": "Disabling/customizing Email Reminders",
+     "customer": "Perforce Software",
+     "score": 74,
+     "arr": 411312
+    },
+    {
+     "key": "FR-174",
+     "summary": "LTI Information API Request",
+     "customer": "Perforce Software",
+     "score": 64,
+     "arr": 411312
+    },
+    {
+     "key": "FR-165",
+     "summary": "Clear Class Chat",
+     "customer": "Perforce Software",
+     "score": 61,
+     "arr": 411312
+    },
+    {
+     "key": "FR-667",
+     "summary": "Perforce Software",
+     "customer": "Perforce Software",
+     "score": null,
+     "arr": 0
+    }
+   ]
+  },
+  {
+   "customer": "Ping Identity (formerly ForgeRock)",
+   "count": 4,
+   "arr": 275000,
+   "frs": [
+    {
+     "key": "FR-168",
+     "summary": "API: Migrition ID mapping endpoint from Classic to Accelerat",
+     "customer": "Ping Identity (formerly ForgeRock)",
+     "score": 48,
+     "arr": 275000
+    },
+    {
+     "key": "FR-426",
+     "summary": "Add more levels of Markdown Headers",
+     "customer": "Ping Identity (formerly ForgeRock)",
+     "score": 31,
+     "arr": 275000
+    },
+    {
+     "key": "FR-457",
+     "summary": "Individual user snapshots for roll back and progress checkin",
+     "customer": "Ping Identity (formerly ForgeRock)",
+     "score": 26,
+     "arr": 275000
+    },
+    {
+     "key": "FR-668",
+     "summary": "Ping Identity (formerly ForgeRock)",
+     "customer": "Ping Identity (formerly ForgeRock)",
+     "score": null,
+     "arr": 0
+    }
+   ]
+  },
+  {
+   "customer": "Infios (Koerber Supply Chain)",
+   "count": 4,
+   "arr": 183600,
+   "frs": [
+    {
+     "key": "FR-343",
+     "summary": "Customer-facing Reporting on User Actions (logs/audit trail)",
+     "customer": "Infios (Koerber Supply Chain)",
+     "score": 43,
+     "arr": 183600
+    },
+    {
+     "key": "FR-323",
+     "summary": "Duplicate blueprint(s) from bp list without opening environm",
+     "customer": "Infios (Koerber Supply Chain)",
+     "score": 38,
+     "arr": 183600
+    },
+    {
+     "key": "FR-424",
+     "summary": "[Infios] Reporting to identify unused environments",
+     "customer": "Infios (Koerber Supply Chain)",
+     "score": 31,
+     "arr": 183600
+    },
+    {
+     "key": "FR-653",
+     "summary": "Infios (Koerber Supply Chain)",
+     "customer": "Infios (Koerber Supply Chain)",
+     "score": null,
+     "arr": 0
+    }
+   ]
+  },
+  {
+   "customer": "BeyondTrust",
+   "count": 4,
+   "arr": 175560,
+   "frs": [
+    {
+     "key": "FR-717",
+     "summary": "[BeyondTrust] - Dynamic Region Assignment AWS",
+     "customer": "BeyondTrust",
+     "score": 37,
+     "arr": 175560
+    },
+    {
+     "key": "FR-606",
+     "summary": "[BeyondTrust] - Email Invites From cx Email Adddress",
+     "customer": "BeyondTrust",
+     "score": 35,
+     "arr": 175560
+    },
+    {
+     "key": "FR-607",
+     "summary": "[BeyondTrust] - Additional Email Customizations",
+     "customer": "BeyondTrust",
+     "score": 28,
+     "arr": 175560
+    },
+    {
+     "key": "FR-627",
+     "summary": "BeyondTrust",
+     "customer": "BeyondTrust",
+     "score": null,
+     "arr": 0
+    }
+   ]
+  },
+  {
+   "customer": "Rapid7 - SE",
+   "count": 4,
+   "arr": 63168,
+   "frs": [
+    {
+     "key": "FR-313",
+     "summary": "API's for user management",
+     "customer": "Rapid7 - SE",
+     "score": 33,
+     "arr": 63168
+    },
+    {
+     "key": "FR-312",
+     "summary": "Adding users to projects",
+     "customer": "Rapid7 - SE",
+     "score": 33,
+     "arr": 63168
+    },
+    {
+     "key": "FR-368",
+     "summary": "Environment re-creation when environment creation fails",
+     "customer": "Rapid7 - SE",
+     "score": 20,
+     "arr": 63168
+    },
+    {
+     "key": "FR-671",
+     "summary": "Rapid7 - SE",
+     "customer": "Rapid7 - SE",
+     "score": null,
+     "arr": 0
     }
    ]
   },
@@ -1393,6 +1715,111 @@
    ]
   },
   {
+   "customer": "City & Guilds",
+   "count": 4,
+   "arr": 43932,
+   "frs": [
+    {
+     "key": "FR-497",
+     "summary": "When an end user logs out of CloudShare, the runtime timer o",
+     "customer": "City & Guilds",
+     "score": 35,
+     "arr": 43932
+    },
+    {
+     "key": "FR-222",
+     "summary": "Accessibility Zoom in function",
+     "customer": "City & Guilds",
+     "score": 34,
+     "arr": 43932
+    },
+    {
+     "key": "FR-345",
+     "summary": "Customer facing Logs and audit trail",
+     "customer": "City & Guilds",
+     "score": 31,
+     "arr": 42624
+    },
+    {
+     "key": "FR-630",
+     "summary": "City & Guilds",
+     "customer": "City & Guilds",
+     "score": null,
+     "arr": 0
+    }
+   ]
+  },
+  {
+   "customer": "MCCi",
+   "count": 4,
+   "arr": 42228,
+   "frs": [
+    {
+     "key": "FR-409",
+     "summary": "[MCCi] Disable all users login access at tenant level",
+     "customer": "MCCi",
+     "score": 14,
+     "arr": 42228
+    },
+    {
+     "key": "FR-389",
+     "summary": "[MCCi] Include environments/VM's shared with a user in their",
+     "customer": "MCCi",
+     "score": 14,
+     "arr": 42228
+    },
+    {
+     "key": "FR-390",
+     "summary": "[MCCi] Date Created Field - Environment List",
+     "customer": "MCCi",
+     "score": 11,
+     "arr": 42228
+    },
+    {
+     "key": "FR-660",
+     "summary": "MCCi",
+     "customer": "MCCi",
+     "score": null,
+     "arr": 0
+    }
+   ]
+  },
+  {
+   "customer": "Darktrace",
+   "count": 4,
+   "arr": 37068,
+   "frs": [
+    {
+     "key": "FR-177",
+     "summary": "API: Additional security, IP whitlisting",
+     "customer": "Darktrace",
+     "score": 61,
+     "arr": 37068
+    },
+    {
+     "key": "FR-180",
+     "summary": "Logs: allow tenant logs to be seen and sent to a customers o",
+     "customer": "Darktrace",
+     "score": 41,
+     "arr": 37068
+    },
+    {
+     "key": "FR-194",
+     "summary": "Security: Native MFA for a \"a breaking-glass account\"",
+     "customer": "Darktrace",
+     "score": 21,
+     "arr": 37068
+    },
+    {
+     "key": "FR-637",
+     "summary": "Darktrace",
+     "customer": "Darktrace",
+     "score": null,
+     "arr": 0
+    }
+   ]
+  },
+  {
    "customer": "Check Point Software - TAC PS",
    "count": 4,
    "arr": 35880,
@@ -1428,142 +1855,149 @@
    ]
   },
   {
-   "customer": "Check Point Software - Combined",
-   "count": 3,
-   "arr": 490000,
+   "customer": "Cribl",
+   "count": 4,
+   "arr": 12000,
    "frs": [
     {
-     "key": "FR-216",
-     "summary": "Allow End-User Invitations from Non-Default Blueprint Snapsh",
-     "customer": "Check Point Software - Combined",
-     "score": 74,
-     "arr": 490000
+     "key": "FR-316",
+     "summary": "Better automation pipeline for internal infrastructure deplo",
+     "customer": "Cribl",
+     "score": 50,
+     "arr": 12000
     },
     {
-     "key": "FR-532",
-     "summary": "Accelerate Migration - Gap from Classic",
-     "customer": "Check Point Software - Combined",
-     "score": 48,
-     "arr": 490000
+     "key": "FR-170",
+     "summary": "RBAC permission for assigned blueprints to stop snapshotting",
+     "customer": "Cribl",
+     "score": 44,
+     "arr": 12000
     },
     {
-     "key": "FR-421",
-     "summary": "Cross-Data Center VM Migration",
-     "customer": "Check Point Software - Combined",
+     "key": "FR-315",
+     "summary": "Better automation pipeline for image and blueprint creation ",
+     "customer": "Cribl",
+     "score": 41,
+     "arr": 12000
+    },
+    {
+     "key": "FR-633",
+     "summary": "Cribl",
+     "customer": "Cribl",
+     "score": null,
+     "arr": 0
+    }
+   ]
+  },
+  {
+   "customer": "Ciena - Training",
+   "count": 3,
+   "arr": 125280,
+   "frs": [
+    {
+     "key": "FR-344",
+     "summary": "Emoji Based Feadback",
+     "customer": "Ciena - Training",
      "score": 31,
-     "arr": 490000
-    }
-   ]
-  },
-  {
-   "customer": "Perforce Software",
-   "count": 3,
-   "arr": 411312,
-   "frs": [
-    {
-     "key": "FR-193",
-     "summary": "Disabling/customizing Email Reminders",
-     "customer": "Perforce Software",
-     "score": 74,
-     "arr": 411312
+     "arr": 125280
     },
     {
-     "key": "FR-174",
-     "summary": "LTI Information API Request",
-     "customer": "Perforce Software",
-     "score": 64,
-     "arr": 411312
-    },
-    {
-     "key": "FR-165",
-     "summary": "Clear Class Chat",
-     "customer": "Perforce Software",
-     "score": 61,
-     "arr": 411312
-    }
-   ]
-  },
-  {
-   "customer": "Ping Identity (formerly ForgeRock)",
-   "count": 3,
-   "arr": 275000,
-   "frs": [
-    {
-     "key": "FR-168",
-     "summary": "API: Migrition ID mapping endpoint from Classic to Accelerat",
-     "customer": "Ping Identity (formerly ForgeRock)",
-     "score": 48,
-     "arr": 275000
-    },
-    {
-     "key": "FR-426",
-     "summary": "Add more levels of Markdown Headers",
-     "customer": "Ping Identity (formerly ForgeRock)",
-     "score": 31,
-     "arr": 275000
-    },
-    {
-     "key": "FR-457",
-     "summary": "Individual user snapshots for roll back and progress checkin",
-     "customer": "Ping Identity (formerly ForgeRock)",
-     "score": 26,
-     "arr": 275000
-    }
-   ]
-  },
-  {
-   "customer": "Infios (Koerber Supply Chain)",
-   "count": 3,
-   "arr": 183600,
-   "frs": [
-    {
-     "key": "FR-343",
-     "summary": "Customer-facing Reporting on User Actions (logs/audit trail)",
-     "customer": "Infios (Koerber Supply Chain)",
-     "score": 43,
-     "arr": 183600
-    },
-    {
-     "key": "FR-323",
-     "summary": "Duplicate blueprint(s) from bp list without opening environm",
-     "customer": "Infios (Koerber Supply Chain)",
-     "score": 38,
-     "arr": 183600
-    },
-    {
-     "key": "FR-424",
-     "summary": "[Infios] Reporting to identify unused environments",
-     "customer": "Infios (Koerber Supply Chain)",
-     "score": 31,
-     "arr": 183600
-    }
-   ]
-  },
-  {
-   "customer": "BeyondTrust",
-   "count": 3,
-   "arr": 175560,
-   "frs": [
-    {
-     "key": "FR-717",
-     "summary": "[BeyondTrust] - Dynamic Region Assignment AWS",
-     "customer": "BeyondTrust",
-     "score": 37,
-     "arr": 175560
-    },
-    {
-     "key": "FR-606",
-     "summary": "[BeyondTrust] - Email Invites From cx Email Adddress",
-     "customer": "BeyondTrust",
-     "score": 35,
-     "arr": 175560
-    },
-    {
-     "key": "FR-607",
-     "summary": "[BeyondTrust] - Additional Email Customizations",
-     "customer": "BeyondTrust",
+     "key": "FR-718",
+     "summary": "Time Based Controls",
+     "customer": "Ciena - Training",
      "score": 28,
-     "arr": 175560
+     "arr": 125280
+    },
+    {
+     "key": "FR-629",
+     "summary": "Ciena - Training",
+     "customer": "Ciena - Training",
+     "score": null,
+     "arr": 0
+    }
+   ]
+  },
+  {
+   "customer": "Deltek Consulting",
+   "count": 3,
+   "arr": 90720,
+   "frs": [
+    {
+     "key": "FR-166",
+     "summary": "Enable customers to \"Assign\" blueprints across projects in d",
+     "customer": "Deltek Consulting",
+     "score": 61,
+     "arr": 90720
+    },
+    {
+     "key": "FR-318",
+     "summary": "RBAC permission for assigned blueprints to stop snapshotting",
+     "customer": "Deltek Consulting",
+     "score": 48,
+     "arr": 90720
+    },
+    {
+     "key": "FR-638",
+     "summary": "Deltek Consulting",
+     "customer": "Deltek Consulting",
+     "score": null,
+     "arr": 0
+    }
+   ]
+  },
+  {
+   "customer": "SailPoint Technologies",
+   "count": 3,
+   "arr": 83424,
+   "frs": [
+    {
+     "key": "FR-208",
+     "summary": "Changing Main instructor in Training experiences",
+     "customer": "SailPoint Technologies",
+     "score": 61,
+     "arr": 83424
+    },
+    {
+     "key": "FR-408",
+     "summary": "Controlled Re-Enrollment for Training Experiences",
+     "customer": "SailPoint Technologies",
+     "score": 24,
+     "arr": 83424
+    },
+    {
+     "key": "FR-677",
+     "summary": "SailPoint Technologies",
+     "customer": "SailPoint Technologies",
+     "score": null,
+     "arr": 0
+    }
+   ]
+  },
+  {
+   "customer": "Nozomi Networks",
+   "count": 3,
+   "arr": 72900,
+   "frs": [
+    {
+     "key": "FR-324",
+     "summary": "Ability to snapshot and provision an env with a VM powered o",
+     "customer": "Nozomi Networks",
+     "score": 31,
+     "arr": 72900
+    },
+    {
+     "key": "FR-448",
+     "summary": "Enable sharing a web access links for a VM even when it's hi",
+     "customer": "Nozomi Networks",
+     "score": 22,
+     "arr": 72900
+    },
+    {
+     "key": "FR-664",
+     "summary": "Nozomi Networks",
+     "customer": "Nozomi Networks",
+     "score": null,
+     "arr": 0
     }
    ]
   },
@@ -1596,205 +2030,345 @@
    ]
   },
   {
-   "customer": "Rapid7 - SE",
+   "customer": "HYPR Corp",
    "count": 3,
-   "arr": 63168,
+   "arr": 29007,
    "frs": [
     {
-     "key": "FR-313",
-     "summary": "API's for user management",
-     "customer": "Rapid7 - SE",
-     "score": 33,
-     "arr": 63168
-    },
-    {
-     "key": "FR-312",
-     "summary": "Adding users to projects",
-     "customer": "Rapid7 - SE",
-     "score": 33,
-     "arr": 63168
-    },
-    {
-     "key": "FR-368",
-     "summary": "Environment re-creation when environment creation fails",
-     "customer": "Rapid7 - SE",
-     "score": 20,
-     "arr": 63168
-    }
-   ]
-  },
-  {
-   "customer": "City & Guilds",
-   "count": 3,
-   "arr": 43932,
-   "frs": [
-    {
-     "key": "FR-497",
-     "summary": "When an end user logs out of CloudShare, the runtime timer o",
-     "customer": "City & Guilds",
-     "score": 35,
-     "arr": 43932
-    },
-    {
-     "key": "FR-222",
-     "summary": "Accessibility Zoom in function",
-     "customer": "City & Guilds",
-     "score": 34,
-     "arr": 43932
-    },
-    {
-     "key": "FR-345",
-     "summary": "Customer facing Logs and audit trail",
-     "customer": "City & Guilds",
-     "score": 31,
-     "arr": 42624
-    }
-   ]
-  },
-  {
-   "customer": "MCCi",
-   "count": 3,
-   "arr": 42228,
-   "frs": [
-    {
-     "key": "FR-409",
-     "summary": "[MCCi] Disable all users login access at tenant level",
-     "customer": "MCCi",
-     "score": 14,
-     "arr": 42228
-    },
-    {
-     "key": "FR-389",
-     "summary": "[MCCi] Include environments/VM's shared with a user in their",
-     "customer": "MCCi",
-     "score": 14,
-     "arr": 42228
-    },
-    {
-     "key": "FR-390",
-     "summary": "[MCCi] Date Created Field - Environment List",
-     "customer": "MCCi",
-     "score": 11,
-     "arr": 42228
-    }
-   ]
-  },
-  {
-   "customer": "Darktrace",
-   "count": 3,
-   "arr": 37068,
-   "frs": [
-    {
-     "key": "FR-177",
-     "summary": "API: Additional security, IP whitlisting",
-     "customer": "Darktrace",
-     "score": 61,
-     "arr": 37068
-    },
-    {
-     "key": "FR-180",
-     "summary": "Logs: allow tenant logs to be seen and sent to a customers o",
-     "customer": "Darktrace",
-     "score": 41,
-     "arr": 37068
-    },
-    {
-     "key": "FR-194",
-     "summary": "Security: Native MFA for a \"a breaking-glass account\"",
-     "customer": "Darktrace",
-     "score": 21,
-     "arr": 37068
-    }
-   ]
-  },
-  {
-   "customer": "Cribl",
-   "count": 3,
-   "arr": 12000,
-   "frs": [
-    {
-     "key": "FR-316",
-     "summary": "Better automation pipeline for internal infrastructure deplo",
-     "customer": "Cribl",
-     "score": 50,
-     "arr": 12000
-    },
-    {
-     "key": "FR-170",
+     "key": "FR-317",
      "summary": "RBAC permission for assigned blueprints to stop snapshotting",
-     "customer": "Cribl",
-     "score": 44,
-     "arr": 12000
+     "customer": "HYPR Corp",
+     "score": 36,
+     "arr": 29007
     },
     {
-     "key": "FR-315",
-     "summary": "Better automation pipeline for image and blueprint creation ",
-     "customer": "Cribl",
-     "score": 41,
-     "arr": 12000
+     "key": "FR-195",
+     "summary": "Global VPN Setting",
+     "customer": "HYPR Corp",
+     "score": 25,
+     "arr": 29007
+    },
+    {
+     "key": "FR-651",
+     "summary": "HYPR Corp",
+     "customer": "HYPR Corp",
+     "score": null,
+     "arr": 0
     }
    ]
   },
   {
-   "customer": "Ciena - Training",
-   "count": 2,
-   "arr": 125280,
+   "customer": "Georgia Tech",
+   "count": 3,
+   "arr": 20688,
    "frs": [
     {
-     "key": "FR-344",
-     "summary": "Emoji Based Feadback",
-     "customer": "Ciena - Training",
-     "score": 31,
-     "arr": 125280
-    },
-    {
-     "key": "FR-718",
-     "summary": "Time Based Controls",
-     "customer": "Ciena - Training",
+     "key": "FR-329",
+     "summary": "Provide licensing to AI models like we do with Microsoft pro",
+     "customer": "Georgia Tech",
      "score": 28,
-     "arr": 125280
+     "arr": 20688
+    },
+    {
+     "key": "FR-475",
+     "summary": "[Georgia Tech] Blocking IMCP outgoing packets",
+     "customer": "Georgia Tech",
+     "score": 21,
+     "arr": 20688
+    },
+    {
+     "key": "FR-647",
+     "summary": "Georgia Tech",
+     "customer": "Georgia Tech",
+     "score": null,
+     "arr": 0
     }
    ]
   },
   {
-   "customer": "Deltek Consulting",
-   "count": 2,
-   "arr": 90720,
+   "customer": "HID Global Corporation",
+   "count": 3,
+   "arr": 19200,
    "frs": [
     {
-     "key": "FR-166",
-     "summary": "Enable customers to \"Assign\" blueprints across projects in d",
-     "customer": "Deltek Consulting",
-     "score": 61,
-     "arr": 90720
+     "key": "FR-186",
+     "summary": "[HID Global] Terms Banner Page prior to Class access",
+     "customer": "HID Global Corporation",
+     "score": 64,
+     "arr": 19200
     },
     {
-     "key": "FR-318",
-     "summary": "RBAC permission for assigned blueprints to stop snapshotting",
-     "customer": "Deltek Consulting",
+     "key": "FR-190",
+     "summary": "[HID Global] API Enhancement: Swagger and better documentati",
+     "customer": "HID Global Corporation",
+     "score": 51,
+     "arr": 19200
+    },
+    {
+     "key": "FR-649",
+     "summary": "HID Global Corporation",
+     "customer": "HID Global Corporation",
+     "score": null,
+     "arr": 0
+    }
+   ]
+  },
+  {
+   "customer": "ConEst Software",
+   "count": 3,
+   "arr": 14627,
+   "frs": [
+    {
+     "key": "FR-600",
+     "summary": "Customize button in custom email for inviting students",
+     "customer": "ConEst Software",
+     "score": 31,
+     "arr": 14627
+    },
+    {
+     "key": "FR-405",
+     "summary": "Ability to view other instructor's VMs as thumbnail in the c",
+     "customer": "ConEst Software",
+     "score": 18,
+     "arr": 14627
+    },
+    {
+     "key": "FR-631",
+     "summary": "ConEst Software",
+     "customer": "ConEst Software",
+     "score": null,
+     "arr": 0
+    }
+   ]
+  },
+  {
+   "customer": "Siemens Healthineers",
+   "count": 2,
+   "arr": 1002540,
+   "frs": [
+    {
+     "key": "FR-574",
+     "summary": "Dynamic Region Assignment",
+     "customer": "Siemens Healthineers",
+     "score": 31,
+     "arr": 1002540
+    },
+    {
+     "key": "FR-681",
+     "summary": "Siemens Healthineers",
+     "customer": "Siemens Healthineers",
+     "score": null,
+     "arr": 0
+    }
+   ]
+  },
+  {
+   "customer": "Palo Alto Networks",
+   "count": 2,
+   "arr": 569200,
+   "frs": [
+    {
+     "key": "FR-334",
+     "summary": "Enrollment solution for the Azure MFA requirement",
+     "customer": "Palo Alto Networks",
      "score": 48,
-     "arr": 90720
+     "arr": 569200
+    },
+    {
+     "key": "FR-666",
+     "summary": "Palo Alto Networks",
+     "customer": "Palo Alto Networks",
+     "score": null,
+     "arr": 0
     }
    ]
   },
   {
-   "customer": "SailPoint Technologies",
+   "customer": "Omnicell",
    "count": 2,
-   "arr": 83424,
+   "arr": 335491,
    "frs": [
     {
-     "key": "FR-208",
-     "summary": "Changing Main instructor in Training experiences",
-     "customer": "SailPoint Technologies",
-     "score": 61,
-     "arr": 83424
+     "key": "FR-406",
+     "summary": "[Omnicell] Tie a static URL to a login/student's account",
+     "customer": "Omnicell",
+     "score": 31,
+     "arr": 335491
     },
     {
-     "key": "FR-408",
-     "summary": "Controlled Re-Enrollment for Training Experiences",
-     "customer": "SailPoint Technologies",
-     "score": 24,
-     "arr": 83424
+     "key": "FR-665",
+     "summary": "Omnicell",
+     "customer": "Omnicell",
+     "score": null,
+     "arr": 0
+    }
+   ]
+  },
+  {
+   "customer": "Salesforce (MuleSoft)",
+   "count": 2,
+   "arr": 297000,
+   "frs": [
+    {
+     "key": "FR-355",
+     "summary": "Policy Class End Date Warning",
+     "customer": "Salesforce (MuleSoft)",
+     "score": 27,
+     "arr": 297000
+    },
+    {
+     "key": "FR-678",
+     "summary": "Salesforce (MuleSoft)",
+     "customer": "Salesforce (MuleSoft)",
+     "score": null,
+     "arr": 0
+    }
+   ]
+  },
+  {
+   "customer": "Syniti",
+   "count": 2,
+   "arr": 285294,
+   "frs": [
+    {
+     "key": "FR-352",
+     "summary": "[Syniti] View Custom Actions",
+     "customer": "Syniti",
+     "score": 62,
+     "arr": 285294
+    },
+    {
+     "key": "FR-682",
+     "summary": "Syniti",
+     "customer": "Syniti",
+     "score": null,
+     "arr": 0
+    }
+   ]
+  },
+  {
+   "customer": "Netwrix Corporation",
+   "count": 2,
+   "arr": 199480,
+   "frs": [
+    {
+     "key": "FR-367",
+     "summary": "Allow API Get Requests",
+     "customer": "Netwrix Corporation",
+     "score": 41,
+     "arr": 199480
+    },
+    {
+     "key": "FR-663",
+     "summary": "Netwrix Corporation",
+     "customer": "Netwrix Corporation",
+     "score": null,
+     "arr": 0
+    }
+   ]
+  },
+  {
+   "customer": "LaunchLife International",
+   "count": 2,
+   "arr": 125000,
+   "frs": [
+    {
+     "key": "FR-219",
+     "summary": "Guided Journey Export",
+     "customer": "LaunchLife International",
+     "score": 31,
+     "arr": 125000
+    },
+    {
+     "key": "FR-657",
+     "summary": "LaunchLife International",
+     "customer": "LaunchLife International",
+     "score": null,
+     "arr": 0
+    }
+   ]
+  },
+  {
+   "customer": "Cotiviti (Edifecs)",
+   "count": 2,
+   "arr": 104400,
+   "frs": [
+    {
+     "key": "FR-541",
+     "summary": "[Cotiviti] Feature to ensure \"key\" envs are never irrecovera",
+     "customer": "Cotiviti (Edifecs)",
+     "score": 31,
+     "arr": 104400
+    },
+    {
+     "key": "FR-632",
+     "summary": "Cotiviti (Edifecs)",
+     "customer": "Cotiviti (Edifecs)",
+     "score": null,
+     "arr": 0
+    }
+   ]
+  },
+  {
+   "customer": "Procede Software",
+   "count": 2,
+   "arr": 103320,
+   "frs": [
+    {
+     "key": "FR-319",
+     "summary": "An ability to create a pool of FQDNs that can be used for VM",
+     "customer": "Procede Software",
+     "score": 59,
+     "arr": 103320
+    },
+    {
+     "key": "FR-670",
+     "summary": "Procede Software",
+     "customer": "Procede Software",
+     "score": null,
+     "arr": 0
+    }
+   ]
+  },
+  {
+   "customer": "RSA Security - Identity",
+   "count": 2,
+   "arr": 85680,
+   "frs": [
+    {
+     "key": "FR-220",
+     "summary": "VM access menus closer VM names",
+     "customer": "RSA Security - Identity",
+     "score": 34,
+     "arr": 85680
+    },
+    {
+     "key": "FR-675",
+     "summary": "RSA Security - Identity",
+     "customer": "RSA Security - Identity",
+     "score": null,
+     "arr": 0
+    }
+   ]
+  },
+  {
+   "customer": "ARGUS (Altus Group)",
+   "count": 2,
+   "arr": 73000,
+   "frs": [
+    {
+     "key": "FR-423",
+     "summary": "[Argus (Altus Group] Export Chat Data",
+     "customer": "ARGUS (Altus Group)",
+     "score": 22,
+     "arr": 73000
+    },
+    {
+     "key": "FR-625",
+     "summary": "ARGUS (Altus Group)",
+     "customer": "ARGUS (Altus Group)",
+     "score": null,
+     "arr": 0
     }
    ]
   },
@@ -1820,23 +2394,65 @@
    ]
   },
   {
-   "customer": "Nozomi Networks",
+   "customer": "Tessitura Network",
    "count": 2,
-   "arr": 72900,
+   "arr": 67830,
    "frs": [
     {
-     "key": "FR-324",
-     "summary": "Ability to snapshot and provision an env with a VM powered o",
-     "customer": "Nozomi Networks",
-     "score": 31,
-     "arr": 72900
+     "key": "FR-364",
+     "summary": "Better filtering on training experiences",
+     "customer": "Tessitura Network",
+     "score": 20,
+     "arr": 67830
     },
     {
-     "key": "FR-448",
-     "summary": "Enable sharing a web access links for a VM even when it's hi",
-     "customer": "Nozomi Networks",
-     "score": 22,
-     "arr": 72900
+     "key": "FR-684",
+     "summary": "Tessitura Network",
+     "customer": "Tessitura Network",
+     "score": null,
+     "arr": 0
+    }
+   ]
+  },
+  {
+   "customer": "SAI360",
+   "count": 2,
+   "arr": 64440,
+   "frs": [
+    {
+     "key": "FR-720",
+     "summary": "Do not require all collaboration tools to be on for assistan",
+     "customer": "SAI360",
+     "score": 35,
+     "arr": 64440
+    },
+    {
+     "key": "FR-676",
+     "summary": "SAI360",
+     "customer": "SAI360",
+     "score": null,
+     "arr": 0
+    }
+   ]
+  },
+  {
+   "customer": "AlgoSec - SE",
+   "count": 2,
+   "arr": 59017,
+   "frs": [
+    {
+     "key": "FR-377",
+     "summary": "High Priority - Improve the performance of copying snapshots",
+     "customer": "AlgoSec - SE",
+     "score": 34,
+     "arr": 59017
+    },
+    {
+     "key": "FR-621",
+     "summary": "AlgoSec - SE",
+     "customer": "AlgoSec - SE",
+     "score": null,
+     "arr": 0
     }
    ]
   },
@@ -1862,6 +2478,27 @@
    ]
   },
   {
+   "customer": "Netskope (Infiot)",
+   "count": 2,
+   "arr": 48720,
+   "frs": [
+    {
+     "key": "FR-454",
+     "summary": "Reboot All environments",
+     "customer": "Netskope (Infiot)",
+     "score": 13,
+     "arr": 48720
+    },
+    {
+     "key": "FR-662",
+     "summary": "Netskope (Infiot)",
+     "customer": "Netskope (Infiot)",
+     "score": null,
+     "arr": 0
+    }
+   ]
+  },
+  {
    "customer": "Netskope",
    "count": 2,
    "arr": 48720,
@@ -1883,100 +2520,338 @@
    ]
   },
   {
-   "customer": "HYPR Corp",
+   "customer": "Siemens - Digital Industries Learning (SITRAIN)",
    "count": 2,
-   "arr": 29007,
+   "arr": 44604,
    "frs": [
     {
-     "key": "FR-317",
-     "summary": "RBAC permission for assigned blueprints to stop snapshotting",
-     "customer": "HYPR Corp",
-     "score": 36,
-     "arr": 29007
+     "key": "FR-326",
+     "summary": "Cloud Folders for individual students",
+     "customer": "Siemens - Digital Industries Learning (SITRAIN)",
+     "score": 48,
+     "arr": 44604
     },
     {
-     "key": "FR-195",
-     "summary": "Global VPN Setting",
-     "customer": "HYPR Corp",
-     "score": 25,
-     "arr": 29007
+     "key": "FR-680",
+     "summary": "Siemens - Digital Industries Learning (SITRAIN)",
+     "customer": "Siemens - Digital Industries Learning (SITRAIN)",
+     "score": null,
+     "arr": 0
     }
    ]
   },
   {
-   "customer": "Georgia Tech",
+   "customer": "Keyfactor",
    "count": 2,
-   "arr": 20688,
+   "arr": 39857,
    "frs": [
     {
-     "key": "FR-329",
-     "summary": "Provide licensing to AI models like we do with Microsoft pro",
-     "customer": "Georgia Tech",
+     "key": "FR-573",
+     "summary": "Latest Ubuntu Desktop",
+     "customer": "Keyfactor",
+     "score": 15,
+     "arr": 39857
+    },
+    {
+     "key": "FR-656",
+     "summary": "Keyfactor",
+     "customer": "Keyfactor",
+     "score": null,
+     "arr": 0
+    }
+   ]
+  },
+  {
+   "customer": "Menlo Security",
+   "count": 2,
+   "arr": 38688,
+   "frs": [
+    {
+     "key": "FR-176",
+     "summary": "API Enhancement: Swagger and better documentation",
+     "customer": "Menlo Security",
+     "score": 61,
+     "arr": 38688
+    },
+    {
+     "key": "FR-661",
+     "summary": "Menlo Security",
+     "customer": "Menlo Security",
+     "score": null,
+     "arr": 0
+    }
+   ]
+  },
+  {
+   "customer": "GE Vernova",
+   "count": 2,
+   "arr": 38000,
+   "frs": [
+    {
+     "key": "FR-458",
+     "summary": "[GE Vernova] Embedding MP4s in Guided Journeys",
+     "customer": "GE Vernova",
+     "score": 13,
+     "arr": 38000
+    },
+    {
+     "key": "FR-645",
+     "summary": "GE Vernova",
+     "customer": "GE Vernova",
+     "score": null,
+     "arr": 0
+    }
+   ]
+  },
+  {
+   "customer": "Revvity",
+   "count": 2,
+   "arr": 32544,
+   "frs": [
+    {
+     "key": "FR-327",
+     "summary": "Want GPUs for their VMs",
+     "customer": "Revvity",
      "score": 28,
-     "arr": 20688
+     "arr": 32544
     },
     {
-     "key": "FR-475",
-     "summary": "[Georgia Tech] Blocking IMCP outgoing packets",
-     "customer": "Georgia Tech",
-     "score": 21,
-     "arr": 20688
+     "key": "FR-674",
+     "summary": "Revvity",
+     "customer": "Revvity",
+     "score": null,
+     "arr": 0
     }
    ]
   },
   {
-   "customer": "HID Global Corporation",
+   "customer": "AMD",
+   "count": 2,
+   "arr": 29344,
+   "frs": [
+    {
+     "key": "FR-572",
+     "summary": "Want access to AMD Evaluation Boards (Hardware)",
+     "customer": "AMD",
+     "score": 15,
+     "arr": 29344
+    },
+    {
+     "key": "FR-623",
+     "summary": "AMD",
+     "customer": "AMD",
+     "score": null,
+     "arr": 0
+    }
+   ]
+  },
+  {
+   "customer": "Thales Professional Services",
+   "count": 2,
+   "arr": 28800,
+   "frs": [
+    {
+     "key": "FR-592",
+     "summary": "Ability to filter for only active students",
+     "customer": "Thales Professional Services",
+     "score": 29,
+     "arr": 28800
+    },
+    {
+     "key": "FR-686",
+     "summary": "Thales Professional Services",
+     "customer": "Thales Professional Services",
+     "score": null,
+     "arr": 0
+    }
+   ]
+  },
+  {
+   "customer": "Wolters Kluwer",
+   "count": 2,
+   "arr": 25920,
+   "frs": [
+    {
+     "key": "FR-353",
+     "summary": "High Priority - Improve the performance of copying snapshots",
+     "customer": "Wolters Kluwer",
+     "score": 22,
+     "arr": 25920
+    },
+    {
+     "key": "FR-691",
+     "summary": "Wolters Kluwer",
+     "customer": "Wolters Kluwer",
+     "score": null,
+     "arr": 0
+    }
+   ]
+  },
+  {
+   "customer": "Elder Research, Inc.",
+   "count": 2,
+   "arr": 21921,
+   "frs": [
+    {
+     "key": "FR-365",
+     "summary": "LTI 1.3 Enhancement for Elder Research",
+     "customer": "Elder Research, Inc.",
+     "score": 15,
+     "arr": 21921
+    },
+    {
+     "key": "FR-640",
+     "summary": "Elder Research, Inc.",
+     "customer": "Elder Research, Inc.",
+     "score": null,
+     "arr": 0
+    }
+   ]
+  },
+  {
+   "customer": "Siemens (VarianThink)",
+   "count": 2,
+   "arr": 21264,
+   "frs": [
+    {
+     "key": "FR-542",
+     "summary": "Allow Team Memebers / Managers to be in Multiple Teams (+2 m",
+     "customer": "Siemens (VarianThink)",
+     "score": 15,
+     "arr": 21264
+    },
+    {
+     "key": "FR-679",
+     "summary": "Siemens (VarianThink)",
+     "customer": "Siemens (VarianThink)",
+     "score": null,
+     "arr": 0
+    }
+   ]
+  },
+  {
+   "customer": "EVS Broadcast Equipment",
    "count": 2,
    "arr": 19200,
    "frs": [
     {
-     "key": "FR-186",
-     "summary": "[HID Global] Terms Banner Page prior to Class access",
-     "customer": "HID Global Corporation",
-     "score": 64,
+     "key": "FR-357",
+     "summary": "Shared environment communication",
+     "customer": "EVS Broadcast Equipment",
+     "score": 16,
      "arr": 19200
     },
     {
-     "key": "FR-190",
-     "summary": "[HID Global] API Enhancement: Swagger and better documentati",
-     "customer": "HID Global Corporation",
-     "score": 51,
-     "arr": 19200
+     "key": "FR-641",
+     "summary": "EVS Broadcast Equipment",
+     "customer": "EVS Broadcast Equipment",
+     "score": null,
+     "arr": 0
     }
    ]
   },
   {
-   "customer": "ConEst Software",
+   "customer": "CTERA",
    "count": 2,
-   "arr": 14627,
+   "arr": 18240,
    "frs": [
     {
-     "key": "FR-600",
-     "summary": "Customize button in custom email for inviting students",
-     "customer": "ConEst Software",
-     "score": 31,
-     "arr": 14627
+     "key": "FR-363",
+     "summary": "Deletion notification in envs'",
+     "customer": "CTERA",
+     "score": 28,
+     "arr": 18240
     },
     {
-     "key": "FR-405",
-     "summary": "Ability to view other instructor's VMs as thumbnail in the c",
-     "customer": "ConEst Software",
-     "score": 18,
-     "arr": 14627
+     "key": "FR-635",
+     "summary": "CTERA",
+     "customer": "CTERA",
+     "score": null,
+     "arr": 0
     }
    ]
   },
   {
-   "customer": "Siemens Healthineers",
-   "count": 1,
-   "arr": 1002540,
+   "customer": "Applied Materials",
+   "count": 2,
+   "arr": 17616,
    "frs": [
     {
-     "key": "FR-574",
-     "summary": "Dynamic Region Assignment",
-     "customer": "Siemens Healthineers",
-     "score": 31,
-     "arr": 1002540
+     "key": "FR-427",
+     "summary": "Multiple Azure tenants",
+     "customer": "Applied Materials",
+     "score": 21,
+     "arr": 17616
+    },
+    {
+     "key": "FR-624",
+     "summary": "Applied Materials",
+     "customer": "Applied Materials",
+     "score": null,
+     "arr": 0
+    }
+   ]
+  },
+  {
+   "customer": "Vision InfoSoft",
+   "count": 2,
+   "arr": 7956,
+   "frs": [
+    {
+     "key": "FR-419",
+     "summary": "[Vision Infosoft] Thumbnail Request",
+     "customer": "Vision InfoSoft",
+     "score": 18,
+     "arr": 7956
+    },
+    {
+     "key": "FR-689",
+     "summary": "Vision InfoSoft",
+     "customer": "Vision InfoSoft",
+     "score": null,
+     "arr": 0
+    }
+   ]
+  },
+  {
+   "customer": "Honeywell",
+   "count": 2,
+   "arr": 0,
+   "frs": [
+    {
+     "key": "FR-516",
+     "summary": "[Honeywell] Mac Address Changes in the UI",
+     "customer": "Honeywell",
+     "score": 8,
+     "arr": 0
+    },
+    {
+     "key": "FR-650",
+     "summary": "Honeywell",
+     "customer": "Honeywell",
+     "score": null,
+     "arr": 0
+    }
+   ]
+  },
+  {
+   "customer": "Arctic Wolf",
+   "count": 2,
+   "arr": 0,
+   "frs": [
+    {
+     "key": "FR-519",
+     "summary": "[Arctic Wolf] Invitation Validity Timer",
+     "customer": "Arctic Wolf",
+     "score": 14,
+     "arr": 0
+    },
+    {
+     "key": "FR-619",
+     "summary": "Arctic Wolf",
+     "customer": "Arctic Wolf",
+     "score": null,
+     "arr": 0
     }
    ]
   },
@@ -1995,20 +2870,6 @@
    ]
   },
   {
-   "customer": "Palo Alto Networks",
-   "count": 1,
-   "arr": 569200,
-   "frs": [
-    {
-     "key": "FR-334",
-     "summary": "Enrollment solution for the Azure MFA requirement",
-     "customer": "Palo Alto Networks",
-     "score": 48,
-     "arr": 569200
-    }
-   ]
-  },
-  {
    "customer": "One Identity",
    "count": 1,
    "arr": 561600,
@@ -2019,20 +2880,6 @@
      "customer": "One Identity",
      "score": 60,
      "arr": 561600
-    }
-   ]
-  },
-  {
-   "customer": "Omnicell",
-   "count": 1,
-   "arr": 335491,
-   "frs": [
-    {
-     "key": "FR-406",
-     "summary": "[Omnicell] Tie a static URL to a login/student's account",
-     "customer": "Omnicell",
-     "score": 31,
-     "arr": 335491
     }
    ]
   },
@@ -2065,34 +2912,6 @@
    ]
   },
   {
-   "customer": "Salesforce (MuleSoft)",
-   "count": 1,
-   "arr": 297000,
-   "frs": [
-    {
-     "key": "FR-355",
-     "summary": "Policy Class End Date Warning",
-     "customer": "Salesforce (MuleSoft)",
-     "score": 27,
-     "arr": 297000
-    }
-   ]
-  },
-  {
-   "customer": "Syniti",
-   "count": 1,
-   "arr": 285294,
-   "frs": [
-    {
-     "key": "FR-352",
-     "summary": "[Syniti] View Custom Actions",
-     "customer": "Syniti",
-     "score": 62,
-     "arr": 285294
-    }
-   ]
-  },
-  {
    "customer": "Ping Identity",
    "count": 1,
    "arr": 275000,
@@ -2121,20 +2940,6 @@
    ]
   },
   {
-   "customer": "Netwrix Corporation",
-   "count": 1,
-   "arr": 199480,
-   "frs": [
-    {
-     "key": "FR-367",
-     "summary": "Allow API Get Requests",
-     "customer": "Netwrix Corporation",
-     "score": 41,
-     "arr": 199480
-    }
-   ]
-  },
-  {
    "customer": "Check Point Software - Architects (Combined)",
    "count": 1,
    "arr": 133152,
@@ -2149,48 +2954,6 @@
    ]
   },
   {
-   "customer": "LaunchLife International",
-   "count": 1,
-   "arr": 125000,
-   "frs": [
-    {
-     "key": "FR-219",
-     "summary": "Guided Journey Export",
-     "customer": "LaunchLife International",
-     "score": 31,
-     "arr": 125000
-    }
-   ]
-  },
-  {
-   "customer": "Cotiviti (Edifecs)",
-   "count": 1,
-   "arr": 104400,
-   "frs": [
-    {
-     "key": "FR-541",
-     "summary": "[Cotiviti] Feature to ensure \"key\" envs are never irrecovera",
-     "customer": "Cotiviti (Edifecs)",
-     "score": 31,
-     "arr": 104400
-    }
-   ]
-  },
-  {
-   "customer": "Procede Software",
-   "count": 1,
-   "arr": 103320,
-   "frs": [
-    {
-     "key": "FR-319",
-     "summary": "An ability to create a pool of FQDNs that can be used for VM",
-     "customer": "Procede Software",
-     "score": 59,
-     "arr": 103320
-    }
-   ]
-  },
-  {
    "customer": "Deltek",
    "count": 1,
    "arr": 90720,
@@ -2201,20 +2964,6 @@
      "customer": "Deltek",
      "score": 53,
      "arr": 90720
-    }
-   ]
-  },
-  {
-   "customer": "RSA Security - Identity",
-   "count": 1,
-   "arr": 85680,
-   "frs": [
-    {
-     "key": "FR-220",
-     "summary": "VM access menus closer VM names",
-     "customer": "RSA Security - Identity",
-     "score": 34,
-     "arr": 85680
     }
    ]
   },
@@ -2247,62 +2996,6 @@
    ]
   },
   {
-   "customer": "ARGUS (Altus Group)",
-   "count": 1,
-   "arr": 73000,
-   "frs": [
-    {
-     "key": "FR-423",
-     "summary": "[Argus (Altus Group] Export Chat Data",
-     "customer": "ARGUS (Altus Group)",
-     "score": 22,
-     "arr": 73000
-    }
-   ]
-  },
-  {
-   "customer": "Tessitura Network",
-   "count": 1,
-   "arr": 67830,
-   "frs": [
-    {
-     "key": "FR-364",
-     "summary": "Better filtering on training experiences",
-     "customer": "Tessitura Network",
-     "score": 20,
-     "arr": 67830
-    }
-   ]
-  },
-  {
-   "customer": "SAI360",
-   "count": 1,
-   "arr": 64440,
-   "frs": [
-    {
-     "key": "FR-720",
-     "summary": "Do not require all collaboration tools to be on for assistan",
-     "customer": "SAI360",
-     "score": 35,
-     "arr": 64440
-    }
-   ]
-  },
-  {
-   "customer": "AlgoSec - SE",
-   "count": 1,
-   "arr": 59017,
-   "frs": [
-    {
-     "key": "FR-377",
-     "summary": "High Priority - Improve the performance of copying snapshots",
-     "customer": "AlgoSec - SE",
-     "score": 34,
-     "arr": 59017
-    }
-   ]
-  },
-  {
    "customer": "MATRIXX Software (acquired by Amdocs)",
    "count": 1,
    "arr": 50400,
@@ -2313,20 +3006,6 @@
      "customer": "MATRIXX Software (acquired by Amdocs)",
      "score": 20,
      "arr": 50400
-    }
-   ]
-  },
-  {
-   "customer": "Netskope (Infiot)",
-   "count": 1,
-   "arr": 48720,
-   "frs": [
-    {
-     "key": "FR-454",
-     "summary": "Reboot All environments",
-     "customer": "Netskope (Infiot)",
-     "score": 13,
-     "arr": 48720
     }
    ]
   },
@@ -2359,146 +3038,6 @@
    ]
   },
   {
-   "customer": "Siemens - Digital Industries Learning (SITRAIN)",
-   "count": 1,
-   "arr": 44604,
-   "frs": [
-    {
-     "key": "FR-326",
-     "summary": "Cloud Folders for individual students",
-     "customer": "Siemens - Digital Industries Learning (SITRAIN)",
-     "score": 48,
-     "arr": 44604
-    }
-   ]
-  },
-  {
-   "customer": "Keyfactor",
-   "count": 1,
-   "arr": 39857,
-   "frs": [
-    {
-     "key": "FR-573",
-     "summary": "Latest Ubuntu Desktop",
-     "customer": "Keyfactor",
-     "score": 15,
-     "arr": 39857
-    }
-   ]
-  },
-  {
-   "customer": "Menlo Security",
-   "count": 1,
-   "arr": 38688,
-   "frs": [
-    {
-     "key": "FR-176",
-     "summary": "API Enhancement: Swagger and better documentation",
-     "customer": "Menlo Security",
-     "score": 61,
-     "arr": 38688
-    }
-   ]
-  },
-  {
-   "customer": "GE Vernova",
-   "count": 1,
-   "arr": 38000,
-   "frs": [
-    {
-     "key": "FR-458",
-     "summary": "[GE Vernova] Embedding MP4s in Guided Journeys",
-     "customer": "GE Vernova",
-     "score": 13,
-     "arr": 38000
-    }
-   ]
-  },
-  {
-   "customer": "Revvity",
-   "count": 1,
-   "arr": 32544,
-   "frs": [
-    {
-     "key": "FR-327",
-     "summary": "Want GPUs for their VMs",
-     "customer": "Revvity",
-     "score": 28,
-     "arr": 32544
-    }
-   ]
-  },
-  {
-   "customer": "AMD",
-   "count": 1,
-   "arr": 29344,
-   "frs": [
-    {
-     "key": "FR-572",
-     "summary": "Want access to AMD Evaluation Boards (Hardware)",
-     "customer": "AMD",
-     "score": 15,
-     "arr": 29344
-    }
-   ]
-  },
-  {
-   "customer": "Thales Professional Services",
-   "count": 1,
-   "arr": 28800,
-   "frs": [
-    {
-     "key": "FR-592",
-     "summary": "Ability to filter for only active students",
-     "customer": "Thales Professional Services",
-     "score": 29,
-     "arr": 28800
-    }
-   ]
-  },
-  {
-   "customer": "Wolters Kluwer",
-   "count": 1,
-   "arr": 25920,
-   "frs": [
-    {
-     "key": "FR-353",
-     "summary": "High Priority - Improve the performance of copying snapshots",
-     "customer": "Wolters Kluwer",
-     "score": 22,
-     "arr": 25920
-    }
-   ]
-  },
-  {
-   "customer": "Elder Research, Inc.",
-   "count": 1,
-   "arr": 21921,
-   "frs": [
-    {
-     "key": "FR-365",
-     "summary": "LTI 1.3 Enhancement for Elder Research",
-     "customer": "Elder Research, Inc.",
-     "score": 15,
-     "arr": 21921
-    }
-   ]
-  },
-  {
-   "customer": "Siemens (VarianThink)",
-   "count": 1,
-   "arr": 21264,
-   "frs": [
-    {
-     "key": "FR-542",
-     "summary": "Allow Team Memebers / Managers to be in Multiple Teams (+2 m",
-     "customer": "Siemens (VarianThink)",
-     "score": 15,
-     "arr": 21264
-    }
-   ]
-  },
-  {
    "customer": "HID Global",
    "count": 1,
    "arr": 19200,
@@ -2513,58 +3052,394 @@
    ]
   },
   {
-   "customer": "EVS Broadcast Equipment",
+   "customer": "Splunk Inc.",
    "count": 1,
-   "arr": 19200,
+   "arr": 0,
    "frs": [
     {
-     "key": "FR-357",
-     "summary": "Shared environment communication",
-     "customer": "EVS Broadcast Equipment",
-     "score": 16,
-     "arr": 19200
+     "key": "FR-716",
+     "summary": "Splunk Inc.",
+     "customer": "Splunk Inc.",
+     "score": null,
+     "arr": 0
     }
    ]
   },
   {
-   "customer": "CTERA",
+   "customer": "Corporate Training Solutions Australia",
    "count": 1,
-   "arr": 18240,
+   "arr": 0,
    "frs": [
     {
-     "key": "FR-363",
-     "summary": "Deletion notification in envs'",
-     "customer": "CTERA",
-     "score": 28,
-     "arr": 18240
+     "key": "FR-715",
+     "summary": "Corporate Training Solutions Australia",
+     "customer": "Corporate Training Solutions Australia",
+     "score": null,
+     "arr": 0
     }
    ]
   },
   {
-   "customer": "Applied Materials",
+   "customer": "Rapid7",
    "count": 1,
-   "arr": 17616,
+   "arr": 0,
    "frs": [
     {
-     "key": "FR-427",
-     "summary": "Multiple Azure tenants",
-     "customer": "Applied Materials",
-     "score": 21,
-     "arr": 17616
+     "key": "FR-714",
+     "summary": "Rapid7",
+     "customer": "Rapid7",
+     "score": null,
+     "arr": 0
     }
    ]
   },
   {
-   "customer": "Vision InfoSoft",
+   "customer": "RIB Software",
    "count": 1,
-   "arr": 7956,
+   "arr": 0,
    "frs": [
     {
-     "key": "FR-419",
-     "summary": "[Vision Infosoft] Thumbnail Request",
-     "customer": "Vision InfoSoft",
-     "score": 18,
-     "arr": 7956
+     "key": "FR-713",
+     "summary": "RIB Software",
+     "customer": "RIB Software",
+     "score": null,
+     "arr": 0
+    }
+   ]
+  },
+  {
+   "customer": "Cubewise",
+   "count": 1,
+   "arr": 0,
+   "frs": [
+    {
+     "key": "FR-712",
+     "summary": "Cubewise",
+     "customer": "Cubewise",
+     "score": null,
+     "arr": 0
+    }
+   ]
+  },
+  {
+   "customer": "Wherescape",
+   "count": 1,
+   "arr": 0,
+   "frs": [
+    {
+     "key": "FR-711",
+     "summary": "Wherescape",
+     "customer": "Wherescape",
+     "score": null,
+     "arr": 0
+    }
+   ]
+  },
+  {
+   "customer": "Kinaxis",
+   "count": 1,
+   "arr": 0,
+   "frs": [
+    {
+     "key": "FR-710",
+     "summary": "Kinaxis",
+     "customer": "Kinaxis",
+     "score": null,
+     "arr": 0
+    }
+   ]
+  },
+  {
+   "customer": "AspenTech - Training",
+   "count": 1,
+   "arr": 0,
+   "frs": [
+    {
+     "key": "FR-709",
+     "summary": "AspenTech - Training",
+     "customer": "AspenTech - Training",
+     "score": null,
+     "arr": 0
+    }
+   ]
+  },
+  {
+   "customer": "Atlassian - Training",
+   "count": 1,
+   "arr": 0,
+   "frs": [
+    {
+     "key": "FR-708",
+     "summary": "Atlassian - Training",
+     "customer": "Atlassian - Training",
+     "score": null,
+     "arr": 0
+    }
+   ]
+  },
+  {
+   "customer": "IGEL Technology GmbH",
+   "count": 1,
+   "arr": 0,
+   "frs": [
+    {
+     "key": "FR-707",
+     "summary": "IGEL Technology GmbH",
+     "customer": "IGEL Technology GmbH",
+     "score": null,
+     "arr": 0
+    }
+   ]
+  },
+  {
+   "customer": "Cybereason",
+   "count": 1,
+   "arr": 0,
+   "frs": [
+    {
+     "key": "FR-706",
+     "summary": "Cybereason",
+     "customer": "Cybereason",
+     "score": null,
+     "arr": 0
+    }
+   ]
+  },
+  {
+   "customer": "TripleTen",
+   "count": 1,
+   "arr": 0,
+   "frs": [
+    {
+     "key": "FR-705",
+     "summary": "TripleTen",
+     "customer": "TripleTen",
+     "score": null,
+     "arr": 0
+    }
+   ]
+  },
+  {
+   "customer": "LearnQuest",
+   "count": 1,
+   "arr": 0,
+   "frs": [
+    {
+     "key": "FR-704",
+     "summary": "LearnQuest",
+     "customer": "LearnQuest",
+     "score": null,
+     "arr": 0
+    }
+   ]
+  },
+  {
+   "customer": "Palo Alto Networks - Fuel User Group",
+   "count": 1,
+   "arr": 0,
+   "frs": [
+    {
+     "key": "FR-703",
+     "summary": "Palo Alto Networks - Fuel User Group",
+     "customer": "Palo Alto Networks - Fuel User Group",
+     "score": null,
+     "arr": 0
+    }
+   ]
+  },
+  {
+   "customer": "Juniper Networks, Inc.",
+   "count": 1,
+   "arr": 0,
+   "frs": [
+    {
+     "key": "FR-702",
+     "summary": "Juniper Networks, Inc.",
+     "customer": "Juniper Networks, Inc.",
+     "score": null,
+     "arr": 0
+    }
+   ]
+  },
+  {
+   "customer": "Qualys",
+   "count": 1,
+   "arr": 0,
+   "frs": [
+    {
+     "key": "FR-701",
+     "summary": "Qualys",
+     "customer": "Qualys",
+     "score": null,
+     "arr": 0
+    }
+   ]
+  },
+  {
+   "customer": "Progress (Acquired MarkLogic)",
+   "count": 1,
+   "arr": 0,
+   "frs": [
+    {
+     "key": "FR-700",
+     "summary": "Progress (Acquired MarkLogic)",
+     "customer": "Progress (Acquired MarkLogic)",
+     "score": null,
+     "arr": 0
+    }
+   ]
+  },
+  {
+   "customer": "TXOne Networks",
+   "count": 1,
+   "arr": 0,
+   "frs": [
+    {
+     "key": "FR-699",
+     "summary": "TXOne Networks",
+     "customer": "TXOne Networks",
+     "score": null,
+     "arr": 0
+    }
+   ]
+  },
+  {
+   "customer": "SITA",
+   "count": 1,
+   "arr": 0,
+   "frs": [
+    {
+     "key": "FR-698",
+     "summary": "SITA",
+     "customer": "SITA",
+     "score": null,
+     "arr": 0
+    }
+   ]
+  },
+  {
+   "customer": "Westcon-Comstor",
+   "count": 1,
+   "arr": 0,
+   "frs": [
+    {
+     "key": "FR-697",
+     "summary": "Westcon-Comstor",
+     "customer": "Westcon-Comstor",
+     "score": null,
+     "arr": 0
+    }
+   ]
+  },
+  {
+   "customer": "Trimble (Combined)",
+   "count": 1,
+   "arr": 0,
+   "frs": [
+    {
+     "key": "FR-687",
+     "summary": "Trimble (Combined)",
+     "customer": "Trimble (Combined)",
+     "score": null,
+     "arr": 0
+    }
+   ]
+  },
+  {
+   "customer": "systecon.us",
+   "count": 1,
+   "arr": 0,
+   "frs": [
+    {
+     "key": "FR-683",
+     "summary": "systecon.us",
+     "customer": "systecon.us",
+     "score": null,
+     "arr": 0
+    }
+   ]
+  },
+  {
+   "customer": "RedSeal",
+   "count": 1,
+   "arr": 0,
+   "frs": [
+    {
+     "key": "FR-672",
+     "summary": "RedSeal",
+     "customer": "RedSeal",
+     "score": null,
+     "arr": 0
+    }
+   ]
+  },
+  {
+   "customer": "Matrixx Software (aquired by Amdocs)",
+   "count": 1,
+   "arr": 0,
+   "frs": [
+    {
+     "key": "FR-659",
+     "summary": "Matrixx Software (aquired by Amdocs)",
+     "customer": "Matrixx Software (aquired by Amdocs)",
+     "score": null,
+     "arr": 0
+    }
+   ]
+  },
+  {
+   "customer": "Illumio",
+   "count": 1,
+   "arr": 0,
+   "frs": [
+    {
+     "key": "FR-652",
+     "summary": "Illumio",
+     "customer": "Illumio",
+     "score": null,
+     "arr": 0
+    }
+   ]
+  },
+  {
+   "customer": "Graylog",
+   "count": 1,
+   "arr": 0,
+   "frs": [
+    {
+     "key": "FR-648",
+     "summary": "Graylog",
+     "customer": "Graylog",
+     "score": null,
+     "arr": 0
+    }
+   ]
+  },
+  {
+   "customer": "FM Systems (acquired by Johnson Controls)",
+   "count": 1,
+   "arr": 0,
+   "frs": [
+    {
+     "key": "FR-644",
+     "summary": "FM Systems (acquired by Johnson Controls)",
+     "customer": "FM Systems (acquired by Johnson Controls)",
+     "score": null,
+     "arr": 0
+    }
+   ]
+  },
+  {
+   "customer": "BD Becton Dickinson - MMS",
+   "count": 1,
+   "arr": 0,
+   "frs": [
+    {
+     "key": "FR-626",
+     "summary": "BD Becton Dickinson - MMS",
+     "customer": "BD Becton Dickinson - MMS",
+     "score": null,
+     "arr": 0
     }
    ]
   },
@@ -2583,34 +3458,6 @@
    ]
   },
   {
-   "customer": "Arctic Wolf",
-   "count": 1,
-   "arr": 0,
-   "frs": [
-    {
-     "key": "FR-519",
-     "summary": "[Arctic Wolf] Invitation Validity Timer",
-     "customer": "Arctic Wolf",
-     "score": 14,
-     "arr": null
-    }
-   ]
-  },
-  {
-   "customer": "Honeywell",
-   "count": 1,
-   "arr": 0,
-   "frs": [
-    {
-     "key": "FR-516",
-     "summary": "[Honeywell] Mac Address Changes in the UI",
-     "customer": "Honeywell",
-     "score": 8,
-     "arr": null
-    }
-   ]
-  },
-  {
    "customer": "Systecon",
    "count": 1,
    "arr": 0,
@@ -2620,7 +3467,7 @@
      "summary": "[Systecon] Improvements to A/V Functionality",
      "customer": "Systecon",
      "score": 10,
-     "arr": null
+     "arr": 0
     }
    ]
   },
@@ -2634,7 +3481,7 @@
      "summary": "[Redseal] PIP for VILT",
      "customer": "Redseal",
      "score": 18,
-     "arr": null
+     "arr": 0
     }
    ]
   },
@@ -2648,7 +3495,7 @@
      "summary": "Increasing self service CPU from 4 to 8 or 16 - decision fol",
      "customer": "Kaspersky, Exclusive Networks, CheckPoint, Infoblox, Edifecs",
      "score": 18,
-     "arr": null
+     "arr": 0
     }
    ]
   },
@@ -2662,7 +3509,7 @@
      "summary": "[Omnicell] [Cotiviti] [Infios] Productise Private APIs for V",
      "customer": "Omnicell, Cotiviti, Infios, Procede ",
      "score": 14,
-     "arr": null
+     "arr": 0
     }
    ]
   },
@@ -2706,13 +3553,13 @@
    "70+"
   ],
   "counts": [
-   36,
+   37,
    35,
    102,
    51,
    14,
    24,
-   12
+   11
   ],
   "frs": [
    [
@@ -2721,14 +3568,14 @@
      "summary": "[Redseal] PIP for VILT",
      "customer": "Redseal",
      "score": 18,
-     "arr": null
+     "arr": 0
     },
     {
      "key": "FR-468",
      "summary": "Increasing self service CPU from 4 to 8 or 16 - decision fol",
      "customer": "Kaspersky, Exclusive Networks, CheckPoint, Infoblox, Edifecs",
      "score": 18,
-     "arr": null
+     "arr": 0
     },
     {
      "key": "FR-419",
@@ -2747,9 +3594,9 @@
     {
      "key": "FR-598",
      "summary": "Create jump page button for Graylog to use in LearnWorlds",
-     "customer": null,
+     "customer": "(none)",
      "score": 17,
-     "arr": null
+     "arr": 0
     },
     {
      "key": "FR-478",
@@ -2819,14 +3666,14 @@
      "summary": "[Arctic Wolf] Invitation Validity Timer",
      "customer": "Arctic Wolf",
      "score": 14,
-     "arr": null
+     "arr": 0
     },
     {
      "key": "FR-463",
      "summary": "[Omnicell] [Cotiviti] [Infios] Productise Private APIs for V",
      "customer": "Omnicell, Cotiviti, Infios, Procede ",
      "score": 14,
-     "arr": null
+     "arr": 0
     },
     {
      "key": "FR-409",
@@ -2931,7 +3778,7 @@
      "summary": "[Systecon] Improvements to A/V Functionality",
      "customer": "Systecon",
      "score": 10,
-     "arr": null
+     "arr": 0
     },
     {
      "key": "FR-479",
@@ -2941,11 +3788,18 @@
      "arr": 199480
     },
     {
+     "key": "FR-724",
+     "summary": "Import VM - change the storage/transfer backend from Aspera ",
+     "customer": "(none)",
+     "score": 8,
+     "arr": 0
+    },
+    {
      "key": "FR-516",
      "summary": "[Honeywell] Mac Address Changes in the UI",
      "customer": "Honeywell",
      "score": 8,
-     "arr": null
+     "arr": 0
     },
     {
      "key": "FR-499",
@@ -2957,9 +3811,9 @@
     {
      "key": "FR-528",
      "summary": "New Instructor Console: there seems to be no way to extend a",
-     "customer": null,
+     "customer": "(none)",
      "score": 6,
-     "arr": null
+     "arr": 0
     },
     {
      "key": "FR-500",
@@ -3022,7 +3876,7 @@
     {
      "key": "FR-719",
      "summary": "[Trimble] External Meeting Link Enhancement",
-     "customer": null,
+     "customer": "(none)",
      "score": 27,
      "arr": 495000
     },
@@ -4562,13 +5416,6 @@
     }
    ],
    [
-    {
-     "key": "FR-506",
-     "summary": "[Trimble] All students to Live Thumbnail",
-     "customer": "Trimble",
-     "score": 78,
-     "arr": 495000
-    },
     {
      "key": "FR-216",
      "summary": "Allow End-User Invitations from Non-Default Blueprint Snapsh",
@@ -4652,19 +5499,19 @@
  "align": [
   {
    "label": "Enterprise Readiness",
-   "count": 167
+   "count": 166
+  },
+  {
+   "label": "None",
+   "count": 111
   },
   {
    "label": "AI & Automation",
-   "count": 47
+   "count": 48
   },
   {
    "label": "Cyber Vertical",
    "count": 40
-  },
-  {
-   "label": "None",
-   "count": 16
   },
   {
    "label": "Other",
@@ -4674,7 +5521,7 @@
  "renew": [
   {
    "label": "<180 days",
-   "count": 104
+   "count": 103
   },
   {
    "label": "180–364",
@@ -4690,7 +5537,7 @@
   },
   {
    "label": "No date",
-   "count": 40
+   "count": 136
   }
  ],
  "clusters": [
@@ -5100,27 +5947,6 @@
    ]
   },
   {
-   "theme": "Instructor view: live thumbnails of VMs",
-   "fr_count": 3,
-   "customers": 3,
-   "arr": 517583,
-   "top_score": 78,
-   "members": [
-    {
-     "key": "FR-405",
-     "summary": "Ability to view other instructor's VMs as thumbn"
-    },
-    {
-     "key": "FR-419",
-     "summary": "[Vision Infosoft] Thumbnail Request"
-    },
-    {
-     "key": "FR-506",
-     "summary": "[Trimble] All students to Live Thumbnail"
-    }
-   ]
-  },
-  {
    "theme": "Filtering of experiences & students",
    "fr_count": 3,
    "customers": 3,
@@ -5289,6 +6115,23 @@
    ]
   },
   {
+   "theme": "Instructor view: live thumbnails of VMs",
+   "fr_count": 2,
+   "customers": 2,
+   "arr": 22583,
+   "top_score": 18,
+   "members": [
+    {
+     "key": "FR-405",
+     "summary": "Ability to view other instructor's VMs as thumbn"
+    },
+    {
+     "key": "FR-419",
+     "summary": "[Vision Infosoft] Thumbnail Request"
+    }
+   ]
+  },
+  {
    "theme": "Dynamic region assignment",
    "fr_count": 2,
    "customers": 2,
@@ -5427,6 +6270,24 @@
  ],
  "new_frs": [
   {
+   "key": "FR-725",
+   "summary": "[UX/UI] Markdown Import modal – Upload → Choose sections → Preview flo",
+   "customer": "(none)",
+   "arr": 0,
+   "align": "None",
+   "score": null,
+   "created": "2026-11-08"
+  },
+  {
+   "key": "FR-724",
+   "summary": "Import VM - change the storage/transfer backend from Aspera to S3.",
+   "customer": "(none)",
+   "arr": 0,
+   "align": "AI & Automation",
+   "score": 8,
+   "created": "2026-11-06"
+  },
+  {
    "key": "FR-720",
    "summary": "Do not require all collaboration tools to be on for assistance request",
    "customer": "SAI360",
@@ -5438,32 +6299,34 @@
   {
    "key": "FR-719",
    "summary": "[Trimble] External Meeting Link Enhancement",
-   "customer": null,
+   "customer": "(none)",
    "arr": 495000,
    "align": "Enterprise Readiness",
    "score": 27,
    "created": "2026-11-03"
-  },
-  {
-   "key": "FR-718",
-   "summary": "Time Based Controls",
-   "customer": "Ciena - Training",
-   "arr": 125280,
-   "align": "Enterprise Readiness",
-   "score": 28,
-   "created": "2026-10-29"
-  },
-  {
-   "key": "FR-717",
-   "summary": "[BeyondTrust] - Dynamic Region Assignment AWS",
-   "customer": "BeyondTrust",
-   "arr": 175560,
-   "align": "Enterprise Readiness",
-   "score": 37,
-   "created": "2026-10-29"
   }
  ],
  "completed": [
+  {
+   "key": "FR-506",
+   "summary": "[Trimble] All students to Live Thumbnail",
+   "customer": "Trimble",
+   "arr": 495000,
+   "align": "Enterprise Readiness",
+   "score": 78,
+   "owner": "Eric Bar",
+   "completed": "2026-11-08"
+  },
+  {
+   "key": "FR-723",
+   "summary": "CLONE Do not require all collaboration tools to be on for assistance r",
+   "customer": "SAI360",
+   "arr": 64440,
+   "align": "Enterprise Readiness",
+   "score": 42,
+   "owner": null,
+   "completed": "2026-11-05"
+  },
   {
    "key": "FR-560",
    "summary": "Make the in-experience AI chatbot more visually prominent",
@@ -5473,19 +6336,20 @@
    "score": 31,
    "owner": "Andrey Alonzov",
    "completed": "2026-11-03"
-  },
-  {
-   "key": "FR-217",
-   "summary": "Pre-configured environments: select all users rather than individuals",
-   "customer": "Genesys",
-   "arr": 470007,
-   "align": "AI & Automation",
-   "score": 54,
-   "owner": "Alexander Karyazhkin",
-   "completed": "2026-10-29"
   }
  ],
  "in_progress": [
+  {
+   "key": "FR-719",
+   "summary": "[Trimble] External Meeting Link Enhancement",
+   "customer": "(none)",
+   "arr": 495000,
+   "align": "Enterprise Readiness",
+   "score": 27,
+   "owner": "Eric Bar",
+   "started": "2026-11-05",
+   "is_new": true
+  },
   {
    "key": "FR-563",
    "summary": "Feature request (details needed)",
@@ -5516,17 +6380,6 @@
    "align": "Cyber Vertical",
    "score": 48,
    "owner": "Ofek Ackerman",
-   "started": "2026-09-11",
-   "is_new": false
-  },
-  {
-   "key": "FR-506",
-   "summary": "[Trimble] All students to Live Thumbnail",
-   "customer": "Trimble",
-   "arr": 495000,
-   "align": "Enterprise Readiness",
-   "score": 78,
-   "owner": "Eric Bar",
    "started": "2026-09-11",
    "is_new": false
   },
