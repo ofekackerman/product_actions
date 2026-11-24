@@ -1,11 +1,11 @@
 {
  "meta": {
-  "week_of": "2026-11-23",
-  "open": 378,
-  "arr_total": 16438254,
+  "week_of": "2026-11-24",
+  "open": 376,
+  "arr_total": 16352574,
   "high_threshold": 60,
   "high_count": 35,
-  "scored": 280,
+  "scored": 279,
   "risk_count": 101,
   "customers": 126
  },
@@ -511,6 +511,104 @@
    ]
   },
   {
+   "customer": "Exclusive Networks - France",
+   "count": 13,
+   "arr": 565500,
+   "frs": [
+    {
+     "key": "FR-758",
+     "summary": "GPUs for their CloudShare privte VMs",
+     "customer": "Exclusive Networks - France",
+     "score": 51,
+     "arr": 565500
+    },
+    {
+     "key": "FR-360",
+     "summary": "Increase CPU to 8 or 16 core as Self Service",
+     "customer": "Exclusive Networks - France",
+     "score": 48,
+     "arr": 565500
+    },
+    {
+     "key": "FR-733",
+     "summary": "Manage brand settings in a single place (logo + colors)",
+     "customer": "Exclusive Networks - France",
+     "score": 44,
+     "arr": 565500
+    },
+    {
+     "key": "FR-734",
+     "summary": "Granular permissions configuration",
+     "customer": "Exclusive Networks - France",
+     "score": 44,
+     "arr": 565500
+    },
+    {
+     "key": "FR-163",
+     "summary": "Analytics insights into VMs",
+     "customer": "Exclusive Networks - France",
+     "score": 43,
+     "arr": 565500
+    },
+    {
+     "key": "FR-308",
+     "summary": "RBAC permission for assigned blueprints to stop snapshotting",
+     "customer": "Exclusive Networks - France",
+     "score": 36,
+     "arr": 565500
+    },
+    {
+     "key": "FR-333",
+     "summary": "Increase Number of Networks in an Environment",
+     "customer": "Exclusive Networks - France",
+     "score": 33,
+     "arr": 565500
+    },
+    {
+     "key": "FR-358",
+     "summary": "Networking: improve ability to handle more segmented network",
+     "customer": "Exclusive Networks - France",
+     "score": 33,
+     "arr": 565500
+    },
+    {
+     "key": "FR-339",
+     "summary": "Ability to snapshot and provision an env with a VM powered o",
+     "customer": "Exclusive Networks - France",
+     "score": 31,
+     "arr": 565500
+    },
+    {
+     "key": "FR-341",
+     "summary": "Dashboard/reports: Better dashboards showing project member ",
+     "customer": "Exclusive Networks - France",
+     "score": 31,
+     "arr": 565500
+    },
+    {
+     "key": "FR-411",
+     "summary": "API that queries our data",
+     "customer": "Exclusive Networks - France",
+     "score": 31,
+     "arr": 565500
+    },
+    {
+     "key": "FR-414",
+     "summary": "Enable Wallpaper Display in RDP",
+     "customer": "Exclusive Networks - France",
+     "score": 30,
+     "arr": 565500
+    },
+    {
+     "key": "FR-642",
+     "summary": "Exclusive Networks - France",
+     "customer": "Exclusive Networks - France",
+     "score": null,
+     "arr": 0
+    }
+   ]
+  },
+  {
    "customer": "Trimble",
    "count": 13,
    "arr": 495000,
@@ -605,97 +703,6 @@
      "customer": "Trimble",
      "score": 31,
      "arr": 495000
-    }
-   ]
-  },
-  {
-   "customer": "Exclusive Networks - France",
-   "count": 12,
-   "arr": 565500,
-   "frs": [
-    {
-     "key": "FR-360",
-     "summary": "Increase CPU to 8 or 16 core as Self Service",
-     "customer": "Exclusive Networks - France",
-     "score": 48,
-     "arr": 565500
-    },
-    {
-     "key": "FR-733",
-     "summary": "Manage brand settings in a single place (logo + colors)",
-     "customer": "Exclusive Networks - France",
-     "score": 44,
-     "arr": 565500
-    },
-    {
-     "key": "FR-734",
-     "summary": "Granular permissions configuration",
-     "customer": "Exclusive Networks - France",
-     "score": 44,
-     "arr": 565500
-    },
-    {
-     "key": "FR-163",
-     "summary": "Analytics insights into VMs",
-     "customer": "Exclusive Networks - France",
-     "score": 43,
-     "arr": 565500
-    },
-    {
-     "key": "FR-308",
-     "summary": "RBAC permission for assigned blueprints to stop snapshotting",
-     "customer": "Exclusive Networks - France",
-     "score": 36,
-     "arr": 565500
-    },
-    {
-     "key": "FR-333",
-     "summary": "Increase Number of Networks in an Environment",
-     "customer": "Exclusive Networks - France",
-     "score": 33,
-     "arr": 565500
-    },
-    {
-     "key": "FR-358",
-     "summary": "Networking: improve ability to handle more segmented network",
-     "customer": "Exclusive Networks - France",
-     "score": 33,
-     "arr": 565500
-    },
-    {
-     "key": "FR-339",
-     "summary": "Ability to snapshot and provision an env with a VM powered o",
-     "customer": "Exclusive Networks - France",
-     "score": 31,
-     "arr": 565500
-    },
-    {
-     "key": "FR-341",
-     "summary": "Dashboard/reports: Better dashboards showing project member ",
-     "customer": "Exclusive Networks - France",
-     "score": 31,
-     "arr": 565500
-    },
-    {
-     "key": "FR-411",
-     "summary": "API that queries our data",
-     "customer": "Exclusive Networks - France",
-     "score": 31,
-     "arr": 565500
-    },
-    {
-     "key": "FR-414",
-     "summary": "Enable Wallpaper Display in RDP",
-     "customer": "Exclusive Networks - France",
-     "score": 30,
-     "arr": 565500
-    },
-    {
-     "key": "FR-642",
-     "summary": "Exclusive Networks - France",
-     "customer": "Exclusive Networks - France",
-     "score": null,
-     "arr": 0
     }
    ]
   },
@@ -950,17 +957,17 @@
      "arr": 1321652
     },
     {
+     "key": "FR-601",
+     "summary": "[CRWD] Mask API token in user profile; reveal only via rotat",
+     "customer": "Crowdstrike - Marketing AWS",
+     "score": 47,
+     "arr": 1321652
+    },
+    {
      "key": "FR-490",
      "summary": "[CRWD] Reduce AWS Account Onboarding Friction",
      "customer": "Crowdstrike - Marketing AWS",
      "score": 42,
-     "arr": 1321652
-    },
-    {
-     "key": "FR-601",
-     "summary": "[CRWD] Mask API token in user profile; reveal only via rotat",
-     "customer": "Crowdstrike - Marketing AWS",
-     "score": 39,
      "arr": 1321652
     },
     {
@@ -995,62 +1002,6 @@
      "key": "FR-634",
      "summary": "Crowdstrike - Marketing AWS",
      "customer": "Crowdstrike - Marketing AWS",
-     "score": null,
-     "arr": 0
-    }
-   ]
-  },
-  {
-   "customer": "(none)",
-   "count": 7,
-   "arr": 495000,
-   "frs": [
-    {
-     "key": "FR-719",
-     "summary": "[Trimble] External Meeting Link Enhancement",
-     "customer": "(none)",
-     "score": 27,
-     "arr": 495000
-    },
-    {
-     "key": "FR-598",
-     "summary": "Create jump page button for Graylog to use in LearnWorlds",
-     "customer": "(none)",
-     "score": 17,
-     "arr": 0
-    },
-    {
-     "key": "FR-724",
-     "summary": "Import VM - change the storage/transfer backend from Aspera ",
-     "customer": "(none)",
-     "score": 8,
-     "arr": 0
-    },
-    {
-     "key": "FR-726",
-     "summary": "EVOLVE MEP - CPU Clock Speed Request",
-     "customer": "(none)",
-     "score": 7,
-     "arr": 0
-    },
-    {
-     "key": "FR-528",
-     "summary": "New Instructor Console: there seems to be no way to extend a",
-     "customer": "(none)",
-     "score": 6,
-     "arr": 0
-    },
-    {
-     "key": "FR-725",
-     "summary": "[UX/UI] Markdown Import modal – Upload → Choose sections → P",
-     "customer": "(none)",
-     "score": null,
-     "arr": 0
-    },
-    {
-     "key": "FR-752",
-     "summary": "Configure Graylog Open Lab launch and TLS bridge in prod dyn",
-     "customer": "(none)",
      "score": null,
      "arr": 0
     }
@@ -1254,6 +1205,48 @@
      "key": "FR-655",
      "summary": "Kaspersky Combined",
      "customer": "Kaspersky Combined",
+     "score": null,
+     "arr": 0
+    }
+   ]
+  },
+  {
+   "customer": "(none)",
+   "count": 5,
+   "arr": 495000,
+   "frs": [
+    {
+     "key": "FR-719",
+     "summary": "[Trimble] External Meeting Link Enhancement",
+     "customer": "(none)",
+     "score": 27,
+     "arr": 495000
+    },
+    {
+     "key": "FR-724",
+     "summary": "Import VM - change the storage/transfer backend from Aspera ",
+     "customer": "(none)",
+     "score": 8,
+     "arr": 0
+    },
+    {
+     "key": "FR-726",
+     "summary": "EVOLVE MEP - CPU Clock Speed Request",
+     "customer": "(none)",
+     "score": 7,
+     "arr": 0
+    },
+    {
+     "key": "FR-528",
+     "summary": "New Instructor Console: there seems to be no way to extend a",
+     "customer": "(none)",
+     "score": 6,
+     "arr": 0
+    },
+    {
+     "key": "FR-725",
+     "summary": "[UX/UI] Markdown Import modal – Upload → Choose sections → P",
+     "customer": "(none)",
      "score": null,
      "arr": 0
     }
@@ -2107,34 +2100,6 @@
    ]
   },
   {
-   "customer": "SAI360",
-   "count": 3,
-   "arr": 64440,
-   "frs": [
-    {
-     "key": "FR-727",
-     "summary": "Native integration with power automate",
-     "customer": "SAI360",
-     "score": 36,
-     "arr": 64440
-    },
-    {
-     "key": "FR-720",
-     "summary": "Do not require all collaboration tools to be on for assistan",
-     "customer": "SAI360",
-     "score": 35,
-     "arr": 64440
-    },
-    {
-     "key": "FR-676",
-     "summary": "SAI360",
-     "customer": "SAI360",
-     "score": null,
-     "arr": 0
-    }
-   ]
-  },
-  {
    "customer": "BWise B.V. (SAI360)",
    "count": 3,
    "arr": 64440,
@@ -2159,6 +2124,34 @@
      "customer": "BWise B.V. (SAI360)",
      "score": 21,
      "arr": 64440
+    }
+   ]
+  },
+  {
+   "customer": "SAI360",
+   "count": 3,
+   "arr": 64440,
+   "frs": [
+    {
+     "key": "FR-727",
+     "summary": "Native integration with power automate",
+     "customer": "SAI360",
+     "score": 36,
+     "arr": 64440
+    },
+    {
+     "key": "FR-720",
+     "summary": "Do not require all collaboration tools to be on for assistan",
+     "customer": "SAI360",
+     "score": 35,
+     "arr": 64440
+    },
+    {
+     "key": "FR-676",
+     "summary": "SAI360",
+     "customer": "SAI360",
+     "score": null,
+     "arr": 0
     }
    ]
   },
@@ -2471,27 +2464,6 @@
    ]
   },
   {
-   "customer": "RSA Security - Identity",
-   "count": 2,
-   "arr": 85680,
-   "frs": [
-    {
-     "key": "FR-220",
-     "summary": "VM access menus closer VM names",
-     "customer": "RSA Security - Identity",
-     "score": 23,
-     "arr": 85680
-    },
-    {
-     "key": "FR-675",
-     "summary": "RSA Security - Identity",
-     "customer": "RSA Security - Identity",
-     "score": null,
-     "arr": 0
-    }
-   ]
-  },
-  {
    "customer": "ARGUS (Altus Group)",
    "count": 2,
    "arr": 73000,
@@ -2555,27 +2527,6 @@
    ]
   },
   {
-   "customer": "Netskope",
-   "count": 2,
-   "arr": 48720,
-   "frs": [
-    {
-     "key": "FR-462",
-     "summary": "[Netskope] Generate New Class Password",
-     "customer": "Netskope",
-     "score": 37,
-     "arr": 48720
-    },
-    {
-     "key": "FR-477",
-     "summary": "[Netskope] Generate New Class Password",
-     "customer": "Netskope",
-     "score": 13,
-     "arr": 48720
-    }
-   ]
-  },
-  {
    "customer": "Netskope (Infiot)",
    "count": 2,
    "arr": 48720,
@@ -2593,6 +2544,27 @@
      "customer": "Netskope (Infiot)",
      "score": null,
      "arr": 0
+    }
+   ]
+  },
+  {
+   "customer": "Netskope",
+   "count": 2,
+   "arr": 48720,
+   "frs": [
+    {
+     "key": "FR-462",
+     "summary": "[Netskope] Generate New Class Password",
+     "customer": "Netskope",
+     "score": 37,
+     "arr": 48720
+    },
+    {
+     "key": "FR-477",
+     "summary": "[Netskope] Generate New Class Password",
+     "customer": "Netskope",
+     "score": 13,
+     "arr": 48720
     }
    ]
   },
@@ -2891,27 +2863,6 @@
    ]
   },
   {
-   "customer": "Arctic Wolf",
-   "count": 2,
-   "arr": 0,
-   "frs": [
-    {
-     "key": "FR-519",
-     "summary": "[Arctic Wolf] Invitation Validity Timer",
-     "customer": "Arctic Wolf",
-     "score": 14,
-     "arr": 0
-    },
-    {
-     "key": "FR-619",
-     "summary": "Arctic Wolf",
-     "customer": "Arctic Wolf",
-     "score": null,
-     "arr": 0
-    }
-   ]
-  },
-  {
    "customer": "Honeywell",
    "count": 2,
    "arr": 0,
@@ -2927,6 +2878,27 @@
      "key": "FR-650",
      "summary": "Honeywell",
      "customer": "Honeywell",
+     "score": null,
+     "arr": 0
+    }
+   ]
+  },
+  {
+   "customer": "Arctic Wolf",
+   "count": 2,
+   "arr": 0,
+   "frs": [
+    {
+     "key": "FR-519",
+     "summary": "[Arctic Wolf] Invitation Validity Timer",
+     "customer": "Arctic Wolf",
+     "score": 14,
+     "arr": 0
+    },
+    {
+     "key": "FR-619",
+     "summary": "Arctic Wolf",
+     "customer": "Arctic Wolf",
      "score": null,
      "arr": 0
     }
@@ -3143,43 +3115,15 @@
    ]
   },
   {
-   "customer": "Kaspersky, Exclusive Networks, CheckPoint, Infoblox, Edifecs",
+   "customer": "BD Becton Dickinson (Parent)",
    "count": 1,
    "arr": 0,
    "frs": [
     {
-     "key": "FR-468",
-     "summary": "Increasing self service CPU from 4 to 8 or 16 - decision fol",
-     "customer": "Kaspersky, Exclusive Networks, CheckPoint, Infoblox, Edifecs",
-     "score": 18,
-     "arr": 0
-    }
-   ]
-  },
-  {
-   "customer": "Redseal",
-   "count": 1,
-   "arr": 0,
-   "frs": [
-    {
-     "key": "FR-488",
-     "summary": "[Redseal] PIP for VILT",
-     "customer": "Redseal",
-     "score": 18,
-     "arr": 0
-    }
-   ]
-  },
-  {
-   "customer": "CloudShare (Internal)",
-   "count": 1,
-   "arr": 0,
-   "frs": [
-    {
-     "key": "FR-567",
-     "summary": "Project-Level Permissions for Webhook Management",
-     "customer": "CloudShare (Internal)",
-     "score": 15,
+     "key": "FR-320",
+     "summary": "Enable Cloud folders in all regions",
+     "customer": "BD Becton Dickinson (Parent)",
+     "score": 12,
      "arr": 0
     }
    ]
@@ -3213,15 +3157,29 @@
    ]
   },
   {
-   "customer": "BD Becton Dickinson (Parent)",
+   "customer": "Kaspersky, Exclusive Networks, CheckPoint, Infoblox, Edifecs",
    "count": 1,
    "arr": 0,
    "frs": [
     {
-     "key": "FR-320",
-     "summary": "Enable Cloud folders in all regions",
-     "customer": "BD Becton Dickinson (Parent)",
-     "score": 12,
+     "key": "FR-468",
+     "summary": "Increasing self service CPU from 4 to 8 or 16 - decision fol",
+     "customer": "Kaspersky, Exclusive Networks, CheckPoint, Infoblox, Edifecs",
+     "score": 18,
+     "arr": 0
+    }
+   ]
+  },
+  {
+   "customer": "Redseal",
+   "count": 1,
+   "arr": 0,
+   "frs": [
+    {
+     "key": "FR-488",
+     "summary": "[Redseal] PIP for VILT",
+     "customer": "Redseal",
+     "score": 18,
      "arr": 0
     }
    ]
@@ -3236,6 +3194,20 @@
      "summary": "[Systecon] Improvements to A/V Functionality",
      "customer": "Systecon",
      "score": 10,
+     "arr": 0
+    }
+   ]
+  },
+  {
+   "customer": "CloudShare (Internal)",
+   "count": 1,
+   "arr": 0,
+   "frs": [
+    {
+     "key": "FR-567",
+     "summary": "Project-Level Permissions for Webhook Management",
+     "customer": "CloudShare (Internal)",
+     "score": 15,
      "arr": 0
     }
    ]
@@ -3319,6 +3291,20 @@
      "key": "FR-672",
      "summary": "RedSeal",
      "customer": "RedSeal",
+     "score": null,
+     "arr": 0
+    }
+   ]
+  },
+  {
+   "customer": "RSA Security - Identity",
+   "count": 1,
+   "arr": 0,
+   "frs": [
+    {
+     "key": "FR-675",
+     "summary": "RSA Security - Identity",
+     "customer": "RSA Security - Identity",
      "score": null,
      "arr": 0
     }
@@ -3672,11 +3658,11 @@
    "70+"
   ],
   "counts": [
-   37,
    36,
-   106,
-   53,
-   13,
+   35,
+   105,
+   54,
+   14,
    24,
    11
   ],
@@ -3709,13 +3695,6 @@
      "customer": "Crowdstrike - Marketing AWS",
      "score": 17,
      "arr": 1321652
-    },
-    {
-     "key": "FR-598",
-     "summary": "Create jump page button for Graylog to use in LearnWorlds",
-     "customer": "(none)",
-     "score": 17,
-     "arr": 0
     },
     {
      "key": "FR-322",
@@ -4070,13 +4049,6 @@
      "arr": 1321652
     },
     {
-     "key": "FR-220",
-     "summary": "VM access menus closer VM names",
-     "customer": "RSA Security - Identity",
-     "score": 23,
-     "arr": 85680
-    },
-    {
      "key": "FR-353",
      "summary": "High Priority - Improve the performance of copying snapshots",
      "customer": "Wolters Kluwer",
@@ -4238,13 +4210,6 @@
      "customer": "Learning Tree International",
      "score": 39,
      "arr": 250000
-    },
-    {
-     "key": "FR-601",
-     "summary": "[CRWD] Mask API token in user profile; reveal only via rotat",
-     "customer": "Crowdstrike - Marketing AWS",
-     "score": 39,
-     "arr": 1321652
     },
     {
      "key": "FR-189",
@@ -5096,6 +5061,13 @@
      "arr": 900000
     },
     {
+     "key": "FR-601",
+     "summary": "[CRWD] Mask API token in user profile; reveal only via rotat",
+     "customer": "Crowdstrike - Marketing AWS",
+     "score": 47,
+     "arr": 1321652
+    },
+    {
      "key": "FR-172",
      "summary": "Conditional Formatting in the Viewer",
      "customer": "Trimble",
@@ -5399,6 +5371,13 @@
      "arr": 650000
     },
     {
+     "key": "FR-758",
+     "summary": "GPUs for their CloudShare privte VMs",
+     "customer": "Exclusive Networks - France",
+     "score": 51,
+     "arr": 565500
+    },
+    {
      "key": "FR-316",
      "summary": "Better automation pipeline for internal infrastructure deplo",
      "customer": "Cribl",
@@ -5660,11 +5639,11 @@
  "align": [
   {
    "label": "Enterprise Readiness",
-   "count": 170
+   "count": 169
   },
   {
    "label": "None",
-   "count": 113
+   "count": 112
   },
   {
    "label": "AI & Automation",
@@ -5686,7 +5665,7 @@
   },
   {
    "label": "180–364",
-   "count": 39
+   "count": 40
   },
   {
    "label": "365–499",
@@ -5694,14 +5673,23 @@
   },
   {
    "label": "500+",
-   "count": 67
+   "count": 66
   },
   {
    "label": "No date",
-   "count": 138
+   "count": 136
   }
  ],
  "new_frs": [
+  {
+   "key": "FR-758",
+   "summary": "GPUs for their CloudShare privte VMs",
+   "customer": "Exclusive Networks - France",
+   "arr": 565500,
+   "align": "Enterprise Readiness",
+   "score": 51,
+   "created": "2026-11-23"
+  },
   {
    "key": "FR-755",
    "summary": "Image hover behavior",
@@ -5712,13 +5700,13 @@
    "created": "2026-11-19"
   },
   {
-   "key": "FR-752",
-   "summary": "Configure Graylog Open Lab launch and TLS bridge in prod dynamic confi",
-   "customer": "(none)",
-   "arr": 0,
-   "align": "None",
-   "score": null,
-   "created": "2026-11-19"
+   "key": "FR-750",
+   "summary": "[RiB] - Remove Expected Time From GJ Chapters",
+   "customer": "RIB Software",
+   "arr": 52000,
+   "align": "Enterprise Readiness",
+   "score": 32,
+   "created": "2026-11-18"
   },
   {
    "key": "FR-751",
@@ -5727,15 +5715,6 @@
    "arr": 52000,
    "align": "Enterprise Readiness",
    "score": 30,
-   "created": "2026-11-18"
-  },
-  {
-   "key": "FR-750",
-   "summary": "[RiB] - Remove Expected Time From GJ Chapters",
-   "customer": "RIB Software",
-   "arr": 52000,
-   "align": "Enterprise Readiness",
-   "score": 32,
    "created": "2026-11-18"
   },
   {
@@ -5749,6 +5728,16 @@
   }
  ],
  "completed": [
+  {
+   "key": "FR-598",
+   "summary": "Create jump page button for Graylog to use in LearnWorlds",
+   "customer": "(none)",
+   "arr": 0,
+   "align": "Enterprise Readiness",
+   "score": 17,
+   "owner": "Andrey Alonzov",
+   "completed": "2026-11-23"
+  },
   {
    "key": "FR-507",
    "summary": "[Trimble] Increased character Limits for Snapshots",
@@ -5792,15 +5781,15 @@
  ],
  "in_progress": [
   {
-   "key": "FR-598",
-   "summary": "Create jump page button for Graylog to use in LearnWorlds",
-   "customer": "(none)",
-   "arr": 0,
-   "align": "Enterprise Readiness",
-   "score": 17,
-   "owner": "Andrey Alonzov",
-   "started": "2026-11-11",
-   "is_new": false
+   "key": "FR-199",
+   "summary": "Generate New Password",
+   "customer": "Netskope (Parent)",
+   "arr": 48720,
+   "align": "Cyber Vertical",
+   "score": 46,
+   "owner": "Alla Bliahrov",
+   "started": "2026-11-23",
+   "is_new": true
   },
   {
    "key": "FR-719",
@@ -6042,7 +6031,7 @@
    "theme": "Customer-facing logs & audit trail",
    "fr_count": 7,
    "customers": 4,
-   "arr": 863292,
+   "arr": 864600,
    "top_score": 43,
    "members": [
     {
@@ -6708,6 +6697,23 @@
     {
      "key": "FR-480",
      "summary": "[Nozomi] Enable sharing a web access links for a"
+    }
+   ]
+  },
+  {
+   "theme": "GPU-enabled VMs",
+   "fr_count": 2,
+   "customers": 2,
+   "arr": 598044,
+   "top_score": 51,
+   "members": [
+    {
+     "key": "FR-327",
+     "summary": "Want GPUs for their VMs"
+    },
+    {
+     "key": "FR-758",
+     "summary": "GPUs for their CloudShare privte VMs"
     }
    ]
   },
